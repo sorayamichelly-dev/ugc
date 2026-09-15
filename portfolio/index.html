@@ -1,0 +1,1241 @@
+<title>Soraya Oliveira UGC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    /* mundo visual único: colagem de revista, sempre claro */
+    --ground: #FFF5EF;
+    --paper: #FFFFFF;
+    --ink: #2A1A1E;
+    --ink-2: #5E4A50;
+    --ink-3: #9A868C;
+    --line: #E8D6CF;
+
+    --wine: #4A1526;
+    --berry: #D8386A;
+    --berry-soft: #FFE0E9;
+    --tangerine: #F2762E;
+    --tangerine-soft: #FDE6D6;
+    --lilac: #8A6FD1;
+    --lilac-soft: #EBE4FB;
+    --mint: #1F9C7E;
+    --mint-soft: #D7F2E9;
+    --sky: #3E8FD0;
+    --sky-soft: #DCEDFB;
+
+    --poster: "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+    --serif: "Fraunces", Georgia, serif;
+    --body: "Karla", "Helvetica Neue", Arial, sans-serif;
+    --hand: "Caveat", "Bradley Hand", cursive;
+    --mono: "DM Mono", ui-monospace, Menlo, monospace;
+
+    --maxw: 1120px;
+    --pad: clamp(18px, 5vw, 52px);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding-inline: var(--pad);
+  }
+
+  p { margin: 0; }
+  a { color: inherit; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--berry);
+    outline-offset: 3px;
+  }
+
+  /* ---------- peças reutilizadas ---------- */
+
+  .poster {
+    font-family: var(--poster);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.92;
+    letter-spacing: 0.005em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .said {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
+
+  .note {
+    font-family: var(--hand);
+    font-size: clamp(21px, 2.4vw, 27px);
+    line-height: 1.15;
+    color: var(--berry);
+    transform: rotate(-2.2deg);
+    display: inline-block;
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .mark {
+    background: linear-gradient(transparent 58%, var(--tangerine-soft) 58%);
+    padding-inline: 2px;
+  }
+
+  .star { width: 1em; height: 1em; display: inline-block; vertical-align: -0.12em; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    border: 2px solid var(--ink);
+    background: var(--berry);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+
+  .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+
+  .btn.cream { background: var(--ground); color: var(--ink); }
+  .btn.sun { background: var(--tangerine); color: var(--ink); }
+
+  /* ---------- topo ---------- */
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: var(--wine);
+    color: #FFF1E8;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .topbar .wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 58px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    margin-right: auto;
+  }
+
+  .brand small {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    color: #F7A8BE;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .open {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFD9A8;
+  }
+
+  .blink {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #7BE0B0;
+    box-shadow: 0 0 0 4px rgba(123,224,176,.22);
+  }
+
+  .topbar .btn {
+    padding: 9px 18px;
+    font-size: 13.5px;
+    border-color: #FFF1E8;
+    box-shadow: 3px 3px 0 #1A0810;
+  }
+
+  /* ---------- hero ---------- */
+
+  .hero {
+    background: var(--wine);
+    color: #FFF1E8;
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before,
+  .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero::before {
+    width: 340px; height: 340px;
+    background: radial-gradient(circle at 30% 30%, rgba(242,118,46,.34), transparent 68%);
+    top: -120px; left: -90px;
+  }
+
+  .hero::after {
+    width: 420px; height: 420px;
+    background: radial-gradient(circle at 60% 40%, rgba(216,56,106,.34), transparent 68%);
+    bottom: -200px; right: 24%;
+  }
+
+  .hero .wrap {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: clamp(26px, 4vw, 56px);
+    align-items: center;
+    padding-block: clamp(38px, 6vw, 64px) clamp(42px, 6vw, 68px);
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 8.4vw, 96px);
+    color: #FFF1E8;
+  }
+
+  .hero h1 .said { color: #FFC46B; }
+
+  .hero .lede {
+    font-size: clamp(16px, 1.7vw, 18.5px);
+    color: #F3D9CF;
+    max-width: 44ch;
+    margin-top: 22px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    align-items: center;
+  }
+
+  .hero .note { color: #FFC46B; margin-bottom: 14px; }
+
+  /* foto polaroid */
+
+  .polaroid {
+    margin: 0;
+    background: var(--paper);
+    padding: 12px 12px 0;
+    border: 3px solid var(--ink);
+    box-shadow: 10px 10px 0 rgba(0,0,0,.35);
+    transform: rotate(2.4deg);
+    position: relative;
+  }
+
+  .polaroid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 16%;
+    background: var(--berry-soft);
+  }
+
+  .polaroid figcaption {
+    font-family: var(--hand);
+    font-size: 25px;
+    color: var(--ink);
+    text-align: center;
+    padding: 6px 4px 10px;
+    line-height: 1.1;
+  }
+
+  .polaroid::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    translate: -50% 0;
+    width: 118px;
+    height: 30px;
+    background: repeating-linear-gradient(45deg, rgba(242,118,46,.85) 0 7px, rgba(255,196,107,.85) 7px 14px);
+    border: 2px solid var(--ink);
+    rotate: -3deg;
+  }
+
+  /* ---------- marquee ---------- */
+
+  .marquee {
+    background: var(--tangerine);
+    border-bottom: 3px solid var(--ink);
+    overflow: hidden;
+    padding-block: 11px;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 26px;
+    animation: slide 26s linear infinite;
+  }
+
+  .marquee span {
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ---------- etiquetas da entrega ---------- */
+
+  .labels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 12px;
+    margin: 0;
+    padding-block: clamp(30px, 4vw, 44px);
+  }
+
+  .label {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    padding: 13px 16px 15px;
+    display: grid;
+    gap: 3px;
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+
+  .label:nth-child(4n+1) { background: var(--sky-soft); }
+  .label:nth-child(4n+2) { background: var(--berry-soft); }
+  .label:nth-child(4n+3) { background: var(--mint-soft); }
+  .label:nth-child(4n+4) { background: var(--lilac-soft); }
+
+  .label dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+  .label dd { margin: 0; font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }
+
+  /* ---------- seções ---------- */
+
+  section { padding-block: clamp(40px, 6vw, 72px); }
+
+  .head {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .head h2 {
+    font-size: clamp(30px, 5vw, 54px);
+  }
+
+  .head .note { margin-left: auto; }
+
+  .rule-dash {
+    border: 0;
+    border-top: 3px dashed var(--line);
+    margin: 0;
+  }
+
+  /* sobre */
+
+  .about {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: clamp(22px, 4vw, 48px);
+    align-items: start;
+  }
+
+  .about p { font-size: 16.5px; color: var(--ink-2); max-width: 54ch; }
+  .about p + p { margin-top: 14px; }
+  .about strong { color: var(--ink); font-weight: 700; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; align-content: start; }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 7px 15px;
+    background: var(--paper);
+    rotate: -1.5deg;
+  }
+
+  .chip:nth-child(even) { rotate: 1.8deg; }
+  .chip:nth-child(3n) { background: var(--berry-soft); }
+  .chip:nth-child(3n+1) { background: var(--mint-soft); }
+  .chip:nth-child(3n+2) { background: var(--tangerine-soft); }
+
+  /* nichos */
+
+  .niches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    gap: clamp(16px, 2.4vw, 24px);
+  }
+
+  .niche {
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    padding: 22px 22px 26px;
+    background: var(--paper);
+    box-shadow: 6px 6px 0 var(--ink);
+    display: grid;
+    gap: 10px;
+    align-content: start;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+
+  .niche:nth-child(1) { background: var(--sky-soft); rotate: -1.4deg; }
+  .niche:nth-child(2) { background: var(--lilac-soft); rotate: 1.2deg; }
+  .niche:nth-child(3) { background: var(--mint-soft); rotate: -0.9deg; }
+  .niche:nth-child(4) { background: var(--tangerine-soft); rotate: 1.6deg; }
+
+  .niche:hover { transform: translate(3px, 3px) rotate(0deg); box-shadow: 3px 3px 0 var(--ink); }
+
+  .niche h3 { font-family: var(--poster); text-transform: uppercase; font-size: 25px; line-height: 1; margin: 0; }
+  .niche p { font-size: 14.5px; color: var(--ink-2); }
+
+  .niche .tag {
+    justify-self: start;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 4px 11px;
+    background: var(--paper);
+  }
+
+  /* formatos como adesivos */
+
+  .stickers { display: flex; flex-wrap: wrap; gap: 16px; }
+
+  .sticker {
+    flex: 1 1 230px;
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    background: var(--paper);
+    padding: 20px 20px 22px;
+    box-shadow: 5px 5px 0 var(--ink);
+    display: grid;
+    gap: 7px;
+    align-content: start;
+  }
+
+  .sticker h3 { font-family: var(--serif); font-weight: 600; font-size: 19px; margin: 0; line-height: 1.15; }
+  .sticker p { font-size: 14.5px; color: var(--ink-2); }
+  .sticker .tag { color: var(--berry); }
+  .sticker:nth-child(even) { rotate: -1deg; }
+  .sticker:nth-child(odd) { rotate: .8deg; }
+
+  /* portfolio */
+
+  .reel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: clamp(16px, 2.4vw, 26px);
+  }
+
+  .clip {
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .clip figcaption {
+    display: grid;
+    gap: 3px;
+    justify-items: center;
+  }
+
+  .frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--ink);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: var(--ink);
+  }
+
+  .frame video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+  }
+
+  .frame-a { background: linear-gradient(150deg, var(--mint-soft) 0%, #BFE8DA 55%, var(--sky-soft) 100%); }
+  .frame-b { background: linear-gradient(150deg, var(--lilac-soft) 0%, #E2D2F6 55%, var(--berry-soft) 100%); }
+  .frame-c { background: linear-gradient(150deg, var(--berry-soft) 0%, #FFD2C4 55%, var(--tangerine-soft) 100%); }
+
+  .frame-invite {
+    background: repeating-linear-gradient(-45deg, var(--ground) 0 12px, var(--paper) 12px 24px);
+    border-style: dashed;
+    box-shadow: none;
+    padding: 18px;
+  }
+
+  .tape {
+    position: absolute;
+    top: 22px;
+    left: -28px;
+    width: 104px;
+    height: 24px;
+    background: rgba(255,255,255,.55);
+    border: 2px solid var(--ink);
+    rotate: -38deg;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .frame-tag {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 3px 10px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .play {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    border: 3px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    display: grid;
+    place-items: center;
+    box-shadow: 3px 3px 0 var(--ink);
+    cursor: pointer;
+    z-index: 3;
+    transition: background .14s ease, opacity .18s ease, transform .14s ease;
+  }
+
+  .play:hover { background: var(--tangerine); transform: scale(1.06); }
+  .play svg { width: 19px; height: 19px; margin-left: 4px; }
+
+  .frame.playing .play { opacity: 0; pointer-events: none; }
+  .frame.playing .tape,
+  .frame.playing .frame-tag { opacity: 0; }
+
+  .invite-cap {
+    font-family: var(--hand);
+    font-size: 26px;
+    line-height: 1.05;
+    color: var(--berry);
+    text-align: center;
+  }
+
+  .clip-title {
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+  }
+
+  .clip-sub {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+
+  .clip-link {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    color: var(--berry);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--berry);
+    padding-bottom: 1px;
+  }
+
+  .clip-link:hover { color: var(--ink); border-color: var(--ink); }
+
+  .reel-foot { margin-top: 24px; text-align: center; color: var(--ink-2); }
+
+  /* processo */
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(208px, 1fr)); gap: clamp(18px, 3vw, 30px); }
+
+  .step { display: grid; gap: 6px; align-content: start; }
+
+  .step .num {
+    font-family: var(--poster);
+    font-size: 54px;
+    line-height: 0.8;
+    color: var(--berry);
+    -webkit-text-stroke: 2px var(--ink);
+  }
+
+  .step h3 { font-family: var(--poster); text-transform: uppercase; font-size: 21px; margin: 0; line-height: 1; }
+  .step p { font-size: 14.5px; color: var(--ink-2); }
+
+  /* pacotes */
+
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)); gap: clamp(16px, 2.4vw, 24px); align-items: start; }
+
+  .plan {
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    background: var(--paper);
+    padding: 24px 22px 26px;
+    box-shadow: 6px 6px 0 var(--ink);
+    display: grid;
+    gap: 13px;
+    align-content: start;
+    position: relative;
+  }
+
+  .plan h3 { font-family: var(--poster); text-transform: uppercase; font-size: 27px; margin: 0; line-height: 1; }
+  .plan .price { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--berry); }
+
+  .plan.hot { background: var(--wine); color: #FFF1E8; }
+  .plan.hot .price { color: #FFC46B; }
+  .plan.hot li { color: #F3D9CF; }
+  .plan.hot li::before { color: #FFC46B; }
+
+  .plan .badge {
+    position: absolute;
+    top: -16px;
+    right: 16px;
+    font-family: var(--hand);
+    font-size: 21px;
+    background: var(--tangerine);
+    color: var(--ink);
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    padding: 3px 15px 5px;
+    rotate: 4deg;
+  }
+
+  .plan ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; font-size: 14.5px; color: var(--ink-2); }
+  .plan li { display: grid; grid-template-columns: 16px 1fr; gap: 9px; align-items: start; }
+  .plan li::before { content: "★"; color: var(--berry); font-size: 12px; line-height: 1.8; }
+
+  /* permuta */
+
+  .permuta {
+    margin-top: clamp(20px, 3vw, 28px);
+    background: var(--tangerine-soft);
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--ink);
+    padding: clamp(20px, 3vw, 28px);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(18px, 3vw, 32px);
+    align-items: center;
+  }
+
+  .permuta h3 {
+    font-size: clamp(22px, 3vw, 30px);
+    margin-bottom: 10px;
+  }
+
+  .permuta p {
+    color: var(--ink-2);
+    font-size: 15px;
+    max-width: 58ch;
+  }
+
+  /* dúvidas */
+
+  .faq { display: grid; gap: 14px; }
+
+  .qa {
+    border: 3px solid var(--ink);
+    border-radius: 16px;
+    background: var(--paper);
+    padding: 18px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 22px;
+    align-items: start;
+  }
+
+  .qa h3 { font-family: var(--serif); font-weight: 600; font-size: 18px; margin: 0; line-height: 1.2; }
+  .qa p { color: var(--ink-2); font-size: 15px; max-width: 58ch; }
+
+  /* contato */
+
+  .contact {
+    background: var(--wine);
+    color: #FFF1E8;
+    border: 3px solid var(--ink);
+    border-radius: 24px;
+    padding: clamp(26px, 4vw, 46px);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(22px, 3vw, 40px);
+    align-items: center;
+    box-shadow: 8px 8px 0 var(--ink);
+  }
+
+  .contact h2 { font-size: clamp(28px, 4.4vw, 46px); color: #FFF1E8; }
+  .contact .said { color: #FFC46B; }
+  .contact p { color: #F3D9CF; margin-top: 12px; max-width: 40ch; }
+
+  .channels { display: grid; gap: 10px; min-width: 288px; }
+
+  .channel {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 12px 17px;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: var(--ground);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14.5px;
+    box-shadow: 3px 3px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+
+  .channel:hover { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink); background: var(--tangerine); }
+
+  .channel .val { font-family: var(--mono); font-size: 12px; font-weight: 400; color: var(--ink-2); overflow-wrap: anywhere; }
+
+  footer {
+    border-top: 3px dashed var(--line);
+    margin-top: 12px;
+    padding-block: 26px 42px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    color: var(--ink-2);
+  }
+
+  @media (max-width: 880px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .polaroid { max-width: 340px; margin-inline: auto; }
+    .about { grid-template-columns: 1fr; }
+    .qa { grid-template-columns: 1fr; gap: 8px; }
+    .permuta { grid-template-columns: 1fr; justify-items: start; }
+    .contact { grid-template-columns: 1fr; }
+    .channels { min-width: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .marquee-track { animation: none; }
+  }
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      Soraya Oliveira
+      <small>Criadora UGC</small>
+    </div>
+    <span class="open"><i class="blink"></i> Agenda aberta</span>
+    <a class="btn sun" href="#contato">Pedir orçamento</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="note">oi! eu sou a Soraya ✿</span>
+
+      <h1 class="poster">
+        Gente <span class="said">de verdade</span> usando o seu produto.
+      </h1>
+
+      <p class="lede">
+        Eu gravo, edito e entrego o vídeo pronto pra sua marca publicar no feed ou subir
+        como anúncio. Sem estúdio, sem produção cara: luz de janela, casa real, rotina de
+        mãe — que é justamente o que faz a pessoa parar de rolar a tela.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">Quero um vídeo</a>
+        <a class="btn cream" href="#portfolio">Ver experiência</a>
+      </div>
+    </div>
+
+    <figure class="polaroid">
+      <img src="soraya.jpg" alt="Soraya Oliveira, criadora de conteúdo UGC" width="1000" height="1250">
+      <figcaption>a criadora que vai gravar o seu produto</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Unboxing ✦ Review ✦ Tutorial ✦ Depoimento ✦ Rotina ✦ 3 ganchos pra testar ✦ Vídeo vertical 9:16 ✦&nbsp;</span>
+    <span>Unboxing ✦ Review ✦ Tutorial ✦ Depoimento ✦ Rotina ✦ 3 ganchos pra testar ✦ Vídeo vertical 9:16 ✦&nbsp;</span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- etiquetas da entrega -->
+  <dl class="labels">
+    <div class="label"><dt>Formato</dt><dd>9:16 · 1080×1920</dd></div>
+    <div class="label"><dt>Arquivo</dt><dd>MP4 · 30 fps</dd></div>
+    <div class="label"><dt>Duração</dt><dd>15 s a 60 s</dd></div>
+    <div class="label"><dt>Áudio</dt><dd>Voz + legenda</dd></div>
+    <div class="label"><dt>Prazo</dt><dd>Até 7 dias</dd></div>
+    <div class="label"><dt>Revisões</dt><dd>2 inclusas</dd></div>
+    <div class="label"><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
+    <div class="label"><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
+  </dl>
+
+  <hr class="rule-dash">
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre">
+    <div class="head">
+      <h2 class="poster">Quem vai gravar<br>o seu <span class="said">produto</span></h2>
+      <span class="note">prazer, sou eu!</span>
+    </div>
+
+    <div class="about">
+      <div>
+        <p>
+          Eu sou a Soraya, <strong>mãe</strong> e criadora de conteúdo UGC. Meu dia é o mesmo
+          da pessoa que compra de você: casa, filho, cozinha, pressa. É desse lugar que eu
+          falo do seu produto — e é por isso que o vídeo <span class="mark">não soa como
+          propaganda</span>.
+        </p>
+        <p>
+          Antes do UGC eu já trabalhava com <strong>divulgação de ofertas na internet</strong>,
+          vendo de perto o que faz alguém clicar e comprar. Trouxe isso pro vídeo: o gancho
+          vem primeiro, a informação vem rápida e o motivo pra comprar aparece antes de a
+          pessoa rolar a tela.
+        </p>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Mãe</span>
+        <span class="chip">De mãe pra mãe</span>
+        <span class="chip">Luz natural</span>
+        <span class="chip">Edito eu mesma</span>
+        <span class="chip">Legenda inclusa</span>
+        <span class="chip">Roteiro aprovado antes</span>
+        <span class="chip">Entrega em 7 dias</span>
+        <span class="chip">Brasil inteiro</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= NICHOS ================= -->
+  <section id="nichos">
+    <div class="head">
+      <h2 class="poster">Meus nichos</h2>
+      <span class="note">onde eu falo com propriedade</span>
+    </div>
+
+    <div class="niches">
+      <article class="niche">
+        <h3>Maternidade</h3>
+        <p>Enxoval, papinha, mamadeira, brinquedo, quarto organizado. Falo como mãe pra outra mãe — com a dúvida real que ela tem antes de comprar.</p>
+        <span class="tag">Nicho base</span>
+      </article>
+      <article class="niche">
+        <h3>Beleza</h3>
+        <p>Skincare, cabelo, perfumaria. Textura na mão, aplicação em tempo real, antes e depois honesto. A marca continua bonita vista de perto.</p>
+        <span class="tag">Alta demanda</span>
+      </article>
+      <article class="niche">
+        <h3>Casa</h3>
+        <p>Utilidade doméstica, organização, eletroportátil, receita rápida. Aqui o vídeo vende o problema resolvido, não o produto parado na bancada.</p>
+        <span class="tag">Converte bem</span>
+      </article>
+      <article class="niche">
+        <h3>Moda</h3>
+        <p>Provador, montagem de look, rotina. Corpo real, roupa caindo no corpo real — o que a cliente precisa ver pra clicar em comprar.</p>
+        <span class="tag">Sazonal</span>
+      </article>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= FORMATOS ================= -->
+  <section id="formatos">
+    <div class="head">
+      <h2 class="poster">O que eu <span class="said">entrego</span></h2>
+      <span class="note">escolhe no briefing</span>
+    </div>
+
+    <div class="stickers">
+      <article class="sticker">
+        <span class="tag">Unboxing</span>
+        <h3>Chegou e abri na câmera</h3>
+        <p>A primeira reação, a embalagem, o tamanho real na mão. Ótimo como primeiro contato da pessoa com a marca.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Review</span>
+        <h3>Usei uns dias e te conto</h3>
+        <p>Opinião com um ponto de honestidade: o que gostei, pra quem serve, o que esperar. É o que mais gera comentário.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Tutorial</span>
+        <h3>Como usar sem errar</h3>
+        <p>Passo a passo curto, mãos na câmera. Ideal pro produto que ninguém compra por achar complicado.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Depoimento</span>
+        <h3>Falando direto pra câmera</h3>
+        <p>Roteiro aprovado por vocês, entrega natural. O preferido pra anúncio, porque dá pra testar vários ganchos.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Rotina</span>
+        <h3>O produto dentro do meu dia</h3>
+        <p>Manhã, banho do bebê, cozinha, arrumação. Ele aparece onde é usado de verdade, sem cara de propaganda.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Ganchos</span>
+        <h3>3 aberturas diferentes</h3>
+        <p>Mesmo corpo de vídeo, três primeiros segundos distintos pra vocês testarem qual segura mais gente.</p>
+      </article>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= PORTFÓLIO ================= -->
+  <section id="portfolio">
+    <div class="head">
+      <h2 class="poster">Experiência</h2>
+      <span class="note">clica e assiste ✦</span>
+    </div>
+
+    <div class="reel">
+      <figure class="clip">
+        <div class="frame frame-a">
+          <video src="elgin-v2.mp4" poster="elgin-capa.jpg" preload="none" playsinline controls
+                 aria-label="Mixer 3 em 1 Elgin — demonstração"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Casa</span>
+          <button class="play" type="button" aria-label="Assistir Mixer 3 em 1 Elgin">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Mixer 3 em 1 Elgin</span>
+          <span class="clip-sub">Demonstração · cozinha</span>
+          <a class="clip-link" href="https://www.instagram.com/reels/Db6jCrIJIWD/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-b">
+          <video src="siage.mp4" poster="siage-capa.jpg" preload="none" playsinline controls
+                 aria-label="Siàge Nutri Acid Complex — depoimento"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir Siàge Nutri Acid Complex">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Siàge Nutri Acid</span>
+          <span class="clip-sub">Depoimento · cabelo</span>
+          <a class="clip-link" href="https://www.instagram.com/reels/DdBpFQlOzu0/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-c">
+          <video src="rejuran-v3.mp4" poster="rejuran-capa2.jpg" preload="none" playsinline controls
+                 aria-label="Rejuran Ampoule and Cream — skincare"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir Rejuran Ampoule and Cream">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Rejuran Ampoule &amp; Cream</span>
+          <span class="clip-sub">Skincare · rotina</span>
+          <a class="clip-link" href="https://www.instagram.com/sorayaaoliroutine/reel/Dc4OEE_JddK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-invite">
+          <span class="invite-cap">O próximo pode ser o seu produto</span>
+        </div>
+        <figcaption>
+          <span class="clip-title">Sua marca aqui</span>
+          <span class="clip-sub">Me chama pra gravar</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="reel-foot"><span class="tag">Toque no play para assistir aqui mesmo · som incluso</span></p>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= PROCESSO ================= -->
+  <section id="processo">
+    <div class="head">
+      <h2 class="poster">Como <span class="said">funciona</span></h2>
+      <span class="note">do briefing à entrega</span>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <span class="num">01</span>
+        <h3>Briefing</h3>
+        <p>Vocês me contam o produto, pra quem ele é e o que não pode faltar na fala. Se já tiverem roteiro, eu sigo o roteiro.</p>
+      </article>
+      <article class="step">
+        <span class="num">02</span>
+        <h3>Roteiro</h3>
+        <p>Escrevo o gancho e a fala em linguagem de gente, mando pra aprovação e só gravo depois do ok de vocês.</p>
+      </article>
+      <article class="step">
+        <span class="num">03</span>
+        <h3>Produto</h3>
+        <p>O prazo começa a contar no dia em que o produto chega aqui — assim ninguém fica refém da transportadora.</p>
+      </article>
+      <article class="step">
+        <span class="num">04</span>
+        <h3>Gravação</h3>
+        <p>Luz natural, casa real, celular na mão. Se o combinado incluir ganchos extras, gravo as variações no mesmo dia.</p>
+      </article>
+      <article class="step">
+        <span class="num">05</span>
+        <h3>Edição</h3>
+        <p>Corte no ritmo do vertical, legenda queimada e trilha. O vídeo chega pronto pra subir, sem retrabalho do lado de vocês.</p>
+      </article>
+      <article class="step">
+        <span class="num">06</span>
+        <h3>Entrega</h3>
+        <p>Vídeo editado e arquivos brutos por link. Duas rodadas de ajuste já estão inclusas no valor.</p>
+      </article>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= PACOTES ================= -->
+  <section id="pacotes">
+    <div class="head">
+      <h2 class="poster">Pacotes</h2>
+      <span class="note">valores sob consulta · aceito permuta</span>
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <h3>Avulso</h3>
+        <span class="price">Sob consulta</span>
+        <ul>
+          <li>1 vídeo editado de até 45 s</li>
+          <li>1 gancho de abertura</li>
+          <li>Arquivos brutos inclusos</li>
+          <li>2 rodadas de ajuste</li>
+          <li>Uso orgânico por 3 meses</li>
+        </ul>
+      </article>
+
+      <article class="plan hot">
+        <span class="badge">mais pedido</span>
+        <h3>Teste de anúncio</h3>
+        <span class="price">Sob consulta</span>
+        <ul>
+          <li>3 vídeos do mesmo produto</li>
+          <li>3 ganchos diferentes pra testar</li>
+          <li>Versão com e sem legenda</li>
+          <li>Corte extra de 15 s pro stories</li>
+          <li>Uso em mídia paga por 3 meses</li>
+        </ul>
+      </article>
+
+      <article class="plan">
+        <h3>Mensal</h3>
+        <span class="price">Sob consulta</span>
+        <ul>
+          <li>4 vídeos por mês</li>
+          <li>Calendário combinado no início do mês</li>
+          <li>Prioridade de agenda</li>
+          <li>Resumo do que rendeu melhor</li>
+          <li>Uso em mídia paga por 6 meses</li>
+        </ul>
+      </article>
+    </div>
+
+    <aside class="permuta">
+      <div>
+        <h3 class="poster">Também trabalho por permuta</h3>
+        <p>
+          Em alguns casos eu troco o conteúdo pelo produto, sem cachê. Depende do valor do
+          item, de quantos vídeos vocês querem e de onde o material vai rodar. Marca pequena
+          e produto que combina com o meu público têm prioridade.
+        </p>
+      </div>
+      <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Proposta%20de%20permuta">Propor permuta</a>
+    </aside>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= DÚVIDAS ================= -->
+  <section id="duvidas">
+    <div class="head">
+      <h2 class="poster">O que as marcas<br>sempre <span class="said">perguntam</span></h2>
+    </div>
+
+    <div class="faq">
+      <article class="qa">
+        <h3>O vídeo vai pro meu perfil ou pro de vocês?</h3>
+        <p>O conteúdo é feito pra marca publicar. Eu entrego o arquivo e vocês postam no perfil de vocês ou sobem como anúncio. Publicação no meu perfil é combinada à parte.</p>
+      </article>
+      <article class="qa">
+        <h3>Por quanto tempo posso usar o material?</h3>
+        <p>O padrão é 3 meses de uso orgânico. Mídia paga, uso por tempo indeterminado e exclusividade de categoria entram como adicional no orçamento.</p>
+      </article>
+      <article class="qa">
+        <h3>Preciso receber o produto de volta?</h3>
+        <p>O produto fica comigo — ele faz parte do pagamento do trabalho. Se for item de alto valor que precisa voltar, é só combinar antes que eu incluo o frete de retorno.</p>
+      </article>
+      <article class="qa">
+        <h3>Aceita roteiro pronto?</h3>
+        <p>Aceito. Sigo o roteiro sem mudar o sentido e só sugiro ajuste quando alguma frase soa artificial na fala — o que costuma derrubar o desempenho do vídeo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section id="contato">
+    <div class="contact">
+      <div>
+        <h2 class="poster">Bora fazer<br>o seu <span class="said">vídeo?</span></h2>
+        <p>Me manda o produto, o prazo e o formato que você quer — por e-mail ou pelo direct — que eu devolvo o orçamento fechado no mesmo dia útil.</p>
+      </div>
+
+      <div class="channels">
+        <a class="channel" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">
+          <span>E-mail</span>
+          <span class="val">soraya.michelly@gmail.com</span>
+        </a>
+        <a class="channel" href="https://instagram.com/sorayaaoliroutine" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <span class="val">@sorayaaoliroutine</span>
+        </a>
+        <a class="channel" href="https://tiktok.com/@sorayaaoliroutine" target="_blank" rel="noopener">
+          <span>TikTok</span>
+          <span class="val">@sorayaaoliroutine</span>
+        </a>
+        <a class="channel" href="https://youtube.com/@sorayaaoliroutine" target="_blank" rel="noopener">
+          <span>YouTube</span>
+          <span class="val">@sorayaaoliroutine</span>
+        </a>
+        <a class="channel" href="https://www.facebook.com/profile.php?id=61591590345285" target="_blank" rel="noopener">
+          <span>Facebook</span>
+          <span class="val">Sol Routine</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="tag">Soraya Oliveira · Portfólio UGC</span>
+    <span class="tag">@sorayaaoliroutine</span>
+    <span class="tag">Setembro de 2026</span>
+  </footer>
+
+</main>
+
+<script>
+  document.querySelectorAll('.frame').forEach(function (frame) {
+    var video = frame.querySelector('video');
+    var button = frame.querySelector('.play');
+    if (!video || !button) return;
+
+    button.addEventListener('click', function () {
+      var playing = video.play();
+      if (playing && playing.catch) { playing.catch(function () {}); }
+    });
+
+    video.addEventListener('play', function () {
+      frame.classList.add('playing');
+      document.querySelectorAll('.frame video').forEach(function (other) {
+        if (other !== video) { other.pause(); }
+      });
+    });
+
+    video.addEventListener('pause', function () { frame.classList.remove('playing'); });
+    video.addEventListener('ended', function () { frame.classList.remove('playing'); });
+  });
+</script>
