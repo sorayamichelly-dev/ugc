@@ -62,20 +62,22 @@
   .page {
     position: relative;
     z-index: 1;
-    max-width: 470px;
+    max-width: 540px;
+    min-height: 100svh;
     margin: 0 auto;
-    padding: clamp(26px, 6vw, 44px) 20px 40px;
+    padding: clamp(22px, 5vw, 40px) clamp(18px, 5vw, 24px) clamp(26px, 5vw, 40px);
     display: grid;
+    align-content: center;
     justify-items: center;
-    gap: 10px;
+    gap: clamp(10px, 1.6vh, 16px);
   }
 
   /* foto */
 
   .avatar {
     position: relative;
-    width: 148px;
-    height: 148px;
+    width: clamp(150px, 42vw, 208px);
+    height: clamp(150px, 42vw, 208px);
     margin-bottom: 6px;
   }
 
@@ -107,7 +109,7 @@
     font-family: var(--poster);
     font-weight: 400;
     text-transform: uppercase;
-    font-size: clamp(30px, 8vw, 40px);
+    font-size: clamp(34px, 9.5vw, 48px);
     line-height: 1;
     letter-spacing: 0.01em;
     margin: 0;
@@ -116,7 +118,7 @@
 
   .handle {
     font-family: var(--mono);
-    font-size: 12px;
+    font-size: clamp(12px, 3.2vw, 14px);
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--berry);
@@ -124,12 +126,12 @@
 
   .bio {
     font-family: var(--hand);
-    font-size: 25px;
+    font-size: clamp(26px, 6.8vw, 34px);
     line-height: 1.15;
     color: var(--ink);
     text-align: center;
     max-width: 22ch;
-    margin: 4px 0 14px;
+    margin: 6px 0 clamp(12px, 2vh, 20px);
     rotate: -1.6deg;
   }
 
@@ -137,7 +139,7 @@
 
   .links {
     display: grid;
-    gap: 12px;
+    gap: clamp(11px, 1.5vh, 16px);
     width: 100%;
   }
 
@@ -146,14 +148,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 15px 20px;
+    padding: clamp(16px, 2.1vh, 21px) clamp(20px, 5vw, 26px);
     border: 3px solid var(--ink);
     border-radius: 999px;
     background: var(--paper);
     color: var(--ink);
     text-decoration: none;
     font-weight: 700;
-    font-size: 15.5px;
+    font-size: clamp(16px, 4.2vw, 18px);
     line-height: 1.2;
     box-shadow: 5px 5px 0 var(--ink);
     transition: transform .12s ease, box-shadow .12s ease;
@@ -169,7 +171,7 @@
 
   .link .at {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: clamp(11px, 2.9vw, 12.5px);
     font-weight: 400;
     letter-spacing: 0.04em;
     color: var(--ink-2);
@@ -178,8 +180,8 @@
 
   .link.zap {
     background: var(--mint-soft);
-    padding-block: 18px;
-    font-size: 16.5px;
+    padding-block: clamp(19px, 2.5vh, 25px);
+    font-size: clamp(17px, 4.6vw, 19px);
   }
 
   .link.zap .at { color: #1F7A60; font-weight: 500; }
@@ -193,8 +195,8 @@
   .link.portfolio {
     background: var(--wine);
     color: #FFF1E8;
-    padding-block: 19px;
-    font-size: 16.5px;
+    padding-block: clamp(20px, 2.6vh, 26px);
+    font-size: clamp(17px, 4.6vw, 19px);
   }
 
   .link.portfolio .at { color: #FFC46B; }
@@ -209,13 +211,13 @@
 
   .destaque .nota {
     font-family: var(--hand);
-    font-size: 22px;
+    font-size: clamp(22px, 5.6vw, 27px);
     color: var(--berry);
     rotate: 1.4deg;
   }
 
   footer {
-    margin-top: 22px;
+    margin-top: clamp(18px, 2.6vh, 30px);
     text-align: center;
     display: grid;
     gap: 4px;
@@ -223,7 +225,7 @@
 
   footer span {
     font-family: var(--mono);
-    font-size: 10.5px;
+    font-size: clamp(10.5px, 2.7vw, 12px);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--ink-2);
