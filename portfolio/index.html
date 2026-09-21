@@ -388,14 +388,66 @@
 
   .about {
     display: grid;
-    grid-template-columns: 1.1fr .9fr;
+    grid-template-columns: 1.4fr .6fr;
     gap: clamp(22px, 4vw, 48px);
     align-items: start;
   }
 
-  .about p { font-size: 16.5px; color: var(--ink-2); max-width: 54ch; }
-  .about p + p { margin-top: 14px; }
+  .about-texto { display: grid; gap: 15px; }
+
+  .about p { font-size: 16.5px; color: var(--ink-2); max-width: 62ch; }
   .about strong { color: var(--ink); font-weight: 700; }
+
+  /* a frase que a marca precisa ouvir */
+
+  .fala {
+    margin: 4px 0;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(21px, 2.9vw, 29px);
+    line-height: 1.18;
+    color: var(--ink);
+    background: var(--berry-soft);
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 5px 5px 0 var(--ink);
+    padding: 20px 24px 22px 54px;
+    rotate: -1deg;
+    position: relative;
+    max-width: 30ch;
+  }
+
+  .fala::before {
+    content: "“";
+    position: absolute;
+    left: 16px;
+    top: 4px;
+    font-family: var(--serif);
+    font-size: 58px;
+    line-height: 1;
+    color: var(--berry);
+  }
+
+  .convite {
+    margin-top: 6px;
+    padding-top: 20px;
+    border-top: 3px dashed var(--line);
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2.5vw, 26px);
+    flex-wrap: wrap;
+  }
+
+  .convite-frase {
+    font-size: clamp(18px, 2.3vw, 22px) !important;
+    font-weight: 700;
+    color: var(--ink) !important;
+    line-height: 1.25;
+    max-width: 34ch !important;
+  }
+
+  .convite-frase .said { color: var(--berry); }
 
   .chips { display: flex; flex-wrap: wrap; gap: 9px; align-content: start; }
 
@@ -872,35 +924,73 @@
   <!-- ================= SOBRE ================= -->
   <section id="sobre">
     <div class="head">
-      <h2 class="poster">Quem vai gravar<br>o seu <span class="said">produto</span></h2>
+      <h2 class="poster">Sobre <span class="said">mim</span></h2>
       <span class="note">prazer, sou eu!</span>
     </div>
 
     <div class="about">
-      <div>
+      <div class="about-texto">
         <p>
-          Eu sou a Soraya, <strong>mãe</strong> e criadora de conteúdo UGC. Meu dia é o mesmo
-          da pessoa que compra de você: casa, filho, cozinha, pressa. É desse lugar que eu
-          falo do seu produto — e é por isso que o vídeo <span class="mark">não soa como
-          propaganda</span>.
+          Sou Soraya, tenho <strong>32 anos</strong>, sou <strong>contabilista</strong>,
+          esposa e <strong>mãe do Levi</strong>.
         </p>
         <p>
-          Antes do UGC eu já trabalhava com <strong>divulgação de ofertas na internet</strong>,
-          vendo de perto o que faz alguém clicar e comprar. Trouxe isso pro vídeo: o gancho
-          vem primeiro, a informação vem rápida e o motivo pra comprar aparece antes de a
-          pessoa rolar a tela.
+          Nas minhas redes, eu compartilho vida. Minha rotina, minhas alegrias, meus
+          desafios, minhas descobertas e, principalmente, as coisas que fazem parte do meu
+          dia a dia — inclusive minhas compras.
         </p>
+        <p>
+          Comecei a criar conteúdo profissionalmente em <strong>2026</strong>, mas a
+          comunicação sempre esteve presente na minha vida. Há bastante tempo compartilho
+          experiências, dicas e reviews de produtos de forma espontânea, e foi justamente
+          essa naturalidade que me permitiu construir uma comunidade que acompanha minha
+          rotina e <span class="mark">confia nas minhas indicações</span>.
+        </p>
+        <p>
+          Hoje, quero levar essa experiência para as marcas. Não quero apenas mostrar um
+          produto ou repetir suas características. Quero colocá-lo dentro da vida real e
+          mostrar o que ele pode fazer por quem está do outro lado da tela.
+        </p>
+        <p>
+          Acredito que nem tudo está no preço. Está na experiência, na praticidade e na
+          capacidade de um produto de facilitar uma rotina, resolver um problema, economizar
+          tempo ou simplesmente tornar o dia um pouco melhor.
+        </p>
+        <p>
+          Por isso, meu conteúdo busca criar uma ponte verdadeira entre marca e consumidor:
+          uma comunicação natural, útil e capaz de gerar identificação.
+        </p>
+        <p>
+          Como mulher, mãe e consumidora, sei que nossas decisões de compra são cada vez
+          mais influenciadas por experiências reais. Quero produzir conteúdos que façam a
+          pessoa pensar:
+        </p>
+
+        <blockquote class="fala">Isso faz sentido para a minha vida.</blockquote>
+
+        <p>
+          É essa conexão que quero entregar para as marcas. Meu conteúdo começa na minha
+          vida real e chega até pessoas que confiam no que eu compartilho.
+        </p>
+
+        <div class="convite">
+          <p class="convite-frase">
+            Vamos juntos transformar produtos em <span class="said">experiências reais</span>
+            e criar conexões que façam sentido?
+          </p>
+          <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">Bora conversar</a>
+        </div>
       </div>
 
       <div class="chips">
-        <span class="chip">Mãe</span>
-        <span class="chip">De mãe pra mãe</span>
-        <span class="chip">Luz natural</span>
-        <span class="chip">Edito eu mesma</span>
-        <span class="chip">Legenda inclusa</span>
-        <span class="chip">Roteiro aprovado antes</span>
-        <span class="chip">Entrega em 7 dias</span>
-        <span class="chip">Brasil inteiro</span>
+        <span class="chip">32 anos</span>
+        <span class="chip">Mãe do Levi</span>
+        <span class="chip">Esposa</span>
+        <span class="chip">Contabilista</span>
+        <span class="chip">Criando desde 2026</span>
+        <span class="chip">Rotina real</span>
+        <span class="chip">Indicação de confiança</span>
+        <span class="chip">Comunicação natural</span>
       </div>
     </div>
   </section>
