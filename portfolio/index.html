@@ -501,14 +501,14 @@
 
   .niches {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
-    gap: clamp(16px, 2.4vw, 24px);
+    grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+    gap: clamp(12px, 1.8vw, 18px);
   }
 
   .niche {
     border: 3px solid var(--ink);
-    border-radius: 18px;
-    padding: 22px 22px 26px;
+    border-radius: 16px;
+    padding: 17px 16px 19px;
     background: var(--paper);
     box-shadow: 6px 6px 0 var(--ink);
     display: grid;
@@ -525,14 +525,16 @@
 
   .niche:hover { transform: translate(3px, 3px) rotate(0deg); box-shadow: 3px 3px 0 var(--ink); }
 
-  .niche h3 { font-family: var(--poster); text-transform: uppercase; font-size: 25px; line-height: 1; margin: 0; }
-  .niche p { font-size: 14.5px; color: var(--ink-2); }
+  .niche h3 { font-family: var(--poster); text-transform: uppercase; font-size: 21px; line-height: 1; margin: 0; }
+  .niche p { font-size: 13.5px; line-height: 1.45; color: var(--ink-2); }
 
   .niche .tag {
     justify-self: start;
+    font-size: 10px;
+    letter-spacing: 0.08em;
     border: 2px solid var(--ink);
     border-radius: 999px;
-    padding: 4px 11px;
+    padding: 3px 9px;
     background: var(--paper);
   }
 
