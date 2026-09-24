@@ -88,6 +88,10 @@ const EN = {
   'Provador, montagem de look, rotina. Corpo real, roupa caindo no corpo real — o que a cliente precisa ver pra clicar em comprar.':
     'Fitting room, outfit building, routine. A real body, clothes falling on a real body — what the customer needs to see before clicking buy.',
   'Sazonal': 'Seasonal',
+  'Tech': 'Tech',
+  'Celular, fone, gadget de casa, aplicativo. Mostro o que o produto resolve no uso real, sem ficha técnica decorada — do jeito que a pessoa entende antes de comprar.':
+    'Phones, headphones, home gadgets, apps. I show what the product solves in real use, without reciting spec sheets — the way someone actually understands it before buying.',
+  'Em alta': 'Trending',
 
   /* formatos */
   'O que eu <span class="said">entrego</span>': 'What I <span class="said">deliver</span>',
