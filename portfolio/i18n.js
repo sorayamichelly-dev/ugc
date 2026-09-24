@@ -39,25 +39,22 @@ const EN = {
   /* sobre */
   'Sobre <span class="said">mim</span>': 'About <span class="said">me</span>',
   'prazer, sou eu!': 'nice to meet you!',
-  'Sou Soraya, tenho <strong>32 anos</strong>, sou <strong>contabilista</strong>, esposa e <strong>mãe do Levi</strong>.':
-    'I’m Soraya, <strong>32</strong>, an <strong>accountant</strong>, a wife and <strong>Levi’s mom</strong>.',
-  'Nas minhas redes, eu compartilho vida. Minha rotina, minhas alegrias, meus desafios, minhas descobertas e, principalmente, as coisas que fazem parte do meu dia a dia — inclusive minhas compras.':
-    'On my channels, I share life. My routine, my joys, my challenges, my discoveries and, above all, the things that are part of my everyday — including what I buy.',
-  'Comecei a criar conteúdo profissionalmente em <strong>2026</strong>, mas a comunicação sempre esteve presente na minha vida. Há bastante tempo compartilho experiências, dicas e reviews de produtos de forma espontânea, e foi justamente essa naturalidade que me permitiu construir uma comunidade que acompanha minha rotina e <span class="mark">confia nas minhas indicações</span>.':
-    'I started creating content professionally in <strong>2026</strong>, but communication has always been part of my life. For a long time I have shared experiences, tips and product reviews spontaneously, and it was exactly that naturalness that let me build a community that follows my routine and <span class="mark">trusts what I recommend</span>.',
-  'Hoje, quero levar essa experiência para as marcas. Não quero apenas mostrar um produto ou repetir suas características. Quero colocá-lo dentro da vida real e mostrar o que ele pode fazer por quem está do outro lado da tela.':
-    'Today I want to bring that experience to brands. I don’t just want to show a product or repeat its specs. I want to place it inside real life and show what it can do for the person on the other side of the screen.',
-  'Acredito que nem tudo está no preço. Está na experiência, na praticidade e na capacidade de um produto de facilitar uma rotina, resolver um problema, economizar tempo ou simplesmente tornar o dia um pouco melhor.':
-    'I believe it isn’t all about price. It’s about the experience, the convenience and a product’s ability to make a routine easier, solve a problem, save time or simply make the day a little better.',
-  'Por isso, meu conteúdo busca criar uma ponte verdadeira entre marca e consumidor: uma comunicação natural, útil e capaz de gerar identificação.':
-    'That’s why my content sets out to build a genuine bridge between brand and consumer: communication that is natural, useful and easy to relate to.',
-  'Como mulher, mãe e consumidora, sei que nossas decisões de compra são cada vez mais influenciadas por experiências reais. Quero produzir conteúdos que façam a pessoa pensar:':
-    'As a woman, a mother and a consumer, I know our buying decisions are shaped more and more by real experiences. I want to create content that makes someone think:',
+
+  '01 · Quem eu sou': '01 · Who I am',
+  'Sou Soraya, <strong>32 anos</strong>, <strong>contabilista</strong>, esposa e <strong>mãe do Levi</strong>. Nas minhas redes eu compartilho vida: rotina, alegrias, desafios, descobertas — inclusive minhas compras. Crio conteúdo profissionalmente desde <strong>2026</strong>, mas há muito tempo compartilho experiências e reviews de forma espontânea. Foi essa naturalidade que construiu uma comunidade que <span class="mark">confia nas minhas indicações</span>.':
+    'I’m Soraya, <strong>32</strong>, an <strong>accountant</strong>, a wife and <strong>Levi’s mom</strong>. On my channels I share life: routine, joys, challenges, discoveries — including what I buy. I have been creating content professionally since <strong>2026</strong>, but I have shared experiences and reviews spontaneously for far longer. That naturalness is what built a community that <span class="mark">trusts what I recommend</span>.',
+
+  '02 · O que eu crio': '02 · What I create',
+  'Não mostro um produto repetindo características. Coloco ele dentro da vida real e mostro o que ele faz por quem está do outro lado da tela — porque nem tudo está no preço: está na experiência, na praticidade, em resolver um problema ou economizar tempo. Meu conteúdo é uma ponte entre marca e consumidor, e o que eu quero é que a pessoa pense:':
+    'I don’t sell a product by reciting its features. I place it inside real life and show what it does for the person on the other side of the screen — because it isn’t all about price: it’s about the experience, the convenience, solving a problem or saving time. My content is a bridge between brand and consumer, and what I want is for someone to think:',
   'Isso faz sentido para a minha vida.': 'This makes sense for my life.',
-  'É essa conexão que quero entregar para as marcas. Meu conteúdo começa na minha vida real e chega até pessoas que confiam no que eu compartilho.':
-    'That connection is what I want to deliver to brands. My content starts in my real life and reaches people who trust what I share.',
-  'Vamos juntos transformar produtos em <span class="said">experiências reais</span> e criar conexões que façam sentido?':
-    'Shall we turn products into <span class="said">real experiences</span> and build connections that make sense?',
+
+  '03 · O que você vai ver aqui': '03 · What you’ll find here',
+  'Daqui pra baixo estão os vídeos que já entreguei, os formatos que eu gravo e como funciona do briefing à entrega. <strong>Vale descer até o fim</strong>: é lá que está o que toda marca pergunta antes de fechar — prazo, direito de uso, o que entra em cada pacote e as condições de permuta.':
+    'From here down you’ll find the videos I have delivered, the formats I film and how it works from brief to delivery. <strong>It’s worth scrolling to the end</strong>: that’s where the answers every brand asks for are — turnaround, usage rights, what each package includes and the terms for product trade.',
+
+  'Vamos juntos transformar produtos em <span class="said">experiências reais</span>?':
+    'Shall we turn products into <span class="said">real experiences</span>?',
   'Bora conversar': 'Let’s talk',
 
   '32 anos': '32 years old',

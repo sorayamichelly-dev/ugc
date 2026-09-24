@@ -422,10 +422,27 @@
     align-items: start;
   }
 
-  .about-texto { display: grid; gap: 15px; }
+  .about-texto { display: grid; gap: clamp(18px, 2.4vw, 26px); }
 
   .about p { font-size: 16.5px; color: var(--ink-2); max-width: 62ch; }
   .about strong { color: var(--ink); font-weight: 700; }
+
+  .pilar {
+    display: grid;
+    gap: 9px;
+    padding-top: 16px;
+    border-top: 3px dashed var(--line);
+  }
+
+  .pilar:first-child { padding-top: 0; border-top: 0; }
+
+  .pilar-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--berry);
+  }
 
   /* a frase que a marca precisa ouvir */
 
@@ -968,56 +985,48 @@
 
     <div class="about">
       <div class="about-texto">
-        <p>
-          Sou Soraya, tenho <strong>32 anos</strong>, sou <strong>contabilista</strong>,
-          esposa e <strong>mãe do Levi</strong>.
-        </p>
-        <p>
-          Nas minhas redes, eu compartilho vida. Minha rotina, minhas alegrias, meus
-          desafios, minhas descobertas e, principalmente, as coisas que fazem parte do meu
-          dia a dia — inclusive minhas compras.
-        </p>
-        <p>
-          Comecei a criar conteúdo profissionalmente em <strong>2026</strong>, mas a
-          comunicação sempre esteve presente na minha vida. Há bastante tempo compartilho
-          experiências, dicas e reviews de produtos de forma espontânea, e foi justamente
-          essa naturalidade que me permitiu construir uma comunidade que acompanha minha
-          rotina e <span class="mark">confia nas minhas indicações</span>.
-        </p>
-        <p>
-          Hoje, quero levar essa experiência para as marcas. Não quero apenas mostrar um
-          produto ou repetir suas características. Quero colocá-lo dentro da vida real e
-          mostrar o que ele pode fazer por quem está do outro lado da tela.
-        </p>
-        <p>
-          Acredito que nem tudo está no preço. Está na experiência, na praticidade e na
-          capacidade de um produto de facilitar uma rotina, resolver um problema, economizar
-          tempo ou simplesmente tornar o dia um pouco melhor.
-        </p>
-        <p>
-          Por isso, meu conteúdo busca criar uma ponte verdadeira entre marca e consumidor:
-          uma comunicação natural, útil e capaz de gerar identificação.
-        </p>
-        <p>
-          Como mulher, mãe e consumidora, sei que nossas decisões de compra são cada vez
-          mais influenciadas por experiências reais. Quero produzir conteúdos que façam a
-          pessoa pensar:
-        </p>
 
-        <blockquote class="fala">Isso faz sentido para a minha vida.</blockquote>
-
-        <p>
-          É essa conexão que quero entregar para as marcas. Meu conteúdo começa na minha
-          vida real e chega até pessoas que confiam no que eu compartilho.
-        </p>
-
-        <div class="convite">
-          <p class="convite-frase">
-            Vamos juntos transformar produtos em <span class="said">experiências reais</span>
-            e criar conexões que façam sentido?
+        <div class="pilar">
+          <span class="pilar-num">01 · Quem eu sou</span>
+          <p>
+            Sou Soraya, <strong>32 anos</strong>, <strong>contabilista</strong>, esposa e
+            <strong>mãe do Levi</strong>. Nas minhas redes eu compartilho vida: rotina,
+            alegrias, desafios, descobertas — inclusive minhas compras. Crio conteúdo
+            profissionalmente desde <strong>2026</strong>, mas há muito tempo compartilho
+            experiências e reviews de forma espontânea. Foi essa naturalidade que construiu
+            uma comunidade que <span class="mark">confia nas minhas indicações</span>.
           </p>
-          <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">Bora conversar</a>
         </div>
+
+        <div class="pilar">
+          <span class="pilar-num">02 · O que eu crio</span>
+          <p>
+            Não mostro um produto repetindo características. Coloco ele dentro da vida real e
+            mostro o que ele faz por quem está do outro lado da tela — porque nem tudo está no
+            preço: está na experiência, na praticidade, em resolver um problema ou economizar
+            tempo. Meu conteúdo é uma ponte entre marca e consumidor, e o que eu quero é que a
+            pessoa pense:
+          </p>
+          <blockquote class="fala">Isso faz sentido para a minha vida.</blockquote>
+        </div>
+
+        <div class="pilar">
+          <span class="pilar-num">03 · O que você vai ver aqui</span>
+          <p>
+            Daqui pra baixo estão os vídeos que já entreguei, os formatos que eu gravo e como
+            funciona do briefing à entrega. <strong>Vale descer até o fim</strong>: é lá que
+            está o que toda marca pergunta antes de fechar — prazo, direito de uso, o que
+            entra em cada pacote e as condições de permuta.
+          </p>
+
+          <div class="convite">
+            <p class="convite-frase">
+              Vamos juntos transformar produtos em <span class="said">experiências reais</span>?
+            </p>
+            <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">Bora conversar</a>
+          </div>
+        </div>
+
       </div>
 
       <div class="chips">
