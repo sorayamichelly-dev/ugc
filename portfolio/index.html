@@ -192,6 +192,35 @@
     box-shadow: 3px 3px 0 #1A0810;
   }
 
+  /* seletor de idioma */
+
+  .idioma {
+    display: inline-flex;
+    border: 2px solid #FFF1E8;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .idioma button {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    padding: 7px 13px;
+    border: 0;
+    background: transparent;
+    color: #F3D9CF;
+    cursor: pointer;
+    transition: background .12s ease, color .12s ease;
+  }
+
+  .idioma button:hover { background: rgba(255,241,232,.18); }
+
+  .idioma button.on {
+    background: #FFF1E8;
+    color: var(--wine);
+    font-weight: 500;
+  }
+
   /* ---------- hero ---------- */
 
   .hero {
@@ -866,6 +895,10 @@
       <small>Criadora UGC</small>
     </div>
     <span class="open"><i class="blink"></i> Agenda aberta</span>
+    <div class="idioma" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
     <a class="btn sun" href="#contato">Pedir orçamento</a>
   </div>
 </header>
@@ -1394,5 +1427,6 @@
   });
 </script>
 
+<script src="i18n.js" defer></script>
 </body>
 </html>
