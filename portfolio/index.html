@@ -365,7 +365,7 @@
 
   .labels {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin: 0;
     padding-block: clamp(30px, 4vw, 44px);
@@ -890,6 +890,7 @@
   }
 
   @media (max-width: 880px) {
+    .labels { grid-template-columns: repeat(2, 1fr); }
     .hero .wrap { grid-template-columns: 1fr; }
     .polaroid { max-width: 340px; margin-inline: auto; }
     .about { grid-template-columns: 1fr; }
