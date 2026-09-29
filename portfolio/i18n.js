@@ -49,10 +49,6 @@ const EN = {
     'I don’t sell a product by reciting its features. I place it inside real life and show what it does for the person on the other side of the screen — because it isn’t all about price: it’s about the experience, the convenience, solving a problem or saving time. My content is a bridge between brand and consumer, and what I want is for someone to think:',
   'Isso faz sentido para a minha vida.': 'This makes sense for my life.',
 
-  '03 · O que você vai ver aqui': '03 · What you’ll find here',
-  'Daqui pra baixo estão os vídeos que já entreguei, os formatos que eu gravo e como funciona do briefing à entrega. <strong>Vale descer até o fim</strong>: é lá que está o que toda marca pergunta antes de fechar — prazo, direito de uso, o que entra em cada pacote e as condições de permuta.':
-    'From here down you’ll find the videos I have delivered, the formats I film and how it works from brief to delivery. <strong>It’s worth scrolling to the end</strong>: that’s where the answers every brand asks for are — turnaround, usage rights, what each package includes and the terms for product trade.',
-
   'Vamos juntos transformar produtos em <span class="said">experiências reais</span>?':
     'Shall we turn products into <span class="said">real experiences</span>?',
   'Bora conversar': 'Let’s talk',
