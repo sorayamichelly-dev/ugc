@@ -92,8 +92,6 @@ def montar_html():
     s = re.sub(r"<video\b[^>]*>\s*</video>", virar_capa, s, flags=re.S)
     s = re.sub(r"<script\b[^>]*>.*?</script>", "", s, flags=re.S)
     s = re.sub(r'<button class="play".*?</button>', "", s, flags=re.S)
-    # a faixa rolante nao cabe no papel: o texto nao quebra e cria folhas vazias
-    s = re.sub(r'<div class="marquee".*?</div>\s*</div>', "", s, flags=re.S)
     # rodape da secao de videos: no papel nao ha play
     s = re.sub(r'<p class="reel-foot">.*?</p>', "", s, flags=re.S)
     # cada capa abre o reel: o link ja existe na legenda do clipe

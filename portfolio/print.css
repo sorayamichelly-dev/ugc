@@ -16,37 +16,50 @@ body { width: 210mm; overflow: clip; font-size: 14.5px; }
 }
 
 .topbar { position: static; }
+/* o seletor de idioma e controle de site: no papel nao faz nada */
+.idioma { display: none; }
 .topbar .wrap { min-height: 50px; }
 
 a { text-decoration: none; }
 .shot { display: block; position: absolute; inset: 0; z-index: 1; }
 .shot .capa { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* abertura */
-.hero .wrap { padding-block: 24px 28px; grid-template-columns: 1.2fr 300px; align-items: center; }
+/* abertura — ocupa a primeira folha inteira */
+.hero .wrap { padding-block: 62px 66px; grid-template-columns: 1.3fr 316px; align-items: center; }
 .hero .wrap > * { min-width: 0; }
-.hero h1 { font-size: 41px; }
+.hero h1 { font-size: 52px; }
 .hero h1 .said { white-space: nowrap; }
-.hero .lede { font-size: 14.5px; max-width: 48ch; margin-top: 14px; }
-.hero-actions { margin-top: 18px; }
-.polaroid { max-width: 248px; justify-self: end; }
+.hero .lede { font-size: 17px; max-width: 46ch; margin-top: 20px; }
+.hero-actions { margin-top: 26px; flex-wrap: nowrap; }
+.hero .btn { padding: 15px 26px; font-size: 15.5px; }
+.polaroid { max-width: 310px; justify-self: end; }
 .polaroid img { max-width: 100%; height: auto; }
-.polaroid figcaption { font-size: 20px; padding: 4px 4px 8px; }
+.polaroid figcaption { font-size: 25px; padding: 7px 4px 11px; }
 
-/* corpo */
-.labels { padding-block: 12px; gap: 8px; grid-template-columns: repeat(4, 1fr); }
+/* a faixa laranja fecha o bloco da capa */
+.marquee { padding-block: 13px; }
+.marquee-track { animation: none; }
+
+/* ficha tecnica */
+.labels { padding-block: 54px; gap: 12px; grid-template-columns: repeat(4, 1fr); }
+.label { padding: 21px 18px 23px; }
+.label dt { font-size: 10.5px; }
+.label dd { font-size: 15.5px; }
 section { padding-block: 16px; }
 .head { margin-bottom: 14px; }
 .head h2 { font-size: 38px; }
 
-.about p { font-size: 14px; }
-.about-texto { gap: 14px; }
-.pilar { padding-top: 12px; }
-.fala { font-size: 21px; padding: 15px 20px 17px 46px; }
-.fala::before { font-size: 46px; }
-.convite { padding-top: 14px; }
-.convite-frase { font-size: 17px !important; }
-.chip { font-size: 10px; padding: 6px 12px; }
+/* sobre mim — ocupa a folha inteira (so aqui, as outras ja estao cheias) */
+#sobre .about p { font-size: 16px; }
+#sobre .about-texto { gap: 22px; }
+#sobre .pilar { padding-top: 20px; gap: 11px; }
+#sobre .fala { font-size: 26px; padding: 21px 26px 24px 56px; }
+#sobre .fala::before { font-size: 56px; }
+#sobre .convite { padding-top: 20px; margin-top: 8px; }
+#sobre .convite-frase { font-size: 21px !important; }
+#sobre .chip { font-size: 11.5px; padding: 8px 15px; }
+#sobre .chips { gap: 10px; }
+#sobre .pilar-num { font-size: 12px; }
 
 .niches { grid-template-columns: repeat(3, 1fr); }
 .niche { padding: 18px 18px 22px; }
@@ -57,7 +70,17 @@ section { padding-block: 16px; }
 .sticker { flex: 1 1 210px; padding: 17px 18px 19px; }
 .sticker p { font-size: 13.5px; }
 
-.reel { grid-template-columns: repeat(4, 1fr); }
+/* no papel as capas ganham tres colunas: e o que a marca veio ver */
+.reel { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.clip .frame { max-width: 198px; }
+.clip { gap: 11px; }
+.clip-title { font-size: 17px; }
+.clip-sub { font-size: 11px; }
+.clip-link { font-size: 11px; }
+/* o convite "sua marca aqui" vira uma faixa na ultima linha */
+.clip:last-child { grid-column: 1 / -1; }
+.clip:last-child .frame { aspect-ratio: auto; height: 62px; width: 100%; max-width: none; }
+.invite-cap { font-size: 23px; }
 .steps { grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .step p { font-size: 13px; }
 .step .num { font-size: 42px; }
