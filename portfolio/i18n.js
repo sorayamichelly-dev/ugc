@@ -52,6 +52,8 @@ const EN = {
   'Vamos juntos transformar produtos em <span class="said">experiências reais</span>?':
     'Shall we turn products into <span class="said">real experiences</span>?',
   'Bora conversar': 'Let’s talk',
+  'Baixar mídia kit': 'Download media kit',
+  'PDF · 5 páginas': 'PDF · 5 pages',
 
   '32 anos': '32 years old',
   'Mãe do Levi': 'Levi’s mom',

@@ -856,6 +856,35 @@
 
   .channels { display: grid; gap: 10px; min-width: 288px; }
 
+  /* baixar o midia kit: o que a marca leva pra reuniao */
+  .kit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 15px 19px;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: var(--tangerine);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+
+  .kit:hover, .kit:focus-visible { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+
+  .kit .formato {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   .channel {
     display: flex;
     align-items: baseline;
@@ -1381,6 +1410,10 @@
       </div>
 
       <div class="channels">
+        <a class="kit" href="https://sorayamichelly-dev.github.io/ugc/midia-kit/midia-kit-soraya-oliveira.pdf" download>
+          <span>Baixar mídia kit</span>
+          <span class="formato">PDF · 5 páginas</span>
+        </a>
         <a class="channel" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">
           <span>E-mail</span>
           <span class="val">soraya.michelly@gmail.com</span>
