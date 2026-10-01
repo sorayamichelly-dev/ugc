@@ -2,71 +2,96 @@
 
 @page { size: A4 portrait; margin: 0; }
 
+:root { --maxw: none; --pad: 38px; }
+
 html { width: 210mm; }
-body { width: 210mm; overflow: clip; font-size: 13.5px; }
+body { width: 210mm; overflow: clip; font-size: 14px; }
+.hero, .topbar, main, section { overflow: clip; }
 
 *, *::before, *::after {
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
   transition: none !important;
+  animation: none !important;
 }
 
-.wrap { max-width: none; padding-inline: 34px; padding-block: 0 26px; }
-.tip { display: none; }
 a { text-decoration: none; }
+.tip { display: none; }
+/* no papel nao se baixa nada */
+.topbar .dl { display: none; }
+.topbar { position: static; }
+.topbar .wrap { min-height: 48px; }
 
-header { padding-block: 28px 20px; }
-header h1 { font-size: 40px; }
-header .pos { font-size: 14.5px; margin-top: 10px; }
-header .contact { font-size: 11.5px; }
-.aberto { margin-bottom: 10px; }
+/* abertura */
+.hero .wrap { padding-block: 34px 38px; grid-template-columns: 1.25fr 270px; align-items: center; }
+.numerao { font-size: 120px; }
+.numerao-leg { font-size: 11px; margin-top: 8px; }
+.hero .lede { font-size: 14px; max-width: 44ch; margin-top: 16px; }
+.hero .lede.destaque { font-size: 16px; margin-top: 14px; }
+.polaroid { max-width: 258px; }
+.polaroid figcaption { font-size: 21px; padding: 5px 4px 9px; }
+.marquee { padding-block: 10px; }
+.marquee span { font-size: 15px; }
 
-.thesis { margin-top: 22px; padding: 22px 22px; gap: 18px; }
-.thesis .ratio { font-size: 72px; }
-.thesis .say { font-size: 14px; }
+/* a folha A4 tem 794px e cairia no layout de celular (max-width:880px):
+   aqui o papel volta para a grade larga */
+.labels { grid-template-columns: repeat(4, 1fr); }
+.duplo { grid-template-columns: repeat(2, 1fr); }
+.provas { grid-template-columns: repeat(2, 1fr); }
+.ganhos { grid-template-columns: repeat(2, 1fr); }
+.contact { grid-template-columns: 1fr auto; }
+.hero .wrap { grid-template-columns: 1.25fr 270px; }
+.polaroid { margin-inline: 0; justify-self: end; }
 
-section { margin-top: 30px; }
-.sechead { margin-bottom: 16px; padding-bottom: 8px; }
-.sechead h2 { font-size: 20px; }
+/* corpo */
+section { padding-block: 22px; }
+.head { margin-bottom: 18px; }
+.head h2 { font-size: 36px; }
 
-.tiles { grid-template-columns: repeat(4, 1fr); }
-.tile { padding: 14px 14px 12px; }
-.tile .v { font-size: 25px; }
-.tile .l { font-size: 12px; }
-.tile .sub { font-size: 9.5px; }
+.labels { gap: 11px; }
+.label { padding: 13px 15px 15px; box-shadow: 4px 4px 0 var(--ink); }
+.label dd { font-size: 27px; }
+.label p { font-size: 9.5px; }
+.cond .label dd { font-size: 14px; }
 
-figure { padding: 18px 16px 14px; }
-.figtitle { font-size: 14.5px; margin-bottom: 14px; }
-figcaption { font-size: 12px; margin-top: 11px; padding-top: 10px; }
+.quadro { padding: 17px 18px 16px; box-shadow: 5px 5px 0 var(--ink); }
+.figtitle { font-size: 17px; margin-bottom: 14px; }
+.quadro figcaption { font-size: 12.5px; margin-top: 12px; padding-top: 11px; }
 .bars { gap: 7px; }
-.bar-track { height: 14px; }
-.cols { height: 112px; }
+.bar-track { height: 15px; }
+.cols { height: 118px; }
+.split b { font-size: 25px; }
 
-.post { padding: 14px 16px; }
-.post h3 { font-size: 15px; }
-.post .why { font-size: 12.5px; }
-.post .nums b { font-size: 17px; }
-.post .nums { gap: 13px; margin-top: 9px; }
+.provas { gap: 14px; }
+.prova { padding: 14px 16px 16px; box-shadow: 4px 4px 0 var(--ink); gap: 6px; }
+.prova h3 { font-size: 16px; }
+.prova > p { font-size: 12.5px; }
+.nums { gap: 12px; }
+.nums b { font-size: 19px; }
 
-.ganho .g { padding: 17px 16px; gap: 8px; }
-.ganho h3 { font-size: 15.5px; }
-.ganho p { font-size: 12.5px; }
-.cond div { padding: 12px 13px; }
-.cond dd { font-size: 13.5px; }
-.marcas span { font-size: 11px; padding: 6px 11px; }
+.ganho { padding: 17px 18px 19px; box-shadow: 5px 5px 0 var(--ink); }
+.ganho h3 { font-size: 20px; }
+.ganho p { font-size: 13px; }
+.ganho .prova-num { font-size: 11px; padding-top: 8px; }
 
-.passo { margin-top: 30px; padding: 24px 22px; gap: 22px; }
-.passo h2 { font-size: 21px; }
-.passo p { font-size: 14px; }
-.passo ol { font-size: 13px; }
-.passo .cartao { padding: 16px; }
-.srcnote { margin-top: 26px; padding: 14px 16px; }
-.srcnote p { font-size: 11px; }
+.chip { font-size: 11px; padding: 7px 13px; }
+.rodape-chips { font-size: 12.5px; }
+
+.contact { padding: 26px 28px; box-shadow: 6px 6px 0 var(--ink); }
+.contact h2 { font-size: 36px; }
+.contact > div > p { font-size: 14px; }
+.passos { font-size: 13px; gap: 5px; }
+.channels { min-width: 270px; gap: 8px; }
+.channel { padding: 11px 16px; font-size: 13.5px; }
+
+.fonte { padding: 15px 17px; margin-top: 22px; }
+.fonte p { font-size: 11px; }
+footer { padding-block: 16px 26px; margin-top: 20px; }
 
 /* nada cortado no meio da folha */
-.thesis, .tile, figure, .post, .ganho .g, .cond div,
-.passo, .srcnote, .bar-row, header { break-inside: avoid; }
+.label, .quadro, .prova, .ganho, .contact, .polaroid, .head, .fonte, .bar-row, .split { break-inside: avoid; }
 h1, h2, h3 { break-after: avoid; }
 
-/* a tabela de condicoes nao pode comecar no fim da folha */
-#parceria { break-before: page; margin-top: 24px; }
+/* onde cada folha comeca */
+#provas { break-before: page; padding-top: 28px; }
+.head { break-after: avoid; }

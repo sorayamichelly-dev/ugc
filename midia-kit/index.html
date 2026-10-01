@@ -5,259 +5,582 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Mídia Kit · Soraya Oliveira</title>
 <meta name="description" content="Mídia kit de Soraya Oliveira, criadora UGC: números do Instagram, público, o que a marca ganha por objetivo e condições de parceria.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500;1,9..144,600&family=Karla:wght@400;500;700&display=swap">
 <style>
-/* Relatorio de imprensa: coluna unica, mesa de numeros no topo, prova depois. */
-:root{
-  --ground:#EDF1F2;
-  --surface:#FFFFFF;
-  --surface-2:#F6F8F9;
-  --ink:#12282F;
-  --ink-2:#41585F;
-  --ink-3:#74898F;
-  --line:#D8E0E2;
-  --line-strong:#B9C6CA;
-  --accent:#C77A16;
-  --accent-soft:#F3E2C6;
-  --mineral:#4E7C8C;
-  --mineral-soft:#D7E4E8;
-  --good:#2F6B4F;
+  /* mesmo mundo visual do portfolio: colagem de revista, sempre claro */
+  :root {
+    --ground: #FFF5EF;
+    --paper: #FFFFFF;
+    --ink: #2A1A1E;
+    --ink-2: #5E4A50;
+    --ink-3: #9A868C;
+    --line: #E8D6CF;
 
-  --display:"Bricolage Grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#0B1A1F; --surface:#11262C; --surface-2:#162E35;
-    --ink:#E8F0F1; --ink-2:#AEC2C7; --ink-3:#7F969C;
-    --line:#22434C; --line-strong:#33606B;
-    --accent:#E9A845; --accent-soft:#3A2D14;
-    --mineral:#7FB3C4; --mineral-soft:#1B3B45; --good:#6FBF93;
-    color-scheme:dark;
+    --wine: #4A1526;
+    --berry: #D8386A;
+    --berry-soft: #FFE0E9;
+    --tangerine: #F2762E;
+    --tangerine-soft: #FDE6D6;
+    --lilac: #8A6FD1;
+    --lilac-soft: #EBE4FB;
+    --mint: #1F9C7E;
+    --mint-soft: #D7F2E9;
+    --sky: #3E8FD0;
+    --sky-soft: #DCEDFB;
+
+    --poster: "Anton", "Haettenschweiler", "Arial Narrow", sans-serif;
+    --serif: "Fraunces", Georgia, serif;
+    --body: "Karla", "Helvetica Neue", Arial, sans-serif;
+    --hand: "Caveat", "Bradley Hand", cursive;
+    --mono: "DM Mono", ui-monospace, Menlo, monospace;
+
+    --maxw: 1120px;
+    --pad: clamp(18px, 5vw, 52px);
   }
-}
-:root[data-theme="dark"]{
-  --ground:#0B1A1F; --surface:#11262C; --surface-2:#162E35;
-  --ink:#E8F0F1; --ink-2:#AEC2C7; --ink-3:#7F969C;
-  --line:#22434C; --line-strong:#33606B;
-  --accent:#E9A845; --accent-soft:#3A2D14;
-  --mineral:#7FB3C4; --mineral-soft:#1B3B45; --good:#6FBF93;
-  color-scheme:dark;
-}
 
-*{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6}
-.wrap{max-width:940px;margin:0 auto;padding-inline:20px;padding-block:0 56px}
-h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:800;letter-spacing:-.02em}
-p{margin:0}
-a{color:inherit}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  * { box-sizing: border-box; }
 
-.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    margin: 0;
+  }
 
-header{border-bottom:1px solid var(--line-strong);padding-block:40px 28px;display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap}
-header .who{flex:1 1 320px;min-width:0}
-header h1{font-size:clamp(34px,7vw,52px);line-height:1.02}
-header .handle{font-family:var(--mono);font-size:14px;color:var(--accent);margin-top:10px;font-weight:500}
-header .pos{margin-top:14px;font-size:16.5px;color:var(--ink-2);max-width:46ch}
-header .contact{flex:0 1 auto;display:grid;gap:4px;font-family:var(--mono);font-size:12.5px;color:var(--ink-2);padding-bottom:4px;min-width:0}
-header .contact b{color:var(--ink-3);font-weight:500}
-header .contact span{color:var(--ink);overflow-wrap:anywhere}
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding-inline: var(--pad); }
+  p { margin: 0; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--berry); outline-offset: 3px; }
+  img { max-width: 100%; }
 
-.thesis{margin-top:36px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);padding:30px 28px;display:grid;gap:22px;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);align-items:center}
-.thesis .ratio{font-family:var(--display);font-size:clamp(58px,13vw,96px);font-weight:800;line-height:.9;letter-spacing:-.045em;color:var(--accent);font-variant-numeric:tabular-nums}
-.thesis .ratio small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-top:12px;line-height:1.5}
-.thesis .say{font-size:16px;color:var(--ink-2)}
-.thesis .say b{color:var(--ink);font-weight:700}
-@media (max-width:640px){.thesis{grid-template-columns:1fr;padding:24px 20px}}
+  /* ---------- pecas ---------- */
 
-section{margin-top:52px}
-.sechead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line-strong);padding-bottom:10px;margin-bottom:22px;flex-wrap:wrap}
-.sechead h2{font-size:22px}
-.sechead .note{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-left:auto}
+  .poster {
+    font-family: var(--poster);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.92;
+    letter-spacing: 0.005em;
+    margin: 0;
+    text-wrap: balance;
+  }
 
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.tile{background:var(--surface);padding:18px 18px 16px}
-.tile .v{font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1.1}
-.tile .l{font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.4}
-.tile .sub{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;letter-spacing:.04em}
-.tile.hi .v{color:var(--accent)}
+  .said {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
 
-figure{margin:0;background:var(--surface);border:1px solid var(--line);padding:22px 20px 18px}
-figcaption{font-size:13px;color:var(--ink-2);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
-.figtitle{font-family:var(--display);font-weight:600;font-size:15.5px;margin-bottom:18px}
+  .note {
+    font-family: var(--hand);
+    font-size: clamp(21px, 2.4vw, 27px);
+    line-height: 1.15;
+    color: var(--berry);
+    transform: rotate(-2.2deg);
+    display: inline-block;
+  }
 
-.bars{display:grid;gap:9px}
-.bar-row{display:grid;grid-template-columns:104px minmax(0,1fr) 62px;gap:12px;align-items:center}
-.bar-row .cat{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bar-track{background:var(--surface-2);height:16px;position:relative}
-.bar-fill{height:100%;background:var(--mineral);border-radius:0 4px 4px 0}
-.bars.warm .bar-fill{background:var(--accent)}
-.bar-row .val{font-family:var(--mono);font-size:11.5px;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
-@media (max-width:520px){.bar-row{grid-template-columns:86px minmax(0,1fr) 54px;gap:8px}.bar-row .cat,.bar-row .val{font-size:10.5px}}
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 
-/* colunas diarias */
-.cols{display:flex;align-items:flex-end;gap:2px;height:130px;position:relative}
-.col{flex:1 1 0;min-width:0;background:var(--accent);border-radius:3px 3px 0 0;position:relative;cursor:default}
-.col.peak{background:var(--ink)}
-.col:hover{outline:2px solid var(--ink);outline-offset:1px}
-.colaxis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:8px;border-top:1px solid var(--line);padding-top:7px}
-.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--ground);font-family:var(--mono);font-size:11px;padding:5px 8px;border-radius:4px;white-space:nowrap;transform:translate(-50%,-115%);opacity:0;transition:opacity .1s;z-index:5}
-.tip.on{opacity:1}
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    border: 2px solid var(--ink);
+    background: var(--berry);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
 
-/* divisao seguidor / nao seguidor */
-.split{display:flex;height:40px;gap:2px;margin-bottom:12px}
-.split div{display:flex;align-items:center;padding-inline:12px;font-family:var(--mono);font-size:11.5px;font-weight:500;min-width:0}
-.split .seg{background:var(--mineral-soft);color:var(--ink);flex:60 1 0}
-.split .nao{background:var(--accent-soft);color:var(--ink);flex:40 1 0}
-.split span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.legend{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--ink-2)}
-.legend i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
-.legend .a{background:var(--mineral-soft);border:1px solid var(--mineral)}
-.legend .b{background:var(--accent-soft);border:1px solid var(--accent)}
+  .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+  .btn.sun { background: var(--tangerine); color: var(--ink); }
 
-.posts{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
-.post{background:var(--surface);padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:start}
-.post .kind{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.post h3{font-size:16px;font-weight:600;margin-top:5px;line-height:1.35}
-.post .why{font-size:13.5px;color:var(--ink-2);margin-top:7px;max-width:58ch}
-.post .nums{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
-.post .nums div{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
-.post .nums b{display:block;font-family:var(--display);font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.post .nums .star b{color:var(--accent)}
-.post a.see{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);text-decoration:none;border:1px solid var(--line-strong);padding:7px 11px;white-space:nowrap}
-.post a.see:hover{border-color:var(--accent);color:var(--accent)}
-@media (max-width:600px){.post{grid-template-columns:1fr}}
+  /* ---------- topo ---------- */
 
-.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.offer .o{background:var(--surface);padding:20px}
-.offer .o h3{font-size:15.5px;font-weight:600}
-.offer .o p{font-size:13.5px;color:var(--ink-2);margin-top:7px}
-.offer .o .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:3px 8px;margin-bottom:10px}
+  .topbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 30;
+    background: var(--wine);
+    color: #FFF1E8;
+    border-bottom: 3px solid var(--ink);
+  }
 
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .topbar .wrap { display: flex; align-items: center; gap: 14px; min-height: 58px; flex-wrap: wrap; }
 
-.srcnote{margin-top:44px;padding:18px 20px;border:1px dashed var(--line-strong);background:var(--surface-2)}
-.srcnote p{font-size:12.5px;color:var(--ink-2)}
-.srcnote p + p{margin-top:8px}
-.srcnote b{color:var(--ink)}
-/* o que a marca precisa decidir */
-.aberto{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--good);border:1px solid var(--good);padding:4px 10px;margin-bottom:14px}
-.aberto i{width:7px;height:7px;border-radius:50%;background:var(--good);display:inline-block}
+  .brand {
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    margin-right: auto;
+  }
 
-.ganho{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-@media (max-width:620px){.ganho{grid-template-columns:1fr}}
-.ganho .g{background:var(--surface);padding:22px 20px;display:grid;gap:10px;align-content:start}
-.ganho .obj{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.ganho h3{font-size:17px;font-weight:600;line-height:1.3}
-.ganho p{font-size:13.5px;color:var(--ink-2)}
-.ganho .prova{font-family:var(--mono);font-size:11.5px;color:var(--accent);border-top:1px solid var(--line);padding-top:10px;margin-top:2px}
+  .brand small {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    color: #F7A8BE;
+    display: block;
+    text-transform: uppercase;
+  }
 
-.cond{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-@media (max-width:700px){.cond{grid-template-columns:repeat(2,1fr)}}
-.cond div{background:var(--surface);padding:15px 16px}
-.cond dt{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.cond dd{margin:5px 0 0;font-weight:700;font-size:14.5px}
+  .open {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFD9A8;
+  }
 
-.passo{margin-top:52px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);padding:30px 28px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px}
-.passo h2{font-size:24px;margin-bottom:12px}
-.passo p{font-size:15px;color:var(--ink-2)}
-.passo ol{margin:14px 0 0;padding-left:18px;color:var(--ink-2);font-size:14px;display:grid;gap:7px}
-.passo .cartao{background:var(--surface-2);border:1px solid var(--line);padding:20px;display:grid;gap:12px;align-content:start}
-.passo .cartao .rot{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.passo .cartao .dado{font-family:var(--mono);font-size:14px;color:var(--ink);overflow-wrap:anywhere;line-height:1.5}
-.passo .cartao a{color:var(--accent)}
-@media (max-width:700px){.passo{grid-template-columns:1fr;padding:24px 20px}}
+  .blink { width: 8px; height: 8px; border-radius: 50%; background: #7BE0B0; box-shadow: 0 0 0 4px rgba(123,224,176,.22); }
 
-.marcas{display:flex;flex-wrap:wrap;gap:8px}
-.marcas span{font-family:var(--mono);font-size:12px;border:1px solid var(--line-strong);padding:7px 13px;color:var(--ink-2)}
+  .topbar .btn { padding: 9px 18px; font-size: 13.5px; border-color: #FFF1E8; box-shadow: 3px 3px 0 #1A0810; }
 
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  /* ---------- abertura ---------- */
+
+  .hero {
+    background: var(--wine);
+    color: #FFF1E8;
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; }
+  .hero::before { width: 340px; height: 340px; background: radial-gradient(circle at 30% 30%, rgba(242,118,46,.34), transparent 68%); top: -120px; left: -90px; }
+  .hero::after { width: 420px; height: 420px; background: radial-gradient(circle at 60% 40%, rgba(216,56,106,.34), transparent 68%); bottom: -200px; right: 24%; }
+
+  .hero .wrap {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: clamp(26px, 4vw, 56px);
+    align-items: center;
+    padding-block: clamp(34px, 5vw, 56px) clamp(38px, 5vw, 60px);
+  }
+
+  .hero .wrap > * { min-width: 0; }
+
+  .hero .note { color: #FFC46B; margin-bottom: 6px; }
+
+  .numerao {
+    font-family: var(--poster);
+    font-size: clamp(88px, 17vw, 168px);
+    line-height: .82;
+    color: #FFF1E8;
+    letter-spacing: -0.01em;
+  }
+
+  .numerao .x { color: #FFC46B; }
+
+  .numerao-leg {
+    font-family: var(--mono);
+    font-size: clamp(11px, 1.4vw, 13px);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #F7A8BE;
+    margin-top: 12px;
+  }
+
+  .hero .lede { font-size: clamp(15px, 1.6vw, 17px); color: #F3D9CF; max-width: 46ch; margin-top: 20px; }
+  .hero .lede strong { color: #FFF1E8; }
+
+  .hero .lede.destaque {
+    margin-top: 16px;
+    border-left: 4px solid var(--tangerine);
+    padding-left: 16px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(16px, 1.8vw, 19px);
+    color: #FFE6D6;
+  }
+
+  .polaroid {
+    margin: 0;
+    background: var(--paper);
+    padding: 12px 12px 0;
+    border: 3px solid var(--ink);
+    box-shadow: 10px 10px 0 rgba(0,0,0,.35);
+    transform: rotate(2.4deg);
+    position: relative;
+    max-width: 330px;
+    justify-self: end;
+  }
+
+  .polaroid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 16%; background: var(--berry-soft); }
+  .polaroid figcaption { font-family: var(--hand); font-size: 25px; color: var(--ink); text-align: center; padding: 6px 4px 10px; line-height: 1.1; }
+
+  .polaroid::before {
+    content: "";
+    position: absolute;
+    top: -17px; left: 50%;
+    translate: -50% 0;
+    width: 118px; height: 30px;
+    background: repeating-linear-gradient(45deg, rgba(242,118,46,.85) 0 7px, rgba(255,196,107,.85) 7px 14px);
+    border: 2px solid var(--ink);
+    rotate: -3deg;
+  }
+
+  /* ---------- faixa ---------- */
+
+  .marquee { background: var(--tangerine); border-bottom: 3px solid var(--ink); overflow: hidden; padding-block: 11px; }
+  .marquee-track { display: flex; width: max-content; gap: 26px; animation: slide 30s linear infinite; }
+  .marquee span { font-family: var(--poster); text-transform: uppercase; font-size: 17px; letter-spacing: 0.05em; color: var(--ink); white-space: nowrap; }
+  @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- secoes ---------- */
+
+  section { padding-block: clamp(34px, 5vw, 58px); }
+
+  .head { display: flex; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .head h2 { font-size: clamp(30px, 5vw, 50px); }
+  .head .note { margin-left: auto; }
+
+  .rule-dash { border: 0; border-top: 3px dashed var(--line); margin: 0; }
+
+  /* etiquetas de numero */
+
+  .labels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 0; }
+
+  .label {
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 16px;
+    padding: 16px 18px 18px;
+    display: grid;
+    gap: 4px;
+    align-content: start;
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+
+  .label:nth-child(4n+1) { background: var(--sky-soft); }
+  .label:nth-child(4n+2) { background: var(--berry-soft); }
+  .label:nth-child(4n+3) { background: var(--mint-soft); }
+  .label:nth-child(4n+4) { background: var(--lilac-soft); }
+
+  .label dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+  .label dd { margin: 0; font-family: var(--poster); font-size: 34px; line-height: 1; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+  .label p { font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); line-height: 1.45; margin-top: 2px; }
+
+  .cond .label dd { font-family: var(--body); font-weight: 700; font-size: 16px; line-height: 1.25; }
+
+  /* quadros de grafico */
+
+  .duplo { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(16px, 2.4vw, 24px); }
+
+  .quadro {
+    margin: 0;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--ink);
+    padding: 22px 22px 20px;
+  }
+
+  .quadro.azul { background: var(--sky-soft); }
+  .quadro.laranja { background: var(--tangerine-soft); }
+  .quadro.rosa { background: var(--berry-soft); }
+
+  .figtitle { font-family: var(--poster); text-transform: uppercase; font-size: 19px; letter-spacing: 0.02em; margin-bottom: 18px; }
+
+  .quadro figcaption { font-size: 14px; color: var(--ink-2); margin-top: 16px; padding-top: 14px; border-top: 3px dashed rgba(42,26,30,.18); }
+  .quadro figcaption strong { color: var(--ink); }
+
+  .bars { display: grid; gap: 9px; }
+  .bar-row { display: grid; grid-template-columns: 112px minmax(0, 1fr) 54px; gap: 12px; align-items: center; }
+  .bar-row .cat { font-family: var(--mono); font-size: 11px; color: var(--ink-2); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { background: rgba(42,26,30,.09); height: 18px; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--sky); }
+  .bars.warm .bar-fill { background: var(--tangerine); }
+  .bars.berry .bar-fill { background: var(--berry); }
+  .bar-row .val { font-family: var(--mono); font-size: 11.5px; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+
+  @media (max-width: 520px) {
+    .bar-row { grid-template-columns: 84px minmax(0, 1fr) 46px; gap: 8px; }
+    .bar-row .cat, .bar-row .val { font-size: 10px; }
+  }
+
+  /* colunas do dia a dia */
+
+  .cols { display: flex; align-items: flex-end; gap: 3px; height: 150px; position: relative; }
+  .col { flex: 1 1 0; min-width: 0; background: var(--tangerine); border: 2px solid var(--ink); border-bottom: 0; border-radius: 4px 4px 0 0; }
+  .col.peak { background: var(--wine); }
+  .colaxis { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); margin-top: 9px; border-top: 3px solid var(--ink); padding-top: 8px; text-transform: uppercase; letter-spacing: .06em; }
+  .tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--ground); font-family: var(--mono); font-size: 11px; padding: 5px 9px; border-radius: 5px; white-space: nowrap; transform: translate(-50%,-118%); opacity: 0; transition: opacity .1s; z-index: 5; }
+  .tip.on { opacity: 1; }
+
+  /* seguidor x nao seguidor */
+
+  .split { display: flex; gap: 6px; }
+  .split > div { border: 3px solid var(--ink); border-radius: 12px; padding: 14px 16px; display: grid; gap: 2px; align-content: center; min-width: 0; }
+  .split .seg { background: var(--mint-soft); flex: 60 1 0; }
+  .split .nao { background: var(--tangerine-soft); flex: 40 1 0; }
+  .split span { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .split b { font-family: var(--poster); font-size: 30px; line-height: 1; font-weight: 400; }
+
+  /* provas */
+
+  .provas { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 2.4vw, 22px); }
+
+  .prova {
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    background: var(--paper);
+    padding: 20px 20px 22px;
+    box-shadow: 5px 5px 0 var(--ink);
+    display: grid;
+    gap: 9px;
+    align-content: start;
+  }
+
+  .prova:nth-child(even) { rotate: -.7deg; }
+  .prova:nth-child(odd) { rotate: .6deg; }
+  .prova .tag { color: var(--berry); }
+  .prova h3 { font-family: var(--serif); font-weight: 600; font-size: 19px; margin: 0; line-height: 1.2; }
+  .prova > p { font-size: 14.5px; color: var(--ink-2); }
+
+  .nums { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+  .nums div { font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); letter-spacing: .04em; text-transform: uppercase; }
+  .nums b { display: block; font-family: var(--poster); font-size: 24px; font-weight: 400; color: var(--ink); line-height: 1.1; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+  .nums .star b { color: var(--berry); }
+
+  .clip-link { font-family: var(--mono); font-size: 11px; color: var(--berry); text-decoration: none; border-bottom: 2px solid var(--berry); justify-self: start; padding-bottom: 1px; }
+  .clip-link:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ganhos */
+
+  .ganhos { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: clamp(16px, 2.4vw, 24px); }
+
+  .ganho {
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    padding: 22px 22px 24px;
+    box-shadow: 6px 6px 0 var(--ink);
+    display: grid;
+    gap: 10px;
+    align-content: start;
+  }
+
+  .ganho:nth-child(1) { background: var(--sky-soft); rotate: -1.2deg; }
+  .ganho:nth-child(2) { background: var(--lilac-soft); rotate: 1deg; }
+  .ganho:nth-child(3) { background: var(--mint-soft); rotate: -.8deg; }
+  .ganho:nth-child(4) { background: var(--tangerine-soft); rotate: 1.4deg; }
+
+  .ganho .tag { color: var(--ink-2); }
+  .ganho h3 { font-family: var(--poster); text-transform: uppercase; font-size: 23px; line-height: 1; margin: 0; }
+  .ganho p { font-size: 14.5px; color: var(--ink-2); }
+
+  .ganho .prova-num {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink);
+    border-top: 3px dashed rgba(42,26,30,.22);
+    padding-top: 10px;
+    margin-top: 2px;
+    line-height: 1.45;
+  }
+
+  /* marcas */
+
+  .marcas-bloco { margin-top: clamp(22px, 3vw, 30px); display: grid; gap: 12px; justify-items: start; }
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    padding: 8px 16px;
+    background: var(--paper);
+    box-shadow: 3px 3px 0 var(--ink);
+    rotate: -1.5deg;
+  }
+
+  .chip:nth-child(even) { rotate: 1.8deg; }
+  .chip:nth-child(3n) { background: var(--berry-soft); }
+  .chip:nth-child(3n+1) { background: var(--mint-soft); }
+  .chip:nth-child(3n+2) { background: var(--tangerine-soft); }
+
+  .rodape-chips { font-size: 13.5px; color: var(--ink-2); max-width: 70ch; }
+
+  /* contato */
+
+  .contact {
+    background: var(--wine);
+    color: #FFF1E8;
+    border: 3px solid var(--ink);
+    border-radius: 24px;
+    padding: clamp(26px, 4vw, 44px);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(22px, 3vw, 40px);
+    align-items: center;
+    box-shadow: 8px 8px 0 var(--ink);
+  }
+
+  .contact h2 { font-size: clamp(30px, 4.6vw, 48px); color: #FFF1E8; }
+  .contact .said { color: #FFC46B; }
+  .contact > div > p { color: #F3D9CF; margin-top: 12px; max-width: 46ch; }
+
+  .passos { margin: 16px 0 0; padding-left: 20px; color: #F3D9CF; font-size: 14.5px; display: grid; gap: 7px; max-width: 46ch; }
+  .passos::marker { color: #FFC46B; }
+
+  .channels { display: grid; gap: 10px; min-width: 300px; }
+
+  .channel {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 13px 18px;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: var(--ground);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14.5px;
+    box-shadow: 3px 3px 0 var(--ink);
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+
+  .channel:hover { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink); background: var(--tangerine); }
+  .channel .val { font-family: var(--mono); font-size: 12px; font-weight: 400; color: var(--ink-2); overflow-wrap: anywhere; }
+
+  /* fonte dos dados */
+
+  .fonte { margin-top: clamp(26px, 4vw, 40px); border: 3px dashed var(--line); border-radius: 16px; padding: 20px 22px; background: var(--paper); display: grid; gap: 10px; }
+  .fonte p { font-size: 12.5px; color: var(--ink-2); line-height: 1.6; }
+  .fonte strong { color: var(--ink); }
+
+  footer { border-top: 3px dashed var(--line); margin-top: 26px; padding-block: 24px 40px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--ink-2); }
+
+  @media (max-width: 880px) {
+    .provas { grid-template-columns: 1fr; }
+    .hero .wrap { grid-template-columns: 1fr; }
+    .polaroid { max-width: 320px; margin-inline: auto; justify-self: center; }
+    .labels { grid-template-columns: repeat(2, 1fr); }
+    .contact { grid-template-columns: 1fr; }
+    .channels { min-width: 0; }
+  }
+
+  @media (max-width: 520px) {
+    .labels { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+
 </style>
 </head>
 <body>
-<div class="wrap">
-
-  <header>
-    <div class="who">
-      <p class="eyebrow">Mídia kit · 30 de setembro de 2026</p>
-      <h1>Soraya Oliveira</h1>
-      <p class="aberto"><i></i>Aberta para parcerias</p>
-      <p class="handle">@sorayaaoliroutine</p>
-      <p class="pos">Maternidade real, rotina e achados para mulheres de 25 a 44 anos do Rio Grande do Norte — uma base pequena, concentrada e que responde.</p>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      Soraya Oliveira
+      <small>Criadora UGC · mídia kit</small>
     </div>
-    <div class="contact">
-      <p><b>E-mail</b> <span>soraya.michelly@gmail.com</span></p>
-      <p><b>Perfil</b> <span>instagram.com/sorayaaoliroutine</span></p>
-      <p><b>Links</b> <span>tinyurl.com/sorayaoli</span></p>
-      <p><b>Base</b> <span>Mossoró / Baraúna — RN</span></p>
-    </div>
-  </header>
-
-  <div class="thesis">
-    <div class="ratio">102×
-      <small>Visualizações por seguidor<br>em 30 dias</small>
-    </div>
-    <p class="say">Em 30 dias o perfil somou <b>119.488 visualizações</b> com uma base de <b>1.167 seguidores</b>. Não é um perfil grande — é um perfil que o algoritmo distribui muito além da própria base: <b>40% das visualizações vieram de quem não me segue</b>, e <b>85% dos seguidores estão no eixo Mossoró–Baraúna</b>. Se a sua marca quer testar aceitação real no Nordeste antes de investir em mídia, isso é amostra, não vitrine.</p>
+    <span class="open"><i class="blink"></i> Agenda aberta</span>
+    <a class="btn sun dl" href="midia-kit-soraya-oliveira.pdf" download>Baixar em PDF</a>
   </div>
+</header>
 
-  <section>
-    <div class="sechead">
-      <h2>Números dos últimos 30 dias</h2>
-      <p class="note">31/08 – 29/09/2026</p>
+<!-- ================= ABERTURA ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="note">oi, marcas! ✿</span>
+
+      <p class="numerao">102<span class="x">×</span></p>
+      <p class="numerao-leg">visualizações por seguidor em 30 dias</p>
+
+      <p class="lede">
+        Em 30 dias o perfil somou <strong>119.488 visualizações</strong> com uma base de
+        <strong>1.167 seguidores</strong>. Não é um perfil grande — é um perfil que o algoritmo
+        distribui muito além da própria base: <strong>40% das visualizações vieram de quem não me
+        segue</strong>, e <strong>85% dos seguidores estão no eixo Mossoró–Baraúna</strong>.
+      </p>
+
+      <p class="lede destaque">
+        Se a sua marca quer testar aceitação real no Nordeste antes de investir em mídia,
+        isso é amostra, não vitrine.
+      </p>
     </div>
-    <div class="tiles">
-      <div class="tile hi">
-        <p class="v">119.488</p>
-        <p class="l">Visualizações de conteúdo</p>
-        <p class="sub">3.983 / dia em média</p>
-      </div>
-      <div class="tile">
-        <p class="v">1.167</p>
-        <p class="l">Seguidores hoje</p>
-        <p class="sub">229 novos no período</p>
-      </div>
-      <div class="tile">
-        <p class="v">4.656</p>
-        <p class="l">Interações totais</p>
-        <p class="sub">3.486 curtidas · 416 comentários</p>
-      </div>
-      <div class="tile hi">
-        <p class="v">3,90%</p>
-        <p class="l">Interação por visualização</p>
-        <p class="sub">Interações ÷ views do período</p>
-      </div>
-      <div class="tile">
-        <p class="v">8.298</p>
-        <p class="l">Alcance no melhor dia</p>
-        <p class="sub">7,1× a base de seguidores</p>
-      </div>
-      <div class="tile">
-        <p class="v">184</p>
-        <p class="l">Respostas a Stories</p>
-        <p class="sub">Conversa direta no direct</p>
-      </div>
-      <div class="tile">
-        <p class="v">199</p>
-        <p class="l">Compartilhamentos</p>
-        <p class="sub">Alcance ganho, não pago</p>
-      </div>
-      <div class="tile">
-        <p class="v">41</p>
-        <p class="l">Publicações no período</p>
-        <p class="sub">Reels e carrosséis · 21 dias</p>
-      </div>
+
+    <figure class="polaroid">
+      <img src="soraya.jpg" alt="Soraya Oliveira, criadora de conteúdo UGC" width="1000" height="1250">
+      <figcaption>quem vai gravar o seu produto</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ================= FAIXA ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>119.488 views ✦ 1.167 seguidores ✦ 85,4% mulheres ✦ 80,6% de 25 a 44 anos ✦ 93% Rio Grande do Norte ✦&nbsp;</span>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- ================= NUMEROS ================= -->
+  <section id="numeros">
+    <div class="head">
+      <h2 class="poster">Os números<br>dos últimos <span class="said">30 dias</span></h2>
+      <span class="note">31/08 a 29/09/2026</span>
     </div>
+
+    <dl class="labels">
+      <div class="label"><dt>Visualizações</dt><dd>119.488</dd><p>3.983 por dia em média</p></div>
+      <div class="label"><dt>Seguidores hoje</dt><dd>1.167</dd><p>229 novos no período</p></div>
+      <div class="label"><dt>Interações</dt><dd>4.656</dd><p>3.486 curtidas · 416 comentários</p></div>
+      <div class="label"><dt>Interação por view</dt><dd>3,90%</dd><p>Interações ÷ views do período</p></div>
+      <div class="label"><dt>Melhor dia de alcance</dt><dd>8.298</dd><p>7,1× a base de seguidores</p></div>
+      <div class="label"><dt>Respostas a stories</dt><dd>184</dd><p>Conversa direta no direct</p></div>
+      <div class="label"><dt>Compartilhamentos</dt><dd>199</dd><p>Alcance ganho, não pago</p></div>
+      <div class="label"><dt>Publicações</dt><dd>41</dd><p>Reels e carrosséis · em 21 dias</p></div>
+    </dl>
   </section>
 
-  <section>
-    <div class="sechead">
-      <h2>Quem assiste</h2>
-      <p class="note">Base de seguidores · dado de perfil</p>
+  <hr class="rule-dash">
+
+  <!-- ================= PUBLICO ================= -->
+  <section id="publico">
+    <div class="head">
+      <h2 class="poster">Quem <span class="said">assiste</span></h2>
+      <span class="note">base de seguidores</span>
     </div>
-    <div class="grid2">
-      <figure>
+
+    <div class="duplo">
+      <figure class="quadro azul">
         <p class="figtitle">Faixa de idade e gênero</p>
         <div class="bars">
           <div class="bar-row"><span class="cat">Mulheres 25–34</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">473</span></div>
@@ -268,10 +591,10 @@ figcaption{font-size:13px;color:var(--ink-2);margin-top:14px;padding-top:12px;bo
           <div class="bar-row"><span class="cat">Homens (todos)</span><div class="bar-track"><div class="bar-fill" style="width:9.3%"></div></div><span class="val">44</span></div>
           <div class="bar-row"><span class="cat">Mulheres 55+</span><div class="bar-track"><div class="bar-fill" style="width:7.4%"></div></div><span class="val">35</span></div>
         </div>
-        <figcaption><b>85,4% mulheres.</b> As faixas de 25 a 44 anos somam 80,6% da base — a idade que decide a compra de beleza, skincare e itens de casa dentro de casa. “Não informado” é o que o Instagram devolve sem gênero declarado.</figcaption>
+        <figcaption><strong>85,4% mulheres.</strong> As faixas de 25 a 44 anos somam 80,6% da base — a idade que decide a compra de beleza, skincare e itens de casa dentro de casa. “Não informado” é o que o Instagram devolve sem gênero declarado.</figcaption>
       </figure>
 
-      <figure>
+      <figure class="quadro laranja">
         <p class="figtitle">Onde essa audiência mora</p>
         <div class="bars warm">
           <div class="bar-row"><span class="cat">Mossoró RN</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">462</span></div>
@@ -281,134 +604,102 @@ figcaption{font-size:13px;color:var(--ink-2);margin-top:14px;padding-top:12px;bo
           <div class="bar-row"><span class="cat">Fortaleza CE</span><div class="bar-track"><div class="bar-fill" style="width:3.7%"></div></div><span class="val">17</span></div>
           <div class="bar-row"><span class="cat">Natal RN</span><div class="bar-track"><div class="bar-fill" style="width:2.8%"></div></div><span class="val">13</span></div>
         </div>
-        <figcaption><b>93% Rio Grande do Norte, 98% Nordeste.</b> O eixo Mossoró–Baraúna concentra 85% da base. É densidade regional que perfil nacional do mesmo tamanho não tem.</figcaption>
+        <figcaption><strong>93% Rio Grande do Norte, 98% Nordeste.</strong> O eixo Mossoró–Baraúna concentra 85% da base. É densidade regional que perfil nacional do mesmo tamanho não tem.</figcaption>
       </figure>
     </div>
   </section>
 
-  <section>
-    <div class="sechead">
-      <h2>Consistência diária</h2>
-      <p class="note">Visualizações por dia · 30 dias</p>
+  <hr class="rule-dash">
+
+  <!-- ================= DIA A DIA ================= -->
+  <section id="diario">
+    <div class="head">
+      <h2 class="poster">Todo dia tem <span class="said">gente vendo</span></h2>
+      <span class="note">views por dia</span>
     </div>
-    <figure>
+
+    <figure class="quadro">
       <div class="cols" id="cols"><div class="tip" id="tip"></div></div>
-      <div class="colaxis"><span>31/08</span><span>Pico: 12.638 views em 23/09</span><span>29/09</span></div>
+      <div class="colaxis"><span>31/08</span><span>pico: 12.638 views em 23/09</span><span>29/09</span></div>
       <figcaption>Nenhum dia abaixo de 1.128 visualizações. O pico de 23/09 alcançou 8.298 contas, das quais 7.977 não me seguiam — é o comportamento que leva uma marca a ser vista por gente nova.</figcaption>
     </figure>
-  </section>
 
-  <section>
-    <div class="sechead">
-      <h2>Quanto sai da minha bolha</h2>
-      <p class="note">Visualizações do período</p>
-    </div>
-    <figure>
-      <p class="figtitle">Seguidores x não seguidores</p>
+    <figure class="quadro" style="margin-top:18px">
+      <p class="figtitle">Quanto sai da minha bolha</p>
       <div class="split">
-        <div class="seg"><span>60% · 72.038</span></div>
-        <div class="nao"><span>40% · 47.321</span></div>
-      </div>
-      <div class="legend">
-        <span><i class="a"></i>Seguidores</span>
-        <span><i class="b"></i>Não seguidores</span>
+        <div class="seg"><span>seguidores · 72.038</span><b>60%</b></div>
+        <div class="nao"><span>não seguidores · 47.321</span><b>40%</b></div>
       </div>
       <figcaption>Quatro de cada dez visualizações vêm de fora da base. Uma marca que entra aqui não fala só com as 1.167 pessoas que já me seguem: fala também com as que o algoritmo trouxe naquele mês.</figcaption>
     </figure>
   </section>
 
-  <section>
-    <div class="sechead">
-      <h2>Portfólio — o que cada conteúdo provou</h2>
-      <p class="note">Números do painel, não estimativa</p>
+  <hr class="rule-dash">
+
+  <!-- ================= PROVAS ================= -->
+  <section id="provas">
+    <div class="head">
+      <h2 class="poster">O que cada<br>conteúdo <span class="said">provou</span></h2>
+      <span class="note">números do painel ✦</span>
     </div>
-    <div class="posts">
 
-      <div class="post">
-        <div>
-          <p class="kind">Reel · Maternidade · 18 set</p>
-          <h3>“A nossa casa ficou mais feliz depois que você chegou”</h3>
-          <p class="why">Meu conteúdo de maior alcance no período: 2.350 contas, o dobro da minha base. É o formato pessoal que traz gente nova — e quem chega por aqui fica para as próximas publicações.</p>
-          <div class="nums">
-            <div class="star"><b>2.350</b>contas alcançadas</div>
-            <div><b>3.767</b>views</div>
-            <div><b>177</b>curtidas</div>
-            <div><b>201%</b>da minha base</div>
-          </div>
+    <div class="provas">
+      <article class="prova">
+        <span class="tag">Reel · maternidade · 18 set</span>
+        <h3>“A nossa casa ficou mais feliz depois que você chegou”</h3>
+        <p>Meu conteúdo de maior alcance no período: 2.350 contas, o dobro da minha base. É o formato pessoal que traz gente nova — e quem chega fica para as próximas publicações.</p>
+        <div class="nums">
+          <div class="star"><b>2.350</b>contas alcançadas</div>
+          <div><b>3.767</b>views</div>
+          <div><b>177</b>curtidas</div>
+          <div><b>201%</b>da base</div>
         </div>
-        <a class="see" href="https://www.instagram.com/reel/DdaS5aqOMWo/" target="_blank" rel="noopener">Ver Reel</a>
-      </div>
+        <a class="clip-link" href="https://www.instagram.com/reel/DdaS5aqOMWo/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+      </article>
 
-      <div class="post">
-        <div>
-          <p class="kind">Reel com produto · Cozinha · 20 set</p>
-          <h3>Bolo de goiabada com a massa Dona Benta</h3>
-          <p class="why">O conteúdo com marca que mais gerou conversa: 70 comentários, a maioria perguntando a receita e onde encontrar. Receita testada na minha cozinha, com o produto dentro do preparo — não ao lado dele.</p>
-          <div class="nums">
-            <div class="star"><b>70</b>comentários</div>
-            <div><b>2.095</b>views</div>
-            <div><b>122</b>curtidas</div>
-            <div><b>10</b>compartilhamentos</div>
-          </div>
+      <article class="prova">
+        <span class="tag">Reel com produto · cozinha · 20 set</span>
+        <h3>Bolo de goiabada com a massa Dona Benta</h3>
+        <p>O conteúdo com marca que mais gerou conversa: 70 comentários, a maioria perguntando a receita e onde encontrar. O produto entra dentro do preparo, não ao lado dele.</p>
+        <div class="nums">
+          <div class="star"><b>70</b>comentários</div>
+          <div><b>2.095</b>views</div>
+          <div><b>122</b>curtidas</div>
+          <div><b>10</b>compartilham.</div>
         </div>
-        <a class="see" href="https://www.instagram.com/reel/Ddho2LRurui/" target="_blank" rel="noopener">Ver Reel</a>
-      </div>
+        <a class="clip-link" href="https://www.instagram.com/reel/Ddho2LRurui/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+      </article>
 
-      <div class="post">
-        <div>
-          <p class="kind">Reel · Humor de maternidade · 13 set</p>
-          <h3>“O julgamento começa em casa”</h3>
-          <p class="why">Alcançou 2.328 contas — 199% da base. O humor sobre rotina real é o que ultrapassa a bolha; serve quando o objetivo da campanha é alcance, não conversão imediata.</p>
-          <div class="nums">
-            <div class="star"><b>2.328</b>contas alcançadas</div>
-            <div><b>3.068</b>views</div>
-            <div><b>142</b>curtidas</div>
-            <div><b>13</b>comentários</div>
-          </div>
+      <article class="prova">
+        <span class="tag">Reel · humor · 13 set</span>
+        <h3>“O julgamento começa em casa”</h3>
+        <p>Alcançou 2.328 contas — 199% da base. O humor sobre rotina real é o que ultrapassa a bolha; serve quando o objetivo da campanha é alcance.</p>
+        <div class="nums">
+          <div class="star"><b>2.328</b>contas alcançadas</div>
+          <div><b>3.068</b>views</div>
+          <div><b>142</b>curtidas</div>
+          <div><b>13</b>comentários</div>
         </div>
-        <a class="see" href="https://www.instagram.com/reel/DdOvo4euQCA/" target="_blank" rel="noopener">Ver Reel</a>
-      </div>
+        <a class="clip-link" href="https://www.instagram.com/reel/DdOvo4euQCA/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+      </article>
 
-      <div class="post">
-        <div>
-          <p class="kind">Reel com produto · Skincare · 22 set</p>
-          <h3>Rotina noturna com SKIN1004</h3>
-          <p class="why">Views menores que as do humor, comentário muito maior: 24 perguntas em 935 visualizações. Skincare aqui é assunto de dúvida — a audiência quer saber a ordem de uso e o preço antes de comprar.</p>
-          <div class="nums">
-            <div class="star"><b>24</b>comentários</div>
-            <div><b>935</b>views</div>
-            <div><b>583</b>contas alcançadas</div>
-            <div><b>56</b>curtidas</div>
-          </div>
+      <article class="prova">
+        <span class="tag">Reel com produto · skincare · 22 set</span>
+        <h3>Rotina noturna com SKIN1004</h3>
+        <p>Views menores que as do humor, comentário muito maior: 24 perguntas em 935 visualizações. Skincare aqui é assunto de dúvida — a audiência quer a ordem de uso e o preço antes de comprar.</p>
+        <div class="nums">
+          <div class="star"><b>24</b>comentários</div>
+          <div><b>935</b>views</div>
+          <div><b>583</b>contas alcançadas</div>
+          <div><b>56</b>curtidas</div>
         </div>
-        <a class="see" href="https://www.instagram.com/reel/DdlsIwwuwxK/" target="_blank" rel="noopener">Ver Reel</a>
-      </div>
-
-      <div class="post">
-        <div>
-          <p class="kind">Carrossel · Reflexão · 16 set</p>
-          <h3>“Nem tudo precisa ser resolvido hoje”</h3>
-          <p class="why">Mostra a outra metade do perfil: não é só achadinho. É o conteúdo pessoal que sustenta a confiança que faz a indicação funcionar depois.</p>
-          <div class="nums">
-            <div><b>2.171</b>views</div>
-            <div><b>789</b>contas alcançadas</div>
-            <div><b>54</b>curtidas</div>
-            <div><b>13</b>comentários</div>
-          </div>
-        </div>
-        <a class="see" href="https://www.instagram.com/p/DdXGnRtCZqy/" target="_blank" rel="noopener">Ver post</a>
-      </div>
-
+        <a class="clip-link" href="https://www.instagram.com/reel/DdlsIwwuwxK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+      </article>
     </div>
-  </section>
 
-  <section>
-    <div class="sechead">
-      <h2>O padrão que isso revela</h2>
-    </div>
-    <figure>
+    <figure class="quadro rosa" style="margin-top:22px">
       <p class="figtitle">Comentários por mil visualizações</p>
-      <div class="bars">
+      <div class="bars berry">
         <div class="bar-row"><span class="cat">Dona Benta</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">33,4</span></div>
         <div class="bar-row"><span class="cat">Purcell</span><div class="bar-track"><div class="bar-fill" style="width:95.5%"></div></div><span class="val">31,9</span></div>
         <div class="bar-row"><span class="cat">Medicube</span><div class="bar-track"><div class="bar-fill" style="width:77.2%"></div></div><span class="val">25,8</span></div>
@@ -416,127 +707,152 @@ figcaption{font-size:13px;color:var(--ink-2);margin-top:14px;padding-top:12px;bo
         <div class="bar-row"><span class="cat">Siàge</span><div class="bar-track"><div class="bar-fill" style="width:62.6%"></div></div><span class="val">20,9</span></div>
         <div class="bar-row"><span class="cat">Humor (média)</span><div class="bar-track"><div class="bar-fill" style="width:13.5%"></div></div><span class="val">4,5</span></div>
       </div>
-      <figcaption><b>Conteúdo com produto rende de 4 a 7 vezes mais comentário por mil views do que o conteúdo de humor</b>, que alcança mais gente. Na prática: o humor traz público novo, o conteúdo com produto faz esse público perguntar. Uma campanha que use os dois na mesma semana aproveita as duas coisas.</figcaption>
+      <figcaption><strong>Conteúdo com produto rende de 4 a 7 vezes mais comentário por mil views do que o conteúdo de humor</strong>, que alcança mais gente. Na prática: o humor traz público novo, o conteúdo com produto faz esse público perguntar. Uma campanha que use os dois na mesma semana aproveita as duas coisas.</figcaption>
     </figure>
   </section>
 
-  <section>
-    <div class="sechead">
-      <h2>O que a sua marca ganha aqui</h2>
-      <p class="note">Por objetivo de campanha</p>
+  <hr class="rule-dash">
+
+  <!-- ================= GANHOS ================= -->
+  <section id="ganhos">
+    <div class="head">
+      <h2 class="poster">O que a sua<br>marca <span class="said">ganha aqui</span></h2>
+      <span class="note">escolhe pelo objetivo</span>
     </div>
-    <div class="ganho">
-      <div class="g">
-        <p class="obj">Se o objetivo é alcance</p>
+
+    <div class="ganhos">
+      <article class="ganho">
+        <span class="tag">Se o objetivo é alcance</span>
         <h3>Ser vista por quem ainda não te conhece</h3>
-        <p>Entro com o produto dentro de um conteúdo de rotina ou humor, que é o formato que o algoritmo leva para fora da minha base. A marca aparece para gente nova, não só para quem já me segue.</p>
-        <p class="prova">Melhores do mês: 201% e 199% da base alcançada</p>
-      </div>
-      <div class="g">
-        <p class="obj">Se o objetivo é consideração</p>
+        <p>Entro com o produto dentro de um conteúdo de rotina ou humor, que é o formato que o algoritmo leva para fora da minha base. A marca aparece para gente nova.</p>
+        <p class="prova-num">Melhores do mês: 201% e 199% da base alcançada</p>
+      </article>
+      <article class="ganho">
+        <span class="tag">Se o objetivo é consideração</span>
         <h3>Fazer a cliente perguntar antes de comprar</h3>
         <p>Produto dentro do preparo ou da rotina, com a dúvida real respondida na legenda e nos comentários: ordem de uso, textura, preço, para quem serve.</p>
-        <p class="prova">Conteúdo com produto: 21 a 33 comentários por mil views</p>
-      </div>
-      <div class="g">
-        <p class="obj">Se o objetivo é venda</p>
+        <p class="prova-num">Conteúdo com produto: 21 a 33 comentários por mil views</p>
+      </article>
+      <article class="ganho">
+        <span class="tag">Se o objetivo é venda</span>
         <h3>Levar quem já confia até o carrinho</h3>
         <p>Stories com prova de compra, cupom rastreável e link. É onde a dúvida vira pergunta no direct — e a resposta vem de alguém que a pessoa acompanha todo dia.</p>
-        <p class="prova">184 respostas de Stories no mês</p>
-      </div>
-      <div class="g">
-        <p class="obj">Se o objetivo é entender o mercado</p>
+        <p class="prova-num">184 respostas de stories no mês</p>
+      </article>
+      <article class="ganho">
+        <span class="tag">Se o objetivo é entender o mercado</span>
         <h3>Saber o que o Nordeste achou do produto</h3>
-        <p>Devolvo o que a audiência de Mossoró e Baraúna comentou: preço que assusta, textura que não combina com o calor, o que ela já usa no lugar. Dado qualitativo que painel não dá.</p>
-        <p class="prova">93% da base no Rio Grande do Norte</p>
-      </div>
+        <p>Devolvo o que a audiência de Mossoró e Baraúna comentou: preço que assusta, textura que não combina com o calor, o que ela já usa no lugar.</p>
+        <p class="prova-num">93% da base no Rio Grande do Norte</p>
+      </article>
     </div>
   </section>
 
+  <hr class="rule-dash">
+
+  <!-- ================= PARCERIA ================= -->
   <section id="parceria">
-    <div class="sechead">
-      <h2>Como funciona a parceria</h2>
-      <p class="note">Condições padrão</p>
+    <div class="head">
+      <h2 class="poster">Como funciona<br>a <span class="said">parceria</span></h2>
+      <span class="note">condições padrão</span>
     </div>
-    <dl class="cond">
-      <div><dt>Formatos</dt><dd>Reel, carrossel, Stories</dd></div>
-      <div><dt>Entrega do vídeo</dt><dd>9:16 · MP4 · 30 fps</dd></div>
-      <div><dt>Prazo</dt><dd>Até 7 dias</dd></div>
-      <div><dt>Começa a contar</dt><dd>Quando o produto chega</dd></div>
-      <div><dt>Roteiro</dt><dd>Aprovado antes de gravar</dd></div>
-      <div><dt>Revisões</dt><dd>2 inclusas</dd></div>
-      <div><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
-      <div><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
-      <div><dt>Relatório</dt><dd>Com print do painel</dd></div>
-      <div><dt>Permuta</dt><dd>Avalio caso a caso</dd></div>
-      <div><dt>Cachê</dt><dd>Sob consulta</dd></div>
-      <div><dt>Exclusividade</dt><dd>Adicional no orçamento</dd></div>
+
+    <dl class="labels cond">
+      <div class="label"><dt>Formatos</dt><dd>Reel, carrossel, stories</dd></div>
+      <div class="label"><dt>Entrega do vídeo</dt><dd>9:16 · MP4 · 30 fps</dd></div>
+      <div class="label"><dt>Prazo</dt><dd>Até 7 dias</dd></div>
+      <div class="label"><dt>Começa a contar</dt><dd>Quando o produto chega</dd></div>
+      <div class="label"><dt>Roteiro</dt><dd>Aprovado antes de gravar</dd></div>
+      <div class="label"><dt>Revisões</dt><dd>2 inclusas</dd></div>
+      <div class="label"><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
+      <div class="label"><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
+      <div class="label"><dt>Relatório</dt><dd>Com print do painel</dd></div>
+      <div class="label"><dt>Permuta</dt><dd>Avalio caso a caso</dd></div>
+      <div class="label"><dt>Cachê</dt><dd>Sob consulta</dd></div>
+      <div class="label"><dt>Exclusividade</dt><dd>Adicional no orçamento</dd></div>
     </dl>
-    <figure style="margin-top:16px">
-      <p class="figtitle">Produtos que já gravei e publiquei</p>
-      <div class="marcas">
-        <span>Dona Benta</span><span>Elgin</span><span>Siàge · Eudora</span><span>SKIN1004</span>
-        <span>Purcell</span><span>Medicube</span><span>Rejuran</span><span>Creamy</span>
+
+    <div class="marcas-bloco">
+      <span class="note">produtos que já gravei ↓</span>
+      <div class="chips">
+        <span class="chip">Dona Benta</span>
+        <span class="chip">Elgin</span>
+        <span class="chip">Siàge · Eudora</span>
+        <span class="chip">SKIN1004</span>
+        <span class="chip">Purcell</span>
+        <span class="chip">Medicube</span>
+        <span class="chip">Rejuran</span>
+        <span class="chip">Creamy</span>
       </div>
-      <figcaption>Conteúdo gravado e editado por mim, publicado no meu perfil. Os vídeos estão no portfólio, com os números de cada um.</figcaption>
-    </figure>
+      <p class="rodape-chips">Conteúdo gravado e editado por mim, publicado no meu perfil. Os vídeos estão no portfólio, com os números de cada um.</p>
+    </div>
   </section>
 
-  <div class="passo">
-    <div>
-      <h2>Vamos conversar?</h2>
-      <p>Me conta o produto, o objetivo da campanha e o prazo que você tem. Eu respondo com proposta fechada — formato, entrega e valor — no mesmo dia útil.</p>
-      <ol>
-        <li>Você me manda o produto e o briefing (ou o roteiro, se já tiver).</li>
-        <li>Eu escrevo o gancho e a fala e mando para a sua aprovação.</li>
-        <li>Gravo, edito e entrego o arquivo pronto para publicar.</li>
-        <li>Até 7 dias depois, mando o relatório com print do painel.</li>
-      </ol>
+  <!-- ================= CONTATO ================= -->
+  <section id="contato">
+    <div class="contact">
+      <div>
+        <h2 class="poster">Vamos <span class="said">conversar?</span></h2>
+        <p>Me conta o produto, o objetivo da campanha e o prazo que você tem. Eu respondo com proposta fechada — formato, entrega e valor — no mesmo dia útil.</p>
+        <ol class="passos">
+          <li>Você me manda o produto e o briefing (ou o roteiro, se já tiver).</li>
+          <li>Eu escrevo o gancho e a fala e mando para a sua aprovação.</li>
+          <li>Gravo, edito e entrego o arquivo pronto para publicar.</li>
+          <li>Até 7 dias depois, mando o relatório com print do painel.</li>
+        </ol>
+      </div>
+
+      <div class="channels">
+        <a class="channel" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">
+          <span>E-mail</span>
+          <span class="val">soraya.michelly@gmail.com</span>
+        </a>
+        <a class="channel" href="https://instagram.com/sorayaaoliroutine" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <span class="val">@sorayaaoliroutine</span>
+        </a>
+        <a class="channel" href="https://sorayamichelly-dev.github.io/ugc/portfolio/" target="_blank" rel="noopener">
+          <span>Portfólio</span>
+          <span class="val">com os vídeos ↗</span>
+        </a>
+      </div>
     </div>
-    <div class="cartao">
-      <div>
-        <p class="rot">E-mail comercial</p>
-        <p class="dado">soraya.michelly@gmail.com</p>
-      </div>
-      <div>
-        <p class="rot">Direct</p>
-        <p class="dado">@sorayaaoliroutine</p>
-      </div>
-      <div>
-        <p class="rot">Portfólio com os vídeos</p>
-        <p class="dado"><a href="https://sorayamichelly-dev.github.io/ugc/portfolio/" target="_blank" rel="noopener">sorayamichelly-dev.github.io/ugc/portfolio</a></p>
-      </div>
-    </div>
+  </section>
+
+  <div class="fonte">
+    <p><strong>Fonte dos dados:</strong> Instagram Insights da conta profissional @sorayaaoliroutine, extraídos via conector Windsor.ai em 30/09/2026. Período de performance: 31/08 a 29/09/2026. Idade, gênero e cidade são do painel de seguidores na data da extração (1.118 seguidores com faixa etária informada, 974 com cidade).</p>
+    <p><strong>Notas de leitura:</strong> alcance e contas alcançadas são métricas de contas únicas por dia e não devem ser somadas ao longo do período — por isso aparecem como média diária e pico. “Visualizações” inclui Reels, posts e stories. Os 229 novos seguidores são o total de quem passou a seguir no período, sem descontar quem deixou de seguir; o saldo está no número de seguidores de hoje. Publicações dos últimos dias ainda podem ter métricas subindo. Nenhum número desta página é estimativa ou projeção.</p>
   </div>
 
-  <div class="srcnote">
-    <p><b>Fonte dos dados:</b> Instagram Insights da conta profissional @sorayaaoliroutine, extraídos via conector Windsor.ai em 30/09/2026. Período de performance: 31/08 a 29/09/2026. Idade, gênero e cidade são do painel de seguidores na data da extração (1.118 seguidores com faixa etária informada, 974 com cidade).</p>
-    <p><b>Notas de leitura:</b> alcance e contas alcançadas são métricas de contas únicas por dia e não devem ser somadas ao longo do período — por isso aparecem como média diária e pico. “Visualizações” inclui Reels, posts e Stories. Os 229 novos seguidores são o total de quem passou a seguir no período, sem descontar quem deixou de seguir; o saldo está no número de seguidores de hoje. Publicações dos últimos dias ainda podem ter métricas subindo. Nenhum número desta página é estimativa ou projeção.</p>
-  </div>
+  <footer>
+    <span class="tag">Soraya Oliveira · Mídia kit</span>
+    <span class="tag">@sorayaaoliroutine</span>
+    <span class="tag">Setembro de 2026</span>
+  </footer>
 
-</div>
+</main>
 
 <script>
-(function(){
-  var v=[3719,2435,1128,4056,6333,4143,1959,1397,2825,1706,3492,2992,4852,5974,1995,4440,2896,5321,4228,6322,4243,3488,3405,12638,5280,7447,3319,3834,1877,1744];
-  var d=["31/08","01/09","02/09","03/09","04/09","05/09","06/09","07/09","08/09","09/09","10/09","11/09","12/09","13/09","14/09","15/09","16/09","17/09","18/09","19/09","20/09","21/09","22/09","23/09","24/09","25/09","26/09","27/09","28/09","29/09"];
-  var max=Math.max.apply(null,v);
-  var host=document.getElementById('cols');
-  var tip=document.getElementById('tip');
-  v.forEach(function(n,i){
-    var el=document.createElement('div');
-    el.className='col'+(n===max?' peak':'');
-    el.style.height=Math.max(4,Math.round(n/max*100))+'%';
-    el.addEventListener('mouseenter',function(){
-      tip.textContent=d[i]+' · '+n.toLocaleString('pt-BR')+' views';
-      tip.style.left=(el.offsetLeft+el.offsetWidth/2)+'px';
-      tip.style.top=el.offsetTop+'px';
-      tip.classList.add('on');
+  (function(){
+    var v=[3719,2435,1128,4056,6333,4143,1959,1397,2825,1706,3492,2992,4852,5974,1995,4440,2896,5321,4228,6322,4243,3488,3405,12638,5280,7447,3319,3834,1877,1744];
+    var d=["31/08","01/09","02/09","03/09","04/09","05/09","06/09","07/09","08/09","09/09","10/09","11/09","12/09","13/09","14/09","15/09","16/09","17/09","18/09","19/09","20/09","21/09","22/09","23/09","24/09","25/09","26/09","27/09","28/09","29/09"];
+    var max=Math.max.apply(null,v);
+    var host=document.getElementById('cols');
+    var tip=document.getElementById('tip');
+    v.forEach(function(n,i){
+      var el=document.createElement('div');
+      el.className='col'+(n===max?' peak':'');
+      el.style.height=Math.max(5,Math.round(n/max*100))+'%';
+      el.addEventListener('mouseenter',function(){
+        tip.textContent=d[i]+' · '+n.toLocaleString('pt-BR')+' views';
+        tip.style.left=(el.offsetLeft+el.offsetWidth/2)+'px';
+        tip.style.top=el.offsetTop+'px';
+        tip.classList.add('on');
+      });
+      el.addEventListener('mouseleave',function(){tip.classList.remove('on');});
+      host.appendChild(el);
     });
-    el.addEventListener('mouseleave',function(){tip.classList.remove('on');});
-    host.appendChild(el);
-  });
-})();
+  })();
 </script>
 </body>
 </html>

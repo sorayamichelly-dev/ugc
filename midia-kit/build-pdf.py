@@ -19,9 +19,9 @@ BUILD = os.path.join(AQUI, ".build")
 FONTES = os.path.join(BUILD, "fontes")
 SAIDA = os.path.join(AQUI, "midia-kit-soraya-oliveira.pdf")
 
-CSS_GOOGLE = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@"
-              "12..96,400;12..96,600;12..96,800&family=Karla:wght@400;500;700"
-              "&family=IBM+Plex+Mono:wght@400;500;600&display=swap")
+CSS_GOOGLE = ("https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700"
+              "&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,600;"
+              "1,9..144,500;1,9..144,600&family=Karla:wght@400;500;700&display=swap")
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/130.0.0.0 Safari/537.36")
