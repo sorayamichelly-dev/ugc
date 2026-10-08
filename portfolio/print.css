@@ -70,9 +70,9 @@ section { padding-block: 16px; }
 .sticker { flex: 1 1 210px; padding: 17px 18px 19px; }
 .sticker p { font-size: 13.5px; }
 
-/* no papel as capas ganham tres colunas: e o que a marca veio ver */
-.reel { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.clip .frame { max-width: 198px; }
+/* no papel: quatro colunas fecham as oito capas em duas fileiras cheias */
+.reel { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.clip .frame { max-width: 170px; }
 .clip { gap: 11px; }
 .clip-title { font-size: 17px; }
 .clip-sub { font-size: 11px; }
