@@ -8,6 +8,13 @@ const EN = {
   '<i class="blink"></i> Agenda aberta': '<i class="blink"></i> Open for bookings',
   'Pedir orçamento': 'Request a quote',
 
+  /* atalhos da barra */
+  'Vídeos': 'Videos',
+  'Formatos': 'Formats',
+  'Processo': 'Process',
+  'Dúvidas': 'FAQ',
+  'Orçamento': 'Get a quote',
+
   /* abertura */
   'oi! eu sou a Soraya ✿': 'hi! I’m Soraya ✿',
   'Gente <span class="said">de verdade</span> usando o seu produto.':

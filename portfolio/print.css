@@ -16,8 +16,8 @@ body { width: 210mm; overflow: clip; font-size: 14.5px; }
 }
 
 .topbar { position: static; }
-/* o seletor de idioma e controle de site: no papel nao faz nada */
-.idioma { display: none; }
+/* controles de site que nao fazem nada no papel */
+.idioma, .atalhos { display: none; }
 .topbar .wrap { min-height: 50px; }
 
 a { text-decoration: none; }
