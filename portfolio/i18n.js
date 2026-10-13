@@ -10,10 +10,26 @@ const EN = {
 
   /* atalhos da barra */
   'Vídeos': 'Videos',
+  'Fotos': 'Photos',
   'Formatos': 'Formats',
   'Processo': 'Process',
   'Dúvidas': 'FAQ',
   'Orçamento': 'Get a quote',
+
+  /* fotos */
+  'Também faço <span class="said">foto</span>': 'I also shoot <span class="said">photos</span>',
+  'still, produto em uso e retrato': 'still life, product in use and portrait',
+  'Nem toda campanha precisa de vídeo. Entrego também a foto parada: o produto sozinho em cena, o produto sendo usado e o retrato com a peça — mesma luz natural, mesma casa real.':
+    'Not every campaign needs video. I also deliver stills: the product alone in the scene, the product in use and the portrait wearing it — same natural light, same real home.',
+  'Still de produto · praia': 'Product still · beach',
+  'Produto em uso · cabelo': 'Product in use · hair',
+  'Receita · cozinha': 'Recipe · kitchen',
+  'Joias': 'Jewellery',
+  'Retrato · moda': 'Portrait · fashion',
+  'Máscara para olheiras': 'Under-eye patches',
+  'Skincare · rotina': 'Skincare · routine',
+  'O seu produto também rende foto': 'Your product works as a photo too',
+  'Me chama pra fotografar': 'Ask me to shoot it',
 
   /* abertura */
   'oi! eu sou a Soraya ✿': 'hi! I’m Soraya ✿',

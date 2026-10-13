@@ -775,6 +775,82 @@
 
   .reel-foot { margin-top: 24px; text-align: center; color: var(--ink-2); }
 
+
+  /* ---------- fotos ---------- */
+
+  .fotos-lede {
+    font-size: 16.5px;
+    color: var(--ink-2);
+    max-width: 62ch;
+    margin-bottom: clamp(20px, 2.6vw, 28px);
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 2.4vw, 24px);
+  }
+
+  .foto {
+    margin: 0;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--ink);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .foto:nth-child(3n+1) { rotate: -.7deg; }
+  .foto:nth-child(3n+2) { rotate: .6deg; }
+  .foto:nth-child(3n) { rotate: -.4deg; }
+
+  .foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-bottom: 3px solid var(--ink);
+    background: var(--berry-soft);
+  }
+
+  .foto figcaption {
+    padding: 13px 16px 15px;
+    display: grid;
+    gap: 3px;
+  }
+
+  .foto-titulo {
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+  }
+
+  .foto-sub {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+
+  .foto-convite { box-shadow: none; border-style: dashed; background: var(--ground); }
+
+  .foto-convite .convite-area {
+    aspect-ratio: 4 / 5;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: repeating-linear-gradient(-45deg, var(--ground) 0 12px, var(--paper) 12px 24px);
+    border-bottom: 3px dashed var(--ink);
+  }
+
+  .foto-convite .invite-cap { text-align: center; }
+
   /* processo */
 
   .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(208px, 1fr)); gap: clamp(18px, 3vw, 30px); }
@@ -967,11 +1043,14 @@
     .atalhos { order: 10; flex-basis: 100%; margin-right: 0; padding-bottom: 7px; }
   }
 
+  @media (max-width: 520px) {
+    .galeria { grid-template-columns: 1fr; }
+  }
+
   @media (max-width: 620px) {
     /* no celular a barra fica em duas linhas: marca + idioma, e os atalhos.
        O botao de orcamento sai da barra e vira a ultima pilula, em laranja. */
     :root { --barra: 102px; }
-    .open { display: none; }
     .brand { font-size: 16px; }
     .brand small { display: none; }
     .topbar .btn { display: none; }
@@ -987,6 +1066,7 @@
   }
 
   @media (max-width: 880px) {
+    .galeria { grid-template-columns: repeat(2, 1fr); }
     .labels { grid-template-columns: repeat(2, 1fr); }
     .hero .wrap { grid-template-columns: 1fr; }
     .polaroid { max-width: 340px; margin-inline: auto; }
@@ -1016,6 +1096,7 @@
 
     <nav class="atalhos" aria-label="Seções do portfólio">
       <a href="#portfolio">Vídeos</a>
+      <a href="#fotos">Fotos</a>
       <a href="#formatos">Formatos</a>
       <a href="#processo">Processo</a>
       <a href="#pacotes">Pacotes</a>
@@ -1023,7 +1104,6 @@
       <a href="#contato" class="cta">Orçamento</a>
     </nav>
 
-    <span class="open"><i class="blink"></i> Agenda aberta</span>
     <div class="idioma" role="group" aria-label="Idioma / Language">
       <button type="button" data-lang="pt" aria-pressed="true">PT</button>
       <button type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -1051,6 +1131,7 @@
       <div class="hero-actions">
         <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">Quero um vídeo</a>
         <a class="btn cream" href="#portfolio">Ver experiência</a>
+        <span class="open"><i class="blink"></i> Agenda aberta</span>
       </div>
     </div>
 
@@ -1380,6 +1461,74 @@
     </div>
 
     <p class="reel-foot"><span class="tag">Toque no play para assistir aqui mesmo · som incluso</span></p>
+  </section>
+
+
+  <hr class="rule-dash">
+
+  <!-- ================= FOTOS ================= -->
+  <section id="fotos">
+    <div class="head">
+      <h2 class="poster">Também faço <span class="said">foto</span></h2>
+      <span class="note">still, produto em uso e retrato</span>
+    </div>
+
+    <p class="fotos-lede">
+      Nem toda campanha precisa de vídeo. Entrego também a foto parada: o produto sozinho em
+      cena, o produto sendo usado e o retrato com a peça — mesma luz natural, mesma casa real.
+    </p>
+
+    <div class="galeria">
+      <figure class="foto">
+        <img src="foto-kerasys-areia.jpg" alt="Kerasys Propolis Pro Repair e No Wash Repair sobre a areia molhada" width="1200" height="1200" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Kerasys Propolis</span>
+          <span class="foto-sub">Still de produto · praia</span>
+        </figcaption>
+      </figure>
+
+      <figure class="foto">
+        <img src="foto-kerasys-mao.jpg" alt="Kerasys Propolis Pro Repair Treatment na mão, ao ar livre" width="1200" height="1200" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Kerasys Propolis</span>
+          <span class="foto-sub">Produto em uso · cabelo</span>
+        </figcaption>
+      </figure>
+
+      <figure class="foto">
+        <img src="foto-moca.jpg" alt="Ingredientes de uma receita com Leite Moça sobre a mesa" width="941" height="1672" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Leite Moça</span>
+          <span class="foto-sub">Receita · cozinha</span>
+        </figcaption>
+      </figure>
+
+      <figure class="foto">
+        <img src="foto-joias.jpg" alt="Retrato com brinco, anel e colar de pedras verdes" width="1200" height="1200" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Joias</span>
+          <span class="foto-sub">Retrato · moda</span>
+        </figcaption>
+      </figure>
+
+      <figure class="foto">
+        <img src="foto-olheiras.jpg" alt="Selfie com máscaras para olheiras sob os olhos" width="1000" height="1777" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Máscara para olheiras</span>
+          <span class="foto-sub">Skincare · rotina</span>
+        </figcaption>
+      </figure>
+
+      <figure class="foto foto-convite">
+        <div class="convite-area">
+          <span class="invite-cap">O seu produto também rende foto</span>
+        </div>
+        <figcaption>
+          <span class="foto-titulo">Sua marca aqui</span>
+          <span class="foto-sub">Me chama pra fotografar</span>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 
   <hr class="rule-dash">

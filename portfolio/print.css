@@ -107,6 +107,16 @@ section { padding-block: 16px; }
 .permuta, .contact, .polaroid, .pilar, .convite, .head { break-inside: avoid; }
 h1, h2, h3 { break-after: avoid; }
 
+/* fotos: a folha A4 tem 794px e cairia na grade de duas colunas */
+#fotos { break-before: page; padding-top: 26px; }
+.galeria { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.fotos-lede { font-size: 14px; max-width: 70ch; margin-bottom: 18px; }
+.foto { box-shadow: 4px 4px 0 var(--ink); break-inside: avoid; }
+.foto figcaption { padding: 10px 13px 12px; }
+.foto-titulo { font-size: 14px; }
+.foto-sub { font-size: 9.5px; }
+.foto-convite .invite-cap { font-size: 19px; }
+
 /* onde cada folha comeca */
 #sobre, #nichos, #portfolio, #processo, #duvidas { break-before: page; padding-top: 24px; }
 #contato { padding-top: 0; }
