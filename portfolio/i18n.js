@@ -150,6 +150,8 @@ const EN = {
   'Cif Derrete Gordura': 'Cif Derrete Gordura',
   'Antes e depois · limpeza': 'Before and after · cleaning',
   'Abib': 'Abib',
+  'Shein': 'Shein',
+  'Looks · moda': 'Outfits · fashion',
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
   'ver no Instagram ↗': 'watch on Instagram ↗',
   'O próximo pode ser o seu produto': 'The next one could be your product',
