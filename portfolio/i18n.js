@@ -27,7 +27,6 @@ const EN = {
   'Joias': 'Jewellery',
   'Retrato · moda': 'Portrait · fashion',
   'Máscara para olheiras': 'Under-eye patches',
-  'Skincare · rotina': 'Skincare · routine',
   'O seu produto também rende foto': 'Your product works as a photo too',
   'Me chama pra fotografar': 'Ask me to shoot it',
 
@@ -145,7 +144,6 @@ const EN = {
   'Mixer 3 em 1 Elgin': 'Elgin 3-in-1 Hand Blender',
   'Demonstração · cozinha': 'Demo · kitchen',
   'Depoimento · cabelo': 'Testimonial · hair',
-  'Skincare · rotina': 'Skincare · routine',
   'Demonstração · skincare': 'Demo · skincare',
   'Receita completa · cozinha': 'Full recipe · kitchen',
   'Rotina noturna · skincare': 'Night routine · skincare',
