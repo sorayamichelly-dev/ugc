@@ -154,6 +154,8 @@ const EN = {
   'Shein': 'Shein',
   'Looks · moda': 'Outfits · fashion',
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
+  'LUX': 'LUX',
+  'Lançamento de fragrância · banho': 'Fragrance launch · bath',
   'ver no Instagram ↗': 'watch on Instagram ↗',
   'O próximo pode ser o seu produto': 'The next one could be your product',
   'Sua marca aqui': 'Your brand here',
