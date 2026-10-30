@@ -184,7 +184,7 @@ const EN = {
 
   /* pacotes */
   'Pacotes': 'Packages',
-  'valores sob consulta · aceito permuta': 'pricing on request · open to product trade',
+  'valores sob consulta': 'pricing on request',
   'Avulso': 'Single video',
   '1 vídeo editado de até 45 s': '1 edited video, up to 45 s',
   '1 gancho de abertura': '1 opening hook',
@@ -204,10 +204,6 @@ const EN = {
   'Prioridade de agenda': 'Priority scheduling',
   'Resumo do que rendeu melhor': 'A summary of what performed best',
   'Uso em mídia paga por 6 meses': 'Paid media usage for 6 months',
-  'Também trabalho por permuta': 'I also work in product trade',
-  'Em alguns casos eu troco o conteúdo pelo produto, sem cachê. Depende do valor do item, de quantos vídeos vocês querem e de onde o material vai rodar. Marca pequena e produto que combina com o meu público têm prioridade.':
-    'In some cases I trade the content for the product, with no fee. It depends on the item’s value, how many videos you want and where the material will run. Small brands and products that fit my audience come first.',
-  'Propor permuta': 'Propose a trade',
 
   /* duvidas */
   'O que as marcas<br>sempre <span class="said">perguntam</span>':

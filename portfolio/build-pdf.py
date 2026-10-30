@@ -9,6 +9,7 @@ O PDF e o mesmo conteudo do site, adaptado para papel:
 Uso:  python3 build-pdf.py
 """
 
+import glob
 import hashlib
 import os
 import re
@@ -29,7 +30,8 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 
 CHROMES = [
     os.environ.get("CHROME", ""),
-    "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+    # o numero da versao muda, entao procura por padrao
+    *sorted(glob.glob("/opt/pw-browsers/chromium*/chrome-linux*/chrome"), reverse=True),
     "/usr/bin/chromium", "/usr/bin/chromium-browser", "/usr/bin/google-chrome",
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
 ]

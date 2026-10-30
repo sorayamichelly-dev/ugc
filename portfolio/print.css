@@ -89,9 +89,6 @@ section { padding-block: 16px; }
 .plan { padding: 18px 18px 20px; }
 .plan h3 { font-size: 23px; }
 .plan ul { font-size: 13px; gap: 7px; }
-.permuta { margin-top: 14px; padding: 16px 18px; }
-.permuta h3 { font-size: 20px; margin-bottom: 6px; }
-.permuta p { font-size: 13px; }
 /* no papel as duvidas ficam em duas colunas: cabem com o contato na folha */
 .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .qa { grid-template-columns: 1fr; gap: 5px; padding: 13px 16px 15px; }
@@ -104,7 +101,7 @@ section { padding-block: 16px; }
 
 /* nenhum card cortado no meio da folha */
 .label, .niche, .sticker, .clip, .step, .plan, .qa,
-.permuta, .contact, .polaroid, .pilar, .convite, .head { break-inside: avoid; }
+.contact, .polaroid, .pilar, .convite, .head { break-inside: avoid; }
 h1, h2, h3 { break-after: avoid; }
 
 /* fotos: a folha A4 tem 794px e cairia na grade de duas colunas */
