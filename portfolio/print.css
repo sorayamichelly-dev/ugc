@@ -96,8 +96,7 @@ section { padding-block: 16px; }
 .qa p { font-size: 13.5px; max-width: none; }
 
 /* o selo "mais pedido" nao pode encostar no titulo do pacote */
-.plan .badge { top: -14px; font-size: 18px; padding: 2px 12px 4px; }
-.plan.hot h3 { padding-right: 74px; }
+.plan .badge { top: -24px; right: 10px; font-size: 17px; padding: 2px 11px 4px; }
 
 /* nenhum card cortado no meio da folha */
 .label, .niche, .sticker, .clip, .step, .plan, .qa,

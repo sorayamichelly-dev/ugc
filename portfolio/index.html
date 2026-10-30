@@ -873,7 +873,7 @@
 
   /* pacotes */
 
-  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)); gap: clamp(16px, 2.4vw, 24px); align-items: start; }
+  .plans { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)); gap: clamp(16px, 2.4vw, 24px); align-items: start; }
 
   .plan {
     border: 3px solid var(--ink);
@@ -890,6 +890,9 @@
   .plan h3 { font-family: var(--poster); text-transform: uppercase; font-size: 27px; margin: 0; line-height: 1; }
   .plan .price { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--berry); }
 
+  .plan-para { font-size: 14px; color: var(--ink-2); line-height: 1.45; }
+  .plan.hot .plan-para { color: #F3D9CF; }
+
   .plan.hot { background: var(--wine); color: #FFF1E8; }
   .plan.hot .price { color: #FFC46B; }
   .plan.hot li { color: #F3D9CF; }
@@ -897,8 +900,9 @@
 
   .plan .badge {
     position: absolute;
-    top: -16px;
-    right: 16px;
+    /* fica inteiro acima do cartao: o titulo longo passava por baixo dele */
+    top: -27px;
+    right: 12px;
     font-family: var(--hand);
     font-size: 21px;
     background: var(--tangerine);
@@ -1565,39 +1569,38 @@
 
     <div class="plans">
       <article class="plan">
-        <h3>Avulso</h3>
+        <h3>Básico</h3>
         <span class="price">Sob consulta</span>
+        <p class="plan-para">Para marca nova, que quer testar o conteúdo antes de investir mais.</p>
         <ul>
-          <li>1 vídeo editado de até 45 s</li>
+          <li>1 vídeo de até 45 segundos</li>
           <li>1 gancho de abertura</li>
-          <li>Arquivos brutos inclusos</li>
-          <li>2 rodadas de ajuste</li>
+          <li>1 rodada de ajustes</li>
           <li>Uso orgânico por 3 meses</li>
         </ul>
       </article>
 
       <article class="plan hot">
-        <span class="badge">mais pedido</span>
-        <h3>Teste de anúncio</h3>
+        <span class="badge">marcas que voltam</span>
+        <h3>Intermediário</h3>
         <span class="price">Sob consulta</span>
+        <p class="plan-para">Para quem já gravou comigo e quer repetir com mais material.</p>
         <ul>
-          <li>3 vídeos do mesmo produto</li>
-          <li>3 ganchos diferentes pra testar</li>
-          <li>Versão com e sem legenda</li>
-          <li>Corte extra de 15 s pro stories</li>
-          <li>Uso em mídia paga por 3 meses</li>
+          <li>3 vídeos</li>
+          <li>3 ganchos diferentes</li>
+          <li>3 rodadas de ajustes</li>
+          <li>Uso orgânico por 3 meses</li>
         </ul>
       </article>
 
       <article class="plan">
-        <h3>Mensal</h3>
-        <span class="price">Sob consulta</span>
+        <h3>Avançado</h3>
+        <span class="price">Sob medida</span>
+        <p class="plan-para">Campanha maior ou recorrente, montada junto com vocês.</p>
         <ul>
-          <li>4 vídeos por mês</li>
-          <li>Calendário combinado no início do mês</li>
-          <li>Prioridade de agenda</li>
-          <li>Resumo do que rendeu melhor</li>
-          <li>Uso em mídia paga por 6 meses</li>
+          <li>Volume combinado no briefing</li>
+          <li>Mídia paga e exclusividade</li>
+          <li>Prazo e direito de uso definidos caso a caso</li>
         </ul>
       </article>
     </div>

@@ -184,26 +184,32 @@ const EN = {
 
   /* pacotes */
   'Pacotes': 'Packages',
-  'valores sob consulta': 'pricing on request',
-  'Avulso': 'Single video',
-  '1 vídeo editado de até 45 s': '1 edited video, up to 45 s',
+
+  /* pacotes */
+  'Básico': 'Starter',
+  'Para marca nova, que quer testar o conteúdo antes de investir mais.':
+    'For a brand that is new here and wants to test the content before investing more.',
+  '1 vídeo de até 45 segundos': '1 video up to 45 seconds',
   '1 gancho de abertura': '1 opening hook',
-  'Arquivos brutos inclusos': 'Raw files included',
-  '2 rodadas de ajuste': '2 rounds of adjustments',
+  '1 rodada de ajustes': '1 round of adjustments',
   'Uso orgânico por 3 meses': 'Organic usage for 3 months',
-  'mais pedido': 'most booked',
-  'Teste de anúncio': 'Ad testing',
-  '3 vídeos do mesmo produto': '3 videos of the same product',
-  '3 ganchos diferentes pra testar': '3 different hooks to test',
-  'Versão com e sem legenda': 'Version with and without captions',
-  'Corte extra de 15 s pro stories': 'Extra 15 s cut for stories',
-  'Uso em mídia paga por 3 meses': 'Paid media usage for 3 months',
-  'Mensal': 'Monthly',
-  '4 vídeos por mês': '4 videos a month',
-  'Calendário combinado no início do mês': 'Calendar agreed at the start of the month',
-  'Prioridade de agenda': 'Priority scheduling',
-  'Resumo do que rendeu melhor': 'A summary of what performed best',
-  'Uso em mídia paga por 6 meses': 'Paid media usage for 6 months',
+
+  'marcas que voltam': 'brands that come back',
+  'Intermediário': 'Repeat',
+  'Para quem já gravou comigo e quer repetir com mais material.':
+    'For brands that have filmed with me and want more material.',
+  '3 vídeos': '3 videos',
+  '3 ganchos diferentes': '3 different hooks',
+  '3 rodadas de ajustes': '3 rounds of adjustments',
+
+  'Avançado': 'Custom',
+  'Sob medida': 'Tailored',
+  'Campanha maior ou recorrente, montada junto com vocês.':
+    'A larger or recurring campaign, scoped together with you.',
+  'Volume combinado no briefing': 'Volume agreed in the brief',
+  'Mídia paga e exclusividade': 'Paid media and exclusivity',
+  'Prazo e direito de uso definidos caso a caso': 'Turnaround and usage rights set case by case',
+  'valores sob consulta': 'pricing on request',
 
   /* duvidas */
   'O que as marcas<br>sempre <span class="said">perguntam</span>':
