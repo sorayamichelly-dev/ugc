@@ -196,8 +196,8 @@ const EN = {
 
   'marcas que voltam': 'brands that come back',
   'Intermediário': 'Repeat',
-  'Para quem já gravou comigo e quer repetir com mais material.':
-    'For brands that have filmed with me and want more material.',
+  'Para quem quer mais volume e mais variação de gancho.':
+    'For brands that want more volume and more hook variations.',
   '3 vídeos': '3 videos',
   '3 ganchos diferentes': '3 different hooks',
   '3 rodadas de ajustes': '3 rounds of adjustments',
