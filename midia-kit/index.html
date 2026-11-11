@@ -318,6 +318,10 @@
   .bar-fill { height: 100%; background: var(--sky); }
   .bars.warm .bar-fill { background: var(--tangerine); }
   .bars.berry .bar-fill { background: var(--berry); }
+  /* o bloco do TikTok tem valores longos ("145,8 mil") e so seis etiquetas */
+  #tiktok .labels { grid-template-columns: repeat(3, 1fr); }
+  #tiktok .bar-row { grid-template-columns: 112px minmax(0, 1fr) 68px; }
+
   .bar-row .val { font-family: var(--mono); font-size: 11.5px; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
 
   @media (max-width: 520px) {
@@ -529,6 +533,11 @@
         segue</strong>, e <strong>80% dos seguidores estão no eixo Mossoró–Baraúna</strong>.
       </p>
 
+      <p class="lede">
+        No <strong>TikTok</strong> são outras <strong>155,9 mil visualizações</strong> em 28 dias,
+        para <strong>1.797 seguidores</strong> — e para um público diferente: lá, 60% são homens.
+      </p>
+
       <p class="lede destaque">
         Se a sua marca quer testar aceitação real no Nordeste antes de investir em mídia,
         isso é amostra, não vitrine.
@@ -545,7 +554,7 @@
 <!-- ================= FAIXA ================= -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>108.504 views ✦ 1.339 seguidores ✦ 85,6% mulheres ✦ 80,3% de 25 a 44 anos ✦ 91% Rio Grande do Norte ✦&nbsp;</span>
+    <span>Instagram: 108.504 views ✦ 1.339 seguidores ✦ 85,6% mulheres ✦ 91% Rio Grande do Norte ✦ TikTok: 155,9 mil views ✦ 1.797 seguidores ✦ 60% homens ✦&nbsp;</span>
   </div>
 </div>
 
@@ -555,7 +564,7 @@
   <section id="numeros">
     <div class="head">
       <h2 class="poster">Os números<br>dos últimos <span class="said">30 dias</span></h2>
-      <span class="note">30/09 a 29/10/2026</span>
+      <span class="note">Instagram · 30/09 a 29/10/2026</span>
     </div>
 
     <dl class="labels">
@@ -576,7 +585,7 @@
   <section id="publico">
     <div class="head">
       <h2 class="poster">Quem <span class="said">assiste</span></h2>
-      <span class="note">base de seguidores</span>
+      <span class="note">base do Instagram</span>
     </div>
 
     <div class="duplo">
@@ -615,7 +624,7 @@
   <section id="diario">
     <div class="head">
       <h2 class="poster">Todo dia tem <span class="said">gente vendo</span></h2>
-      <span class="note">views por dia</span>
+      <span class="note">Instagram · views por dia</span>
     </div>
 
     <figure class="quadro">
@@ -631,6 +640,57 @@
         <div class="nao"><span>não seguidores · 32.783</span><b>30%</b></div>
       </div>
       <figcaption>Três de cada dez visualizações vêm de fora da base. Uma marca que entra aqui não fala só com as 1.339 pessoas que já me seguem: fala também com as que o algoritmo trouxe naquele mês.</figcaption>
+    </figure>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= TIKTOK ================= -->
+  <section id="tiktok">
+    <div class="head">
+      <h2 class="poster">E no <span class="said">TikTok</span></h2>
+      <span class="note">28 dias · 13/10 a 09/11/2026</span>
+    </div>
+
+    <dl class="labels">
+      <div class="label"><dt>Visualizações</dt><dd>155,9 mil</dd><p>141,7 mil a mais que no mês anterior</p></div>
+      <div class="label"><dt>Seguidores</dt><dd>1.797</dd><p>457 líquidos só na semana do pico</p></div>
+      <div class="label"><dt>Curtidas</dt><dd>10 mil</dd><p>No período</p></div>
+      <div class="label"><dt>Comentários</dt><dd>478</dd><p>No período</p></div>
+      <div class="label"><dt>Compartilhamentos</dt><dd>207</dd><p>Alcance ganho, não pago</p></div>
+      <div class="label"><dt>Visitas ao perfil</dt><dd>16,7 mil</dd><p>Quem foi ver quem eu sou</p></div>
+    </dl>
+
+    <div class="duplo" style="margin-top:18px">
+      <figure class="quadro laranja">
+        <p class="figtitle">De onde vem a visualização</p>
+        <div class="bars warm">
+          <div class="bar-row"><span class="cat">Para você</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">66,6%</span></div>
+          <div class="bar-row"><span class="cat">Meu perfil</span><div class="bar-track"><div class="bar-fill" style="width:48.6%"></div></div><span class="val">32,4%</span></div>
+          <div class="bar-row"><span class="cat">Busca</span><div class="bar-track"><div class="bar-fill" style="width:1.4%"></div></div><span class="val">0,9%</span></div>
+          <div class="bar-row"><span class="cat">Quem me segue</span><div class="bar-track"><div class="bar-fill" style="width:0.2%"></div></div><span class="val">0,1%</span></div>
+        </div>
+        <figcaption><strong>0,1% das visualizações vêm de quem já me segue.</strong> No TikTok eu não falo com a minha base: falo com quem o algoritmo entrega. Para a marca que quer ser descoberta por gente que ainda não a conhece, é exatamente esse o comportamento que interessa.</figcaption>
+      </figure>
+
+      <figure class="quadro azul">
+        <p class="figtitle">Outro público, não o mesmo</p>
+        <div class="bars">
+          <div class="bar-row"><span class="cat">Masculino</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">60%</span></div>
+          <div class="bar-row"><span class="cat">Feminino</span><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div><span class="val">39%</span></div>
+          <div class="bar-row"><span class="cat">Outro</span><div class="bar-track"><div class="bar-fill" style="width:1.7%"></div></div><span class="val">1%</span></div>
+        </div>
+        <figcaption><strong>60% homens no TikTok, contra 85,6% mulheres no Instagram.</strong> São duas audiências, não a mesma repetida. Campanha que precisa falar com mulher de 25 a 44 no Nordeste vai pelo Instagram; campanha que precisa de volume e de público masculino vai pelo TikTok. Dá para usar as duas no mesmo briefing.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="quadro rosa" style="margin-top:18px">
+      <p class="figtitle">O que tem dentro desse número</p>
+      <div class="bars berry">
+        <div class="bar-row"><span class="cat">9 de nov</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="val">145,8 mil</span></div>
+        <div class="bar-row"><span class="cat">27 dias antes</span><div class="bar-track"><div class="bar-fill" style="width:6.9%"></div></div><span class="val">10,1 mil</span></div>
+      </div>
+      <figcaption>Prefiro mostrar aberto: <strong>das 155,9 mil visualizações, 145,8 mil vieram de um único vídeo que estourou em 9 de novembro.</strong> O pico mostra o teto que o perfil alcança quando o algoritmo abraça; os 27 dias anteriores mostram o chão. Quem contrata aqui leva as duas possibilidades, e eu não vou vender o pico como se fosse rotina.</figcaption>
     </figure>
   </section>
 
@@ -726,7 +786,7 @@
         <span class="tag">Se o objetivo é alcance</span>
         <h3>Ser vista por quem ainda não te conhece</h3>
         <p>Entro com o produto dentro de um conteúdo de rotina ou humor, que é o formato que o algoritmo leva para fora da minha base. A marca aparece para gente nova.</p>
-        <p class="prova-num">Campanha da Rivânia Kids: 4.196 contas, 313% da base</p>
+        <p class="prova-num">TikTok: 155,9 mil views, 0,1% vindo de quem já me segue</p>
       </article>
       <article class="ganho">
         <span class="tag">Se o objetivo é consideração</span>
@@ -827,14 +887,14 @@
   </section>
 
   <div class="fonte">
-    <p><strong>Fonte dos dados:</strong> Instagram Insights da conta profissional @sorayaaoliroutine, extraídos via conector Windsor.ai em 30/10/2026. Período de performance: 30/09 a 29/10/2026. Idade, gênero e cidade são do painel de seguidores na data da extração (1.295 seguidores com faixa etária informada, 1.091 com cidade) — esse painel é atualizado pelo Instagram com atraso, por isso não bate exatamente com os 1.339 seguidores de hoje.</p>
+    <p><strong>Fonte dos dados:</strong> os números do Instagram vêm do Insights da conta profissional @sorayaaoliroutine, extraídos via conector Windsor.ai em 30/10/2026, com período de performance de 30/09 a 29/10/2026. Os números do TikTok foram lidos no painel de Análise do aplicativo em 11/11/2026, com período de 28 dias (13/10 a 09/11/2026); o recorte de 457 seguidores líquidos e o gênero da base são da janela de 7 dias do mesmo painel (03 a 09/11). Idade, gênero e cidade são do painel de seguidores na data da extração (1.295 seguidores com faixa etária informada, 1.091 com cidade) — esse painel é atualizado pelo Instagram com atraso, por isso não bate exatamente com os 1.339 seguidores de hoje.</p>
     <p><strong>Notas de leitura:</strong> alcance e contas alcançadas são métricas de contas únicas por dia e não devem ser somadas ao longo do período — por isso aparecem como média diária e pico. “Visualizações” inclui Reels, posts e stories. Os 179 novos seguidores são o total de quem passou a seguir no período, sem descontar quem deixou de seguir; o saldo está no número de seguidores de hoje. As 23 publicações são os reels e carrosséis do feed; stories não entram nessa conta porque o Instagram só os mantém por 24 horas. Publicações dos últimos dias ainda podem ter métricas subindo. Nenhum número desta página é estimativa ou projeção.</p>
   </div>
 
   <footer>
     <span class="tag">Soraya Oliveira · Mídia kit</span>
     <span class="tag">@sorayaaoliroutine</span>
-    <span class="tag">Outubro de 2026</span>
+    <span class="tag">Novembro de 2026</span>
   </footer>
 
 </main>

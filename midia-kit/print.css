@@ -36,6 +36,7 @@ a { text-decoration: none; }
 /* a folha A4 tem 794px e cairia no layout de celular (max-width:880px):
    aqui o papel volta para a grade larga */
 .labels { grid-template-columns: repeat(4, 1fr); }
+#tiktok .labels { grid-template-columns: repeat(3, 1fr); }
 .duplo { grid-template-columns: repeat(2, 1fr); }
 .provas { grid-template-columns: repeat(2, 1fr); }
 .ganhos { grid-template-columns: repeat(2, 1fr); }
@@ -93,5 +94,5 @@ footer { padding-block: 16px 26px; margin-top: 20px; }
 h1, h2, h3 { break-after: avoid; }
 
 /* onde cada folha comeca */
-#provas { break-before: page; padding-top: 28px; }
+#tiktok, #provas { break-before: page; padding-top: 28px; }
 .head { break-after: avoid; }
