@@ -321,6 +321,44 @@
     margin-top: 22px;
   }
 
+  /* a frase ficou em segundo plano: o nome e que precisa ser lido primeiro */
+  .hero-frase {
+    font-family: var(--serif);
+    font-size: clamp(19px, 2.5vw, 29px);
+    line-height: 1.2;
+    color: #FFC46B;
+    margin-top: 18px;
+    max-width: 22ch;
+  }
+
+  .hero-frase .said { color: #FFF1E8; }
+
+  /* faixa que abre cada nicho dentro de "todos os videos" */
+  .nicho-faixa {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 38px 0 18px;
+    font-family: var(--poster);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: clamp(24px, 3.4vw, 34px);
+    letter-spacing: 0.005em;
+    line-height: 1;
+    scroll-margin-top: var(--barra);
+  }
+
+  .nicho-faixa:first-of-type { margin-top: 4px; }
+
+  .nicho-faixa small {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+
   .hero-actions {
     display: flex;
     gap: 12px;
@@ -1088,13 +1126,12 @@
     </div>
 
     <nav class="atalhos" aria-label="Seções do portfólio">
-      <a href="#portfolio">Vídeos</a>
-      <a href="#fotos">Fotos</a>
       <a href="#sobre">Sobre</a>
-      <a href="#formatos">Formatos</a>
-      <a href="#processo">Processo</a>
-      <a href="#pacotes">Pacotes</a>
-      <a href="#duvidas">Dúvidas</a>
+      <a href="#melhores">Melhores</a>
+      <a href="#beleza">Beleza</a>
+      <a href="#casa">Casa</a>
+      <a href="#moda">Moda</a>
+      <a href="#fotos">Fotos</a>
       <a class="kit-atalho" href="../midia-kit/">Mídia kit ↗</a>
       <a href="#contato" class="cta">Orçamento</a>
     </nav>
@@ -1111,11 +1148,13 @@
 <div class="hero">
   <div class="wrap">
     <div>
-      <span class="note">oi! eu sou a Soraya ✿</span>
+      <span class="note">oi, marcas! ✿</span>
 
-      <h1 class="poster">
-        Gente <span class="said">de verdade</span> usando o seu produto.
-      </h1>
+      <h1 class="poster">Soraya<br>Oliveira</h1>
+
+      <p class="hero-frase">
+        Criadora UGC · gente <span class="said">de verdade</span> usando o seu produto.
+      </p>
 
       <p class="lede">
         Eu gravo, edito e entrego o vídeo pronto pra sua marca publicar no feed ou subir
@@ -1124,7 +1163,7 @@
 
       <div class="hero-actions">
         <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">Quero um vídeo</a>
-        <a class="btn cream" href="#portfolio">Ver experiência</a>
+        <a class="btn cream" href="#melhores">Ver meus trabalhos</a>
         <span class="open"><i class="blink"></i> Agenda aberta</span>
       </div>
     </div>
@@ -1145,301 +1184,6 @@
 </div>
 
 <main class="wrap">
-
-  <!-- ================= PORTFÓLIO ================= -->
-  <section id="portfolio">
-    <div class="head">
-      <h2 class="poster">Experiência</h2>
-      <span class="note">clica e assiste ✦</span>
-    </div>
-
-    <div class="reel">
-      <figure class="clip">
-        <div class="frame frame-a">
-          <video src="elgin-v2.mp4" poster="elgin-capa.jpg" preload="none" playsinline controls
-                 aria-label="Mixer 3 em 1 Elgin — demonstração"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Casa</span>
-          <button class="play" type="button" aria-label="Assistir Mixer 3 em 1 Elgin">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Mixer 3 em 1 Elgin</span>
-          <span class="clip-sub">Demonstração · cozinha</span>
-          <a class="clip-link" href="https://www.instagram.com/reels/Db6jCrIJIWD/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-b">
-          <video src="siage.mp4" poster="siage-capa.jpg" preload="none" playsinline controls
-                 aria-label="Siàge Nutri Acid Complex — depoimento"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir Siàge Nutri Acid Complex">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Siàge Nutri Acid</span>
-          <span class="clip-sub">Depoimento · cabelo</span>
-          <a class="clip-link" href="https://www.instagram.com/reels/DdBpFQlOzu0/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-d">
-          <video src="purcell.mp4" poster="purcell-capa.jpg" preload="none" playsinline controls
-                 aria-label="Purcell Vitamin Boosting Toner — skincare"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir Purcell Vitamin Boosting Toner">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Purcell Vitamin Toner</span>
-          <span class="clip-sub">Demonstração · skincare</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/Ddbg7liuuT_/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-e">
-          <video src="donabenta.mp4" poster="donabenta-capa.jpg" preload="none" playsinline controls
-                 aria-label="Dona Benta — receita na cozinha"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Casa</span>
-          <button class="play" type="button" aria-label="Assistir receita com Dona Benta">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Dona Benta</span>
-          <span class="clip-sub">Receita completa · cozinha</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/Ddho2LRurui/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-f">
-          <video src="skin1004.mp4" poster="skin1004-capa.jpg" preload="none" playsinline controls
-                 aria-label="SKIN1004 Centella — rotina noturna de skincare"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir rotina noturna com SKIN1004">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">SKIN1004 Centella</span>
-          <span class="clip-sub">Rotina noturna · skincare</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/DdlsIwwuwxK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-a">
-          <video src="cif.mp4" poster="cif-capa.jpg" preload="none" playsinline controls
-                 aria-label="Cif Derrete Gordura e Cif Cremoso — limpeza da fritadeira"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Casa</span>
-          <button class="play" type="button" aria-label="Assistir limpeza da fritadeira com Cif">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Cif Derrete Gordura</span>
-          <span class="clip-sub">Antes e depois · limpeza</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/DeICrFkpcfK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-b">
-          <video src="abib.mp4" poster="abib-capa.jpg" preload="none" playsinline controls
-                 aria-label="Abib — tratamento para olheiras"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir tratamento para olheiras da Abib">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Abib</span>
-          <span class="clip-sub">Tratamento de olheiras · skincare</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/Dd8uXmpTM2j/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-c">
-          <video src="shein.mp4" poster="shein-capa.jpg" preload="none" playsinline controls
-                 aria-label="Shein — looks novos"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Moda</span>
-          <button class="play" type="button" aria-label="Assistir os looks da Shein">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Shein</span>
-          <span class="clip-sub">Unboxing dos looks · moda</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/DeeiBCtOu9y/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-d">
-          <video src="lux.mp4" poster="lux-capa.jpg" preload="none" playsinline controls
-                 aria-label="LUX — sabonete líquido corporal Morango e Camélia"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir o vídeo do sabonete líquido LUX">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">LUX</span>
-          <span class="clip-sub">Lançamento de fragrância · banho</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/De2HKQMpwyJ/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-e">
-          <video src="barreira.mp4" poster="barreira-capa.jpg" preload="none" playsinline controls
-                 aria-label="Glory of Soul — rotina de skincare para a barreira cutânea"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir a rotina de barreira cutânea da Glory of Soul">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Glory of Soul</span>
-          <span class="clip-sub">Barreira cutânea · loja de skincare</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/DfPhB2EpZlp/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-f">
-          <video src="shein-provador.mp4" poster="shein-provador-capa.jpg" preload="none" playsinline controls
-                 aria-label="Shein — provador, como as peças ficam no corpo"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Moda</span>
-          <button class="play" type="button" aria-label="Assistir o provador da Shein">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">Shein</span>
-          <span class="clip-sub">Provador e caimento · moda</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/DfS2gaOxBY2/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-a">
-          <video src="bioheal.mp4" poster="bioheal-capa.jpg" preload="none" playsinline controls
-                 aria-label="BIOHEAL BOH Probioderm — trio de skincare coreano"></video>
-          <span class="tape" aria-hidden="true"></span>
-          <span class="frame-tag">Beleza</span>
-          <button class="play" type="button" aria-label="Assistir o trio da BIOHEAL BOH">
-            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
-          </button>
-        </div>
-        <figcaption>
-          <span class="clip-title">BIOHEAL BOH</span>
-          <span class="clip-sub">Trio Probioderm · skincare</span>
-          <a class="clip-link" href="https://www.instagram.com/reel/Dfk31xDh3oD/" target="_blank" rel="noopener">ver no Instagram ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="clip">
-        <div class="frame frame-invite">
-          <span class="invite-cap">O próximo pode ser o seu produto</span>
-        </div>
-        <figcaption>
-          <span class="clip-title">Sua marca aqui</span>
-          <span class="clip-sub">Me chama pra gravar</span>
-        </figcaption>
-      </figure>
-    </div>
-
-    <p class="reel-foot"><span class="tag">Toque no play para assistir aqui mesmo · som incluso</span></p>
-  </section>
-
-  <hr class="rule-dash">
-
-  <!-- ================= FOTOS ================= -->
-  <section id="fotos">
-    <div class="head">
-      <h2 class="poster">Também faço <span class="said">foto</span></h2>
-      <span class="note">still, produto em uso e retrato</span>
-    </div>
-
-    <p class="fotos-lede">
-      Nem toda campanha precisa de vídeo. Entrego também a foto parada: o produto sozinho em
-      cena, o produto sendo usado e o retrato com a peça — mesma luz natural, mesma casa real.
-    </p>
-
-    <div class="galeria">
-      <figure class="foto">
-        <img src="foto-kerasys-areia.jpg" alt="Kerasys Propolis Pro Repair e No Wash Repair sobre a areia molhada" width="1200" height="1200" loading="lazy">
-        <figcaption>
-          <span class="foto-titulo">Kerasys Propolis</span>
-          <span class="foto-sub">Still de produto · praia</span>
-        </figcaption>
-      </figure>
-
-      <figure class="foto">
-        <img src="foto-kerasys-mao.jpg" alt="Kerasys Propolis Pro Repair Treatment na mão, ao ar livre" width="1200" height="1200" loading="lazy">
-        <figcaption>
-          <span class="foto-titulo">Kerasys Propolis</span>
-          <span class="foto-sub">Produto em uso · cabelo</span>
-        </figcaption>
-      </figure>
-
-      <figure class="foto">
-        <img src="foto-moca.jpg" alt="Ingredientes de uma receita com Leite Moça sobre a mesa" width="941" height="1672" loading="lazy">
-        <figcaption>
-          <span class="foto-titulo">Leite Moça</span>
-          <span class="foto-sub">Receita · cozinha</span>
-        </figcaption>
-      </figure>
-
-      <figure class="foto">
-        <img src="foto-joias.jpg" alt="Retrato com brinco, anel e colar de pedras verdes" width="1200" height="1200" loading="lazy">
-        <figcaption>
-          <span class="foto-titulo">Joias</span>
-          <span class="foto-sub">Retrato · moda</span>
-        </figcaption>
-      </figure>
-
-      <figure class="foto">
-        <img src="foto-olheiras.jpg" alt="Selfie com máscaras para olheiras sob os olhos" width="1000" height="1777" loading="lazy">
-        <figcaption>
-          <span class="foto-titulo">Máscara para olheiras</span>
-          <span class="foto-sub">Skincare · rotina</span>
-        </figcaption>
-      </figure>
-
-      <figure class="foto foto-convite">
-        <div class="convite-area">
-          <span class="invite-cap">O seu produto também rende foto</span>
-        </div>
-        <figcaption>
-          <span class="foto-titulo">Sua marca aqui</span>
-          <span class="foto-sub">Me chama pra fotografar</span>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <hr class="rule-dash">
 
   <!-- ================= SOBRE ================= -->
   <section id="sobre">
@@ -1499,214 +1243,298 @@
 
   <hr class="rule-dash">
 
-  <!-- ================= NICHOS ================= -->
-  <section id="nichos">
+  <!-- ================= MELHORES ================= -->
+  <section id="melhores">
     <div class="head">
-      <h2 class="poster">Meus nichos</h2>
-      <span class="note">onde eu falo com propriedade</span>
+      <h2 class="poster">Melhores <span class="said">trabalhos</span></h2>
+      <span class="note">comece por aqui ✦</span>
     </div>
 
-    <div class="niches">
-      <article class="niche">
-        <h3>Maternidade</h3>
-        <p>Enxoval, papinha, mamadeira, brinquedo, quarto organizado. Falo como mãe pra outra mãe — com a dúvida real que ela tem antes de comprar.</p>
-        <span class="tag">Nicho base</span>
-      </article>
-      <article class="niche">
-        <h3>Beleza</h3>
-        <p>Skincare, cabelo, perfumaria. Textura na mão, aplicação em tempo real, antes e depois honesto. A marca continua bonita vista de perto.</p>
-        <span class="tag">Alta demanda</span>
-      </article>
-      <article class="niche">
-        <h3>Casa</h3>
-        <p>Utilidade doméstica, organização, eletroportátil, receita rápida. Aqui o vídeo vende o problema resolvido, não o produto parado na bancada.</p>
-        <span class="tag">Converte bem</span>
-      </article>
-      <article class="niche">
-        <h3>Moda</h3>
-        <p>Provador, montagem de look, rotina. Corpo real, roupa caindo no corpo real — o que a cliente precisa ver pra clicar em comprar.</p>
-        <span class="tag">Sazonal</span>
-      </article>
-      <article class="niche">
-        <h3>Tech</h3>
-        <p>Celular, fone, gadget de casa, aplicativo. Mostro o que o produto resolve no uso real, sem ficha técnica decorada — do jeito que a pessoa entende antes de comprar.</p>
-        <span class="tag">Em alta</span>
-      </article>
+    <div class="reel">
+      <figure class="clip">
+        <div class="frame frame-a">
+          <video src="lux.mp4" poster="lux-capa.jpg" preload="none" playsinline controls
+                 aria-label="LUX — sabonete líquido corporal Morango e Camélia"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir o vídeo do sabonete líquido LUX">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">LUX</span>
+          <span class="clip-sub">Lançamento de fragrância · banho</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/De2HKQMpwyJ/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-b">
+          <video src="cif.mp4" poster="cif-capa.jpg" preload="none" playsinline controls
+                 aria-label="Cif Derrete Gordura e Cif Cremoso — limpeza da fritadeira"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Casa</span>
+          <button class="play" type="button" aria-label="Assistir limpeza da fritadeira com Cif">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Cif Derrete Gordura</span>
+          <span class="clip-sub">Antes e depois · limpeza</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/DeICrFkpcfK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-c">
+          <video src="abib.mp4" poster="abib-capa.jpg" preload="none" playsinline controls
+                 aria-label="Abib — tratamento para olheiras"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir tratamento para olheiras da Abib">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Abib</span>
+          <span class="clip-sub">Tratamento de olheiras · skincare</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/Dd8uXmpTM2j/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-d">
+          <video src="shein-provador.mp4" poster="shein-provador-capa.jpg" preload="none" playsinline controls
+                 aria-label="Shein — provador, como as peças ficam no corpo"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Moda</span>
+          <button class="play" type="button" aria-label="Assistir o provador da Shein">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Shein</span>
+          <span class="clip-sub">Provador e caimento · moda</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/DfS2gaOxBY2/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="reel-foot"><span class="tag">Toque no play para assistir aqui mesmo · som incluso</span></p>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= VÍDEOS POR NICHO ================= -->
+  <section id="videos">
+    <div class="head">
+      <h2 class="poster">Todos os <span class="said">vídeos</span></h2>
+      <span class="note">separados por nicho</span>
+    </div>
+
+    <h3 class="nicho-faixa" id="beleza">Beleza <small>skincare, cabelo e perfumaria</small></h3>
+    <div class="reel">
+      <figure class="clip">
+        <div class="frame frame-b">
+          <video src="siage.mp4" poster="siage-capa.jpg" preload="none" playsinline controls
+                 aria-label="Siàge Nutri Acid Complex — depoimento"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir Siàge Nutri Acid Complex">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Siàge Nutri Acid</span>
+          <span class="clip-sub">Depoimento · cabelo</span>
+          <a class="clip-link" href="https://www.instagram.com/reels/DdBpFQlOzu0/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-c">
+          <video src="purcell.mp4" poster="purcell-capa.jpg" preload="none" playsinline controls
+                 aria-label="Purcell Vitamin Boosting Toner — skincare"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir Purcell Vitamin Boosting Toner">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Purcell Vitamin Toner</span>
+          <span class="clip-sub">Demonstração · skincare</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/Ddbg7liuuT_/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-d">
+          <video src="skin1004.mp4" poster="skin1004-capa.jpg" preload="none" playsinline controls
+                 aria-label="SKIN1004 Centella — rotina noturna de skincare"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir rotina noturna com SKIN1004">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">SKIN1004 Centella</span>
+          <span class="clip-sub">Rotina noturna · skincare</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/DdlsIwwuwxK/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-e">
+          <video src="barreira.mp4" poster="barreira-capa.jpg" preload="none" playsinline controls
+                 aria-label="Glory of Soul — rotina de skincare para a barreira cutânea"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir a rotina de barreira cutânea da Glory of Soul">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Glory of Soul</span>
+          <span class="clip-sub">Barreira cutânea · loja de skincare</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/DfPhB2EpZlp/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-f">
+          <video src="bioheal.mp4" poster="bioheal-capa.jpg" preload="none" playsinline controls
+                 aria-label="BIOHEAL BOH Probioderm — trio de skincare coreano"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Beleza</span>
+          <button class="play" type="button" aria-label="Assistir o trio da BIOHEAL BOH">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">BIOHEAL BOH</span>
+          <span class="clip-sub">Trio Probioderm · skincare</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/Dfk31xDh3oD/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <h3 class="nicho-faixa" id="casa">Casa <small>cozinha, limpeza e eletro</small></h3>
+    <div class="reel">
+      <figure class="clip">
+        <div class="frame frame-a">
+          <video src="elgin-v2.mp4" poster="elgin-capa.jpg" preload="none" playsinline controls
+                 aria-label="Mixer 3 em 1 Elgin — demonstração"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Casa</span>
+          <button class="play" type="button" aria-label="Assistir Mixer 3 em 1 Elgin">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Mixer 3 em 1 Elgin</span>
+          <span class="clip-sub">Demonstração · cozinha</span>
+          <a class="clip-link" href="https://www.instagram.com/reels/Db6jCrIJIWD/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="clip">
+        <div class="frame frame-b">
+          <video src="donabenta.mp4" poster="donabenta-capa.jpg" preload="none" playsinline controls
+                 aria-label="Dona Benta — receita na cozinha"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Casa</span>
+          <button class="play" type="button" aria-label="Assistir receita com Dona Benta">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Dona Benta</span>
+          <span class="clip-sub">Receita completa · cozinha</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/Ddho2LRurui/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <h3 class="nicho-faixa" id="moda">Moda <small>provador, look e acessório</small></h3>
+    <div class="reel">
+      <figure class="clip">
+        <div class="frame frame-c">
+          <video src="shein.mp4" poster="shein-capa.jpg" preload="none" playsinline controls
+                 aria-label="Shein — looks novos"></video>
+          <span class="tape" aria-hidden="true"></span>
+          <span class="frame-tag">Moda</span>
+          <button class="play" type="button" aria-label="Assistir os looks da Shein">
+            <svg viewBox="0 0 12 14" fill="currentColor" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+          </button>
+        </div>
+        <figcaption>
+          <span class="clip-title">Shein</span>
+          <span class="clip-sub">Unboxing dos looks · moda</span>
+          <a class="clip-link" href="https://www.instagram.com/reel/DeeiBCtOu9y/" target="_blank" rel="noopener">ver no Instagram ↗</a>
+        </figcaption>
+      </figure>
+      <figure class="clip clip-convite">
+        <div class="frame frame-invite">
+          <span class="invite-cap">O próximo pode ser o seu produto</span>
+        </div>
+        <figcaption>
+          <span class="clip-title">Sua marca aqui</span>
+          <span class="clip-sub">Me chama pra gravar</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
   <hr class="rule-dash">
 
-  <!-- ================= FORMATOS ================= -->
-  <section id="formatos">
+  <!-- ================= FOTOS ================= -->
+  <section id="fotos">
     <div class="head">
-      <h2 class="poster">O que eu <span class="said">entrego</span></h2>
-      <span class="note">escolhe no briefing</span>
+      <h2 class="poster">Também faço <span class="said">foto</span></h2>
+      <span class="note">produto em uso e retrato</span>
     </div>
 
-    <div class="stickers">
-      <article class="sticker">
-        <span class="tag">Unboxing</span>
-        <h3>Chegou e abri na câmera</h3>
-        <p>A primeira reação, a embalagem, o tamanho real na mão. Ótimo como primeiro contato da pessoa com a marca.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Review</span>
-        <h3>Usei uns dias e te conto</h3>
-        <p>Opinião com um ponto de honestidade: o que gostei, pra quem serve, o que esperar. É o que mais gera comentário.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Tutorial</span>
-        <h3>Como usar sem errar</h3>
-        <p>Passo a passo curto, mãos na câmera. Ideal pro produto que ninguém compra por achar complicado.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Depoimento</span>
-        <h3>Falando direto pra câmera</h3>
-        <p>Roteiro aprovado por vocês, entrega natural. O preferido pra anúncio, porque dá pra testar vários ganchos.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Rotina</span>
-        <h3>O produto dentro do meu dia</h3>
-        <p>Manhã, banho, cozinha, arrumação. O produto aparece onde é usado de verdade, sem cara de propaganda.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Ganchos</span>
-        <h3>3 aberturas diferentes</h3>
-        <p>Mesmo corpo de vídeo, três primeiros segundos distintos pra vocês testarem qual segura mais gente.</p>
-      </article>
-    </div>
+    <p class="fotos-lede">
+      Nem toda campanha precisa de vídeo. Entrego também a foto: o produto na mão, na pele,
+      no corpo — sempre com gente em cena, mesma luz natural, mesma casa real.
+    </p>
 
-    <!-- etiquetas da entrega: ficam aqui, junto dos formatos, e nao mais no topo -->
-    <dl class="labels">
-      <div class="label"><dt>Formato</dt><dd>9:16 · 1080×1920</dd></div>
-      <div class="label"><dt>Arquivo</dt><dd>MP4 · 30 fps</dd></div>
-      <div class="label"><dt>Duração</dt><dd>15 s a 60 s</dd></div>
-      <div class="label"><dt>Áudio</dt><dd>Voz + legenda</dd></div>
-      <div class="label"><dt>Prazo</dt><dd>Até 7 dias</dd></div>
-      <div class="label"><dt>Revisões</dt><dd>1 a 3, conforme o pacote</dd></div>
-      <div class="label"><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
-      <div class="label"><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
-    </dl>
-  </section>
+    <div class="galeria">
+      <figure class="foto">
+        <img src="foto-kerasys-mao.jpg" alt="Kerasys Propolis Pro Repair Treatment na mão, ao ar livre" width="1200" height="1200" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Kerasys Propolis</span>
+          <span class="foto-sub">Produto em uso · cabelo</span>
+        </figcaption>
+      </figure>
 
-  <hr class="rule-dash">
+      <figure class="foto">
+        <img src="foto-joias.jpg" alt="Retrato com brinco, anel e colar de pedras verdes" width="1200" height="1200" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Joias</span>
+          <span class="foto-sub">Retrato · moda</span>
+        </figcaption>
+      </figure>
 
-  <!-- ================= PROCESSO ================= -->
-  <section id="processo">
-    <div class="head">
-      <h2 class="poster">Como <span class="said">funciona</span></h2>
-      <span class="note">do briefing à entrega</span>
-    </div>
+      <figure class="foto">
+        <img src="foto-olheiras.jpg" alt="Selfie com máscaras para olheiras sob os olhos" width="1000" height="1777" loading="lazy">
+        <figcaption>
+          <span class="foto-titulo">Máscara para olheiras</span>
+          <span class="foto-sub">Skincare · rotina</span>
+        </figcaption>
+      </figure>
 
-    <div class="steps">
-      <article class="step">
-        <span class="num">01</span>
-        <h3>Briefing</h3>
-        <p>Vocês me contam o produto, pra quem ele é e o que não pode faltar na fala. Se já tiverem roteiro, eu sigo o roteiro.</p>
-      </article>
-      <article class="step">
-        <span class="num">02</span>
-        <h3>Roteiro</h3>
-        <p>Escrevo o gancho e a fala em linguagem de gente, mando pra aprovação e só gravo depois do ok de vocês.</p>
-      </article>
-      <article class="step">
-        <span class="num">03</span>
-        <h3>Produto</h3>
-        <p>O prazo começa a contar no dia em que o produto chega aqui — assim ninguém fica refém da transportadora.</p>
-      </article>
-      <article class="step">
-        <span class="num">04</span>
-        <h3>Gravação</h3>
-        <p>Luz natural, casa real, celular na mão. Se o combinado incluir ganchos extras, gravo as variações no mesmo dia.</p>
-      </article>
-      <article class="step">
-        <span class="num">05</span>
-        <h3>Edição</h3>
-        <p>Corte no ritmo do vertical, legenda queimada e trilha. O vídeo chega pronto pra subir, sem retrabalho do lado de vocês.</p>
-      </article>
-      <article class="step">
-        <span class="num">06</span>
-        <h3>Entrega</h3>
-        <p>Vídeo editado e arquivos brutos por link. Duas rodadas de ajuste já estão inclusas no valor.</p>
-      </article>
-    </div>
-  </section>
-
-  <hr class="rule-dash">
-
-  <!-- ================= PACOTES ================= -->
-  <section id="pacotes">
-    <div class="head">
-      <h2 class="poster">Pacotes</h2>
-      <span class="note">valores sob consulta</span>
-    </div>
-
-    <div class="plans">
-      <article class="plan">
-        <h3>Básico</h3>
-        <span class="price">Sob consulta</span>
-        <p class="plan-para">Para marca nova, que quer testar o conteúdo antes de investir mais.</p>
-        <ul>
-          <li>1 vídeo de até 45 segundos</li>
-          <li>1 gancho de abertura</li>
-          <li>1 rodada de ajustes</li>
-          <li>Uso orgânico por 3 meses</li>
-        </ul>
-      </article>
-
-      <article class="plan hot">
-        <span class="badge">marcas que voltam</span>
-        <h3>Intermediário</h3>
-        <span class="price">Sob consulta</span>
-        <p class="plan-para">Para quem quer mais volume e mais variação de gancho.</p>
-        <ul>
-          <li>3 vídeos</li>
-          <li>3 ganchos diferentes</li>
-          <li>3 rodadas de ajustes</li>
-          <li>Uso orgânico por 3 meses</li>
-        </ul>
-      </article>
-
-      <article class="plan">
-        <h3>Avançado</h3>
-        <span class="price">Sob medida</span>
-        <p class="plan-para">Campanha maior ou recorrente, montada junto com vocês.</p>
-        <ul>
-          <li>Volume combinado no briefing</li>
-          <li>Mídia paga e exclusividade</li>
-          <li>Prazo e direito de uso definidos caso a caso</li>
-        </ul>
-      </article>
-    </div>
-
-  </section>
-
-  <hr class="rule-dash">
-
-  <!-- ================= DÚVIDAS ================= -->
-  <section id="duvidas">
-    <div class="head">
-      <h2 class="poster">O que as marcas<br>sempre <span class="said">perguntam</span></h2>
-    </div>
-
-    <div class="faq">
-      <article class="qa">
-        <h3>O vídeo vai pro meu perfil ou pro de vocês?</h3>
-        <p>O conteúdo é feito pra marca publicar. Eu entrego o arquivo e vocês postam no perfil de vocês ou sobem como anúncio. Publicação no meu perfil é combinada à parte.</p>
-      </article>
-      <article class="qa">
-        <h3>Por quanto tempo posso usar o material?</h3>
-        <p>O padrão é 3 meses de uso orgânico. Mídia paga, uso por tempo indeterminado e exclusividade de categoria entram como adicional no orçamento.</p>
-      </article>
-      <article class="qa">
-        <h3>Preciso receber o produto de volta?</h3>
-        <p>O produto fica comigo — ele faz parte do pagamento do trabalho. Se for item de alto valor que precisa voltar, é só combinar antes que eu incluo o frete de retorno.</p>
-      </article>
-      <article class="qa">
-        <h3>Aceita roteiro pronto?</h3>
-        <p>Aceito. Sigo o roteiro sem mudar o sentido e só sugiro ajuste quando alguma frase soa artificial na fala — o que costuma derrubar o desempenho do vídeo.</p>
-      </article>
+      <figure class="foto foto-convite">
+        <div class="convite-area">
+          <span class="invite-cap">O seu produto também rende foto</span>
+        </div>
+        <figcaption>
+          <span class="foto-titulo">Sua marca aqui</span>
+          <span class="foto-sub">Me chama pra fotografar</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -1721,7 +1549,7 @@
       <div class="channels">
         <a class="kit" href="https://sorayamichelly-dev.github.io/ugc/midia-kit/midia-kit-soraya-oliveira.pdf" download>
           <span>Baixar mídia kit</span>
-          <span class="formato">PDF · 5 páginas</span>
+          <span class="formato">PDF · 7 páginas</span>
         </a>
         <a class="channel" href="mailto:soraya.michelly@gmail.com?subject=Or%C3%A7amento%20UGC">
           <span>E-mail</span>
@@ -1750,7 +1578,7 @@
   <footer>
     <span class="tag">Soraya Oliveira · Portfólio UGC</span>
     <span class="tag">@sorayaaoliroutine</span>
-    <span class="tag">Setembro de 2026</span>
+    <span class="tag">Novembro de 2026</span>
   </footer>
 
 </main>

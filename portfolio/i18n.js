@@ -9,23 +9,18 @@ const EN = {
   'Pedir orçamento': 'Request a quote',
 
   /* atalhos da barra */
-  'Vídeos': 'Videos',
-  'Fotos': 'Photos',
   'Sobre': 'About',
+  'Melhores': 'Best work',
+  'Fotos': 'Photos',
   'Mídia kit ↗': 'Media kit ↗',
-  'Formatos': 'Formats',
-  'Processo': 'Process',
-  'Dúvidas': 'FAQ',
   'Orçamento': 'Get a quote',
 
   /* fotos */
   'Também faço <span class="said">foto</span>': 'I also shoot <span class="said">photos</span>',
-  'still, produto em uso e retrato': 'still life, product in use and portrait',
-  'Nem toda campanha precisa de vídeo. Entrego também a foto parada: o produto sozinho em cena, o produto sendo usado e o retrato com a peça — mesma luz natural, mesma casa real.':
-    'Not every campaign needs video. I also deliver stills: the product alone in the scene, the product in use and the portrait wearing it — same natural light, same real home.',
-  'Still de produto · praia': 'Product still · beach',
+  'produto em uso e retrato': 'product in use and portrait',
+  'Nem toda campanha precisa de vídeo. Entrego também a foto: o produto na mão, na pele, no corpo — sempre com gente em cena, mesma luz natural, mesma casa real.':
+    'Not every campaign needs video. I also deliver photos: the product in the hand, on the skin, on the body — always with a person in frame, same natural light, same real home.',
   'Produto em uso · cabelo': 'Product in use · hair',
-  'Receita · cozinha': 'Recipe · kitchen',
   'Joias': 'Jewellery',
   'Retrato · moda': 'Portrait · fashion',
   'Máscara para olheiras': 'Under-eye patches',
@@ -33,13 +28,13 @@ const EN = {
   'Me chama pra fotografar': 'Ask me to shoot it',
 
   /* abertura */
-  'oi! eu sou a Soraya ✿': 'hi! I’m Soraya ✿',
-  'Gente <span class="said">de verdade</span> usando o seu produto.':
-    'Real <span class="said">people</span> using your product.',
-  'Eu gravo, edito e entrego o vídeo pronto pra sua marca publicar no feed ou subir como anúncio. Sem estúdio, sem produção cara: luz de janela, casa real, rotina de mãe — que é justamente o que faz a pessoa parar de rolar a tela.':
-    'I film, edit and hand over the video ready for your brand to post or run as an ad. No studio, no expensive production: window light, a real home, a mother’s routine — which is exactly what makes people stop scrolling.',
+  'oi, marcas! ✿': 'hi, brands! ✿',
+  'Criadora UGC · gente <span class="said">de verdade</span> usando o seu produto.':
+    'UGC creator · real <span class="said">people</span> using your product.',
+  'Eu gravo, edito e entrego o vídeo pronto pra sua marca publicar no feed ou subir como anúncio. Luz de janela, casa real, rotina de mãe.':
+    'I film, edit and hand over the video ready for your brand to post or run as an ad. Window light, a real home, a mother’s routine.',
   'Quero um vídeo': 'Book a video',
-  'Ver experiência': 'See my work',
+  'Ver meus trabalhos': 'See my best work',
   'a criadora que vai gravar o seu produto': 'the creator who will film your product',
   'Unboxing ✦ Review ✦ Tutorial ✦ Depoimento ✦ Rotina ✦ 3 ganchos pra testar ✦ Vídeo vertical 9:16 ✦&nbsp;':
     'Unboxing ✦ Review ✦ Tutorial ✦ Testimonial ✦ Routine ✦ 3 hooks to test ✦ Vertical 9:16 video ✦&nbsp;',
@@ -77,7 +72,7 @@ const EN = {
     'Shall we turn products into <span class="said">real experiences</span>?',
   'Bora conversar': 'Let’s talk',
   'Baixar mídia kit': 'Download media kit',
-  'PDF · 5 páginas': 'PDF · 5 pages',
+  'PDF · 7 páginas': 'PDF · 7 pages',
 
   '32 anos': '32 years old',
   'Mãe do Levi': 'Levi’s mom',
@@ -141,8 +136,13 @@ const EN = {
     'Same video body, three different opening seconds so you can test which one holds more people.',
 
   /* trabalhos */
-  'Experiência': 'Experience',
-  'clica e assiste ✦': 'tap and watch ✦',
+  'Melhores <span class="said">trabalhos</span>': 'Best <span class="said">work</span>',
+  'comece por aqui ✦': 'start here ✦',
+  'Todos os <span class="said">vídeos</span>': 'All the <span class="said">videos</span>',
+  'separados por nicho': 'grouped by niche',
+  'Beleza <small>skincare, cabelo e perfumaria</small>': 'Beauty <small>skincare, hair and fragrance</small>',
+  'Casa <small>cozinha, limpeza e eletro</small>': 'Home <small>kitchen, cleaning and appliances</small>',
+  'Moda <small>provador, look e acessório</small>': 'Fashion <small>try-on, outfit and accessories</small>',
   'Mixer 3 em 1 Elgin': 'Elgin 3-in-1 Hand Blender',
   'Demonstração · cozinha': 'Demo · kitchen',
   'Depoimento · cabelo': 'Testimonial · hair',
@@ -244,7 +244,7 @@ const EN = {
 
   /* rodape */
   'Soraya Oliveira · Portfólio UGC': 'Soraya Oliveira · UGC Portfolio',
-  'Setembro de 2026': 'September 2026',
+  'Novembro de 2026': 'November 2026',
 };
 
 const TITULO = { pt: 'Soraya Oliveira UGC', en: 'Soraya Oliveira · UGC Creator' };
