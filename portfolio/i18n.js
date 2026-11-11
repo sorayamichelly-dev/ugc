@@ -161,7 +161,7 @@ const EN = {
   'LUX': 'LUX',
   'Lançamento de fragrância · banho': 'Fragrance launch · bath',
   'Glory of Soul': 'Glory of Soul',
-  'Barreira cutânea · skincare': 'Skin barrier · skincare',
+  'Barreira cutânea · loja de skincare': 'Skin barrier · skincare shop',
   'ver no Instagram ↗': 'watch on Instagram ↗',
   'O próximo pode ser o seu produto': 'The next one could be your product',
   'Sua marca aqui': 'Your brand here',
