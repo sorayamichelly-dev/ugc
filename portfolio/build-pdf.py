@@ -98,6 +98,9 @@ def montar_html():
     s = re.sub(r'<p class="reel-foot">.*?</p>', "", s, flags=re.S)
     # cada capa abre o reel: o link ja existe na legenda do clipe
     s = envolver_capas(s)
+    # no papel a ficha tecnica volta para a folha de abertura, que de outro
+    # modo fica com meia pagina vazia; no site ela segue junto dos formatos
+    s = subir_ficha(s)
 
     with open(os.path.join(AQUI, "print.css"), encoding="utf-8") as f:
         s = s.replace("</body>", "<style>\n" + f.read() + "\n</style>\n</body>")
@@ -108,6 +111,18 @@ def montar_html():
     with open(caminho, "w", encoding="utf-8") as f:
         f.write(s)
     return caminho
+
+
+def subir_ficha(s):
+    """Tira a ficha tecnica de dentro de #formatos e poe logo abaixo do hero."""
+    m = re.search(r'\n *<!-- etiquetas da entrega[^\n]*\n *<dl class="labels">.*?</dl>\n',
+                  s, flags=re.S)
+    if not m:
+        return s
+    bloco = m.group(0).strip("\n")
+    s = s[:m.start()] + "\n" + s[m.end():]
+    return s.replace('<main class="wrap">',
+                     '<main class="wrap">\n' + bloco + '\n\n  <hr class="rule-dash">\n', 1)
 
 
 def envolver_capas(s):

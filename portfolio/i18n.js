@@ -11,6 +11,7 @@ const EN = {
   /* atalhos da barra */
   'Vídeos': 'Videos',
   'Fotos': 'Photos',
+  'Sobre': 'About',
   'Mídia kit ↗': 'Media kit ↗',
   'Formatos': 'Formats',
   'Processo': 'Process',

@@ -41,10 +41,11 @@ a { text-decoration: none; }
 .marquee-track { animation: none; }
 
 /* ficha tecnica */
-.labels { padding-block: 54px; gap: 12px; grid-template-columns: repeat(4, 1fr); }
-.label { padding: 21px 18px 23px; }
+/* no papel a ficha tecnica volta para a folha de abertura (ver build-pdf.py) */
+.labels { padding-block: 44px; gap: 12px; grid-template-columns: repeat(4, 1fr); break-inside: avoid; }
+.label { padding: 19px 18px 21px; }
 .label dt { font-size: 10.5px; }
-.label dd { font-size: 15.5px; }
+.label dd { font-size: 15px; }
 section { padding-block: 16px; }
 .head { margin-bottom: 14px; }
 .head h2 { font-size: 38px; }
@@ -61,10 +62,13 @@ section { padding-block: 16px; }
 #sobre .chips { gap: 10px; }
 #sobre .pilar-num { font-size: 12px; }
 
-.niches { grid-template-columns: repeat(3, 1fr); }
-.niche { padding: 18px 18px 22px; }
-.niche h3 { font-size: 22px; }
-.niche p { font-size: 13.5px; }
+/* cinco colunas: os nichos fecham numa linha so, e sobra espaco na folha
+   para os formatos e a ficha tecnica logo abaixo */
+.niches { grid-template-columns: repeat(5, 1fr); gap: 11px; }
+.niche { padding: 15px 14px 17px; }
+.niche h3 { font-size: 18px; }
+.niche p { font-size: 12px; }
+.niche .tag { font-size: 10px; }
 
 .stickers { gap: 14px; }
 .sticker { flex: 1 1 210px; padding: 17px 18px 19px; }

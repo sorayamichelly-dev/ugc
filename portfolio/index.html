@@ -346,6 +346,9 @@
   .polaroid img {
     display: block;
     width: 100%;
+    /* sem isto o atributo height="1250" do <img> vence o aspect-ratio
+       e a foto estica para 1.250px de altura no celular */
+    height: auto;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: 50% 16%;
@@ -1060,6 +1063,13 @@
     .channels { min-width: 0; }
   }
 
+  /* depois do bloco de 880px de proposito: no celular a foto fica menor
+     ainda, pra abertura caber em uma tela */
+  @media (max-width: 620px) {
+    .polaroid { max-width: 268px; }
+    .polaroid figcaption { font-size: 21px; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { transition: none !important; animation: none !important; }
@@ -1080,6 +1090,7 @@
     <nav class="atalhos" aria-label="Seções do portfólio">
       <a href="#portfolio">Vídeos</a>
       <a href="#fotos">Fotos</a>
+      <a href="#sobre">Sobre</a>
       <a href="#formatos">Formatos</a>
       <a href="#processo">Processo</a>
       <a href="#pacotes">Pacotes</a>
@@ -1108,8 +1119,7 @@
 
       <p class="lede">
         Eu gravo, edito e entrego o vídeo pronto pra sua marca publicar no feed ou subir
-        como anúncio. Sem estúdio, sem produção cara: luz de janela, casa real, rotina de
-        mãe — que é justamente o que faz a pessoa parar de rolar a tela.
+        como anúncio. Luz de janela, casa real, rotina de mãe.
       </p>
 
       <div class="hero-actions">
@@ -1135,159 +1145,6 @@
 </div>
 
 <main class="wrap">
-
-  <!-- etiquetas da entrega -->
-  <dl class="labels">
-    <div class="label"><dt>Formato</dt><dd>9:16 · 1080×1920</dd></div>
-    <div class="label"><dt>Arquivo</dt><dd>MP4 · 30 fps</dd></div>
-    <div class="label"><dt>Duração</dt><dd>15 s a 60 s</dd></div>
-    <div class="label"><dt>Áudio</dt><dd>Voz + legenda</dd></div>
-    <div class="label"><dt>Prazo</dt><dd>Até 7 dias</dd></div>
-    <div class="label"><dt>Revisões</dt><dd>2 inclusas</dd></div>
-    <div class="label"><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
-    <div class="label"><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
-  </dl>
-
-  <hr class="rule-dash">
-
-  <!-- ================= SOBRE ================= -->
-  <section id="sobre">
-    <div class="head">
-      <h2 class="poster">Sobre <span class="said">mim</span></h2>
-      <span class="note">prazer, sou eu!</span>
-    </div>
-
-    <div class="about">
-      <div class="about-texto">
-
-        <div class="pilar">
-          <span class="pilar-num">01 · Quem eu sou</span>
-          <p>
-            Sou Soraya, <strong>32 anos</strong>, <strong>contabilista</strong>, esposa e
-            <strong>mãe do Levi</strong>. Nas minhas redes eu compartilho vida: rotina,
-            alegrias, desafios, descobertas — inclusive minhas compras. Crio conteúdo
-            profissionalmente desde <strong>2026</strong>, mas há muito tempo compartilho
-            experiências e reviews de forma espontânea. Foi essa naturalidade que construiu
-            uma comunidade que <span class="mark">confia nas minhas indicações</span>.
-          </p>
-        </div>
-
-        <div class="pilar">
-          <span class="pilar-num">02 · O que eu crio</span>
-          <p>
-            Não mostro um produto repetindo características. Coloco ele dentro da vida real e
-            mostro o que ele faz por quem está do outro lado da tela — porque nem tudo está no
-            preço: está na experiência, na praticidade, em resolver um problema ou economizar
-            tempo. Meu conteúdo é uma ponte entre marca e consumidor, e o que eu quero é que a
-            pessoa pense:
-          </p>
-          <blockquote class="fala">Isso faz sentido para a minha vida.</blockquote>
-        </div>
-
-        <div class="convite">
-          <p class="convite-frase">
-            Vamos juntos transformar produtos em <span class="said">experiências reais</span>?
-          </p>
-          <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">Bora conversar</a>
-        </div>
-
-      </div>
-
-      <div class="chips">
-        <span class="chip">32 anos</span>
-        <span class="chip">Mãe do Levi</span>
-        <span class="chip">Esposa</span>
-        <span class="chip">Contabilista</span>
-        <span class="chip">Criando desde 2026</span>
-        <span class="chip">Rotina real</span>
-        <span class="chip">Indicação de confiança</span>
-        <span class="chip">Comunicação natural</span>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule-dash">
-
-  <!-- ================= NICHOS ================= -->
-  <section id="nichos">
-    <div class="head">
-      <h2 class="poster">Meus nichos</h2>
-      <span class="note">onde eu falo com propriedade</span>
-    </div>
-
-    <div class="niches">
-      <article class="niche">
-        <h3>Maternidade</h3>
-        <p>Enxoval, papinha, mamadeira, brinquedo, quarto organizado. Falo como mãe pra outra mãe — com a dúvida real que ela tem antes de comprar.</p>
-        <span class="tag">Nicho base</span>
-      </article>
-      <article class="niche">
-        <h3>Beleza</h3>
-        <p>Skincare, cabelo, perfumaria. Textura na mão, aplicação em tempo real, antes e depois honesto. A marca continua bonita vista de perto.</p>
-        <span class="tag">Alta demanda</span>
-      </article>
-      <article class="niche">
-        <h3>Casa</h3>
-        <p>Utilidade doméstica, organização, eletroportátil, receita rápida. Aqui o vídeo vende o problema resolvido, não o produto parado na bancada.</p>
-        <span class="tag">Converte bem</span>
-      </article>
-      <article class="niche">
-        <h3>Moda</h3>
-        <p>Provador, montagem de look, rotina. Corpo real, roupa caindo no corpo real — o que a cliente precisa ver pra clicar em comprar.</p>
-        <span class="tag">Sazonal</span>
-      </article>
-      <article class="niche">
-        <h3>Tech</h3>
-        <p>Celular, fone, gadget de casa, aplicativo. Mostro o que o produto resolve no uso real, sem ficha técnica decorada — do jeito que a pessoa entende antes de comprar.</p>
-        <span class="tag">Em alta</span>
-      </article>
-    </div>
-  </section>
-
-  <hr class="rule-dash">
-
-  <!-- ================= FORMATOS ================= -->
-  <section id="formatos">
-    <div class="head">
-      <h2 class="poster">O que eu <span class="said">entrego</span></h2>
-      <span class="note">escolhe no briefing</span>
-    </div>
-
-    <div class="stickers">
-      <article class="sticker">
-        <span class="tag">Unboxing</span>
-        <h3>Chegou e abri na câmera</h3>
-        <p>A primeira reação, a embalagem, o tamanho real na mão. Ótimo como primeiro contato da pessoa com a marca.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Review</span>
-        <h3>Usei uns dias e te conto</h3>
-        <p>Opinião com um ponto de honestidade: o que gostei, pra quem serve, o que esperar. É o que mais gera comentário.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Tutorial</span>
-        <h3>Como usar sem errar</h3>
-        <p>Passo a passo curto, mãos na câmera. Ideal pro produto que ninguém compra por achar complicado.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Depoimento</span>
-        <h3>Falando direto pra câmera</h3>
-        <p>Roteiro aprovado por vocês, entrega natural. O preferido pra anúncio, porque dá pra testar vários ganchos.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Rotina</span>
-        <h3>O produto dentro do meu dia</h3>
-        <p>Manhã, banho, cozinha, arrumação. O produto aparece onde é usado de verdade, sem cara de propaganda.</p>
-      </article>
-      <article class="sticker">
-        <span class="tag">Ganchos</span>
-        <h3>3 aberturas diferentes</h3>
-        <p>Mesmo corpo de vídeo, três primeiros segundos distintos pra vocês testarem qual segura mais gente.</p>
-      </article>
-    </div>
-  </section>
-
-  <hr class="rule-dash">
 
   <!-- ================= PORTFÓLIO ================= -->
   <section id="portfolio">
@@ -1464,7 +1321,6 @@
     <p class="reel-foot"><span class="tag">Toque no play para assistir aqui mesmo · som incluso</span></p>
   </section>
 
-
   <hr class="rule-dash">
 
   <!-- ================= FOTOS ================= -->
@@ -1530,6 +1386,157 @@
         </figcaption>
       </figure>
     </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre">
+    <div class="head">
+      <h2 class="poster">Sobre <span class="said">mim</span></h2>
+      <span class="note">prazer, sou eu!</span>
+    </div>
+
+    <div class="about">
+      <div class="about-texto">
+
+        <div class="pilar">
+          <span class="pilar-num">01 · Quem eu sou</span>
+          <p>
+            Sou Soraya, <strong>32 anos</strong>, <strong>contabilista</strong>, esposa e
+            <strong>mãe do Levi</strong>. Nas minhas redes eu compartilho vida: rotina,
+            alegrias, desafios, descobertas — inclusive minhas compras. Crio conteúdo
+            profissionalmente desde <strong>2026</strong>, mas há muito tempo compartilho
+            experiências e reviews de forma espontânea. Foi essa naturalidade que construiu
+            uma comunidade que <span class="mark">confia nas minhas indicações</span>.
+          </p>
+        </div>
+
+        <div class="pilar">
+          <span class="pilar-num">02 · O que eu crio</span>
+          <p>
+            Não mostro um produto repetindo características. Coloco ele dentro da vida real e
+            mostro o que ele faz por quem está do outro lado da tela — porque nem tudo está no
+            preço: está na experiência, na praticidade, em resolver um problema ou economizar
+            tempo. Meu conteúdo é uma ponte entre marca e consumidor, e o que eu quero é que a
+            pessoa pense:
+          </p>
+          <blockquote class="fala">Isso faz sentido para a minha vida.</blockquote>
+        </div>
+
+        <div class="convite">
+          <p class="convite-frase">
+            Vamos juntos transformar produtos em <span class="said">experiências reais</span>?
+          </p>
+          <a class="btn sun" href="mailto:soraya.michelly@gmail.com?subject=Parceria%20com%20a%20Soraya">Bora conversar</a>
+        </div>
+
+      </div>
+
+      <div class="chips">
+        <span class="chip">32 anos</span>
+        <span class="chip">Mãe do Levi</span>
+        <span class="chip">Esposa</span>
+        <span class="chip">Contabilista</span>
+        <span class="chip">Criando desde 2026</span>
+        <span class="chip">Rotina real</span>
+        <span class="chip">Indicação de confiança</span>
+        <span class="chip">Comunicação natural</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= NICHOS ================= -->
+  <section id="nichos">
+    <div class="head">
+      <h2 class="poster">Meus nichos</h2>
+      <span class="note">onde eu falo com propriedade</span>
+    </div>
+
+    <div class="niches">
+      <article class="niche">
+        <h3>Maternidade</h3>
+        <p>Enxoval, papinha, mamadeira, brinquedo, quarto organizado. Falo como mãe pra outra mãe — com a dúvida real que ela tem antes de comprar.</p>
+        <span class="tag">Nicho base</span>
+      </article>
+      <article class="niche">
+        <h3>Beleza</h3>
+        <p>Skincare, cabelo, perfumaria. Textura na mão, aplicação em tempo real, antes e depois honesto. A marca continua bonita vista de perto.</p>
+        <span class="tag">Alta demanda</span>
+      </article>
+      <article class="niche">
+        <h3>Casa</h3>
+        <p>Utilidade doméstica, organização, eletroportátil, receita rápida. Aqui o vídeo vende o problema resolvido, não o produto parado na bancada.</p>
+        <span class="tag">Converte bem</span>
+      </article>
+      <article class="niche">
+        <h3>Moda</h3>
+        <p>Provador, montagem de look, rotina. Corpo real, roupa caindo no corpo real — o que a cliente precisa ver pra clicar em comprar.</p>
+        <span class="tag">Sazonal</span>
+      </article>
+      <article class="niche">
+        <h3>Tech</h3>
+        <p>Celular, fone, gadget de casa, aplicativo. Mostro o que o produto resolve no uso real, sem ficha técnica decorada — do jeito que a pessoa entende antes de comprar.</p>
+        <span class="tag">Em alta</span>
+      </article>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= FORMATOS ================= -->
+  <section id="formatos">
+    <div class="head">
+      <h2 class="poster">O que eu <span class="said">entrego</span></h2>
+      <span class="note">escolhe no briefing</span>
+    </div>
+
+    <div class="stickers">
+      <article class="sticker">
+        <span class="tag">Unboxing</span>
+        <h3>Chegou e abri na câmera</h3>
+        <p>A primeira reação, a embalagem, o tamanho real na mão. Ótimo como primeiro contato da pessoa com a marca.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Review</span>
+        <h3>Usei uns dias e te conto</h3>
+        <p>Opinião com um ponto de honestidade: o que gostei, pra quem serve, o que esperar. É o que mais gera comentário.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Tutorial</span>
+        <h3>Como usar sem errar</h3>
+        <p>Passo a passo curto, mãos na câmera. Ideal pro produto que ninguém compra por achar complicado.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Depoimento</span>
+        <h3>Falando direto pra câmera</h3>
+        <p>Roteiro aprovado por vocês, entrega natural. O preferido pra anúncio, porque dá pra testar vários ganchos.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Rotina</span>
+        <h3>O produto dentro do meu dia</h3>
+        <p>Manhã, banho, cozinha, arrumação. O produto aparece onde é usado de verdade, sem cara de propaganda.</p>
+      </article>
+      <article class="sticker">
+        <span class="tag">Ganchos</span>
+        <h3>3 aberturas diferentes</h3>
+        <p>Mesmo corpo de vídeo, três primeiros segundos distintos pra vocês testarem qual segura mais gente.</p>
+      </article>
+    </div>
+
+    <!-- etiquetas da entrega: ficam aqui, junto dos formatos, e nao mais no topo -->
+    <dl class="labels">
+      <div class="label"><dt>Formato</dt><dd>9:16 · 1080×1920</dd></div>
+      <div class="label"><dt>Arquivo</dt><dd>MP4 · 30 fps</dd></div>
+      <div class="label"><dt>Duração</dt><dd>15 s a 60 s</dd></div>
+      <div class="label"><dt>Áudio</dt><dd>Voz + legenda</dd></div>
+      <div class="label"><dt>Prazo</dt><dd>Até 7 dias</dd></div>
+      <div class="label"><dt>Revisões</dt><dd>1 a 3, conforme o pacote</dd></div>
+      <div class="label"><dt>Direito de uso</dt><dd>3 meses orgânico</dd></div>
+      <div class="label"><dt>Mídia paga</dt><dd>Sob consulta</dd></div>
+    </dl>
   </section>
 
   <hr class="rule-dash">
