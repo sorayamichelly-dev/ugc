@@ -157,6 +157,8 @@ const EN = {
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
   'LUX': 'LUX',
   'Lançamento de fragrância · banho': 'Fragrance launch · bath',
+  'Barreira cutânea': 'Skin barrier',
+  'Rotina com quatro produtos · skincare': 'Four-product routine · skincare',
   'ver no Instagram ↗': 'watch on Instagram ↗',
   'O próximo pode ser o seu produto': 'The next one could be your product',
   'Sua marca aqui': 'Your brand here',
