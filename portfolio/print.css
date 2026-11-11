@@ -75,13 +75,13 @@ section { padding-block: 16px; }
 .sticker p { font-size: 13.5px; }
 
 /* no papel: quatro colunas fecham as oito capas em duas fileiras cheias */
-/* cinco colunas: com nove videos a grade fecha em duas linhas e cabe numa pagina */
-.reel { grid-template-columns: repeat(5, 1fr); gap: 12px; }
-.clip .frame { max-width: 150px; }
-.clip { gap: 11px; }
-.clip-title { font-size: 17px; }
-.clip-sub { font-size: 11px; }
-.clip-link { font-size: 11px; }
+/* seis colunas: com doze videos a grade fecha em duas linhas e cabe numa pagina */
+.reel { grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.clip .frame { max-width: 125px; }
+.clip { gap: 9px; }
+.clip-title { font-size: 14px; }
+.clip-sub { font-size: 9.5px; }
+.clip-link { font-size: 9.5px; }
 /* o convite "sua marca aqui" vira uma faixa na ultima linha */
 .clip:last-child { grid-column: 1 / -1; }
 .clip:last-child .frame { aspect-ratio: auto; height: 62px; width: 100%; max-width: none; }
