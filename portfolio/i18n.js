@@ -148,7 +148,7 @@ const EN = {
   'Depoimento · cabelo': 'Testimonial · hair',
   'Demonstração · skincare': 'Demo · skincare',
   'Receita completa · cozinha': 'Full recipe · kitchen',
-  'Rotina noturna · skincare': 'Night routine · skincare',
+  'Demonstração de produto · skincare': 'Product demo · skincare',
   'Cif Derrete Gordura': 'Cif Derrete Gordura',
   'Antes e depois · limpeza': 'Before and after · cleaning',
   'Abib': 'Abib',
