@@ -10,6 +10,7 @@ const EN = {
 
   /* atalhos da barra */
   'Sobre': 'About',
+  'Marcas': 'Brands',
   'Melhores': 'Best work',
   'Fotos': 'Photos',
   'Mídia kit ↗': 'Media kit ↗',
@@ -136,6 +137,7 @@ const EN = {
     'Same video body, three different opening seconds so you can test which one holds more people.',
 
   /* trabalhos */
+  'marcas que confiaram no meu trabalho': 'brands that trusted my work',
   'Melhores <span class="said">trabalhos</span>': 'Best <span class="said">work</span>',
   'comece por aqui ✦': 'start here ✦',
   'Todos os <span class="said">vídeos</span>': 'All the <span class="said">videos</span>',

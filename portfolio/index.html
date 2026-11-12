@@ -333,6 +333,35 @@
 
   .hero-frase .said { color: #FFF1E8; }
 
+  /* faixa de prova social: quem ja confiou no trabalho */
+  .faixa-marcas {
+    background: var(--wine);
+    color: #FFF1E8;
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 8px 8px 0 var(--ink);
+    padding: 24px 26px 28px;
+  }
+
+  .faixa-marcas .note { color: #FFC46B; }
+
+  .marcas-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px 30px;
+    margin-top: 14px;
+  }
+
+  .marcas-lista span {
+    font-family: var(--poster);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: clamp(21px, 3vw, 33px);
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+
   /* faixa que abre cada nicho dentro de "todos os videos" */
   .nicho-faixa {
     display: flex;
@@ -1127,6 +1156,7 @@
 
     <nav class="atalhos" aria-label="Seções do portfólio">
       <a href="#sobre">Sobre</a>
+      <a href="#marcas">Marcas</a>
       <a href="#melhores">Melhores</a>
       <a href="#beleza">Beleza</a>
       <a href="#casa">Casa</a>
@@ -1237,6 +1267,22 @@
         <span class="chip">Rotina real</span>
         <span class="chip">Indicação de confiança</span>
         <span class="chip">Comunicação natural</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule-dash">
+
+  <!-- ================= MARCAS ================= -->
+  <section id="marcas">
+    <div class="faixa-marcas">
+      <span class="note">marcas que confiaram no meu trabalho</span>
+      <div class="marcas-lista">
+        <span>Simple Organic</span>
+        <span>LUX</span>
+        <span>Letty</span>
+        <span>Gold Spell</span>
+        <span>Forever Liss</span>
       </div>
     </div>
   </section>

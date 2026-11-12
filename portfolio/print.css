@@ -123,6 +123,10 @@ h1, h2, h3 { break-after: avoid; }
 .foto-convite .invite-cap { font-size: 19px; }
 
 /* onde cada folha comeca */
+#marcas { padding-block: 10px 6px; }
+.faixa-marcas { padding: 18px 22px 20px; box-shadow: 6px 6px 0 var(--ink); break-inside: avoid; }
+.marcas-lista { gap: 10px 26px; margin-top: 11px; }
+.marcas-lista span { font-size: 26px; }
 #melhores { break-before: page; padding-top: 24px; }
 /* as fotos seguem na mesma folha da faixa "sua marca aqui", que sozinha
    ocuparia uma pagina inteira */
