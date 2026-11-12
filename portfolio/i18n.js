@@ -137,7 +137,9 @@ const EN = {
     'Same video body, three different opening seconds so you can test which one holds more people.',
 
   /* trabalhos */
-  'marcas que confiaram no meu trabalho': 'brands that trusted my work',
+  'Algumas marcas': 'Some brands',
+  'que': 'that',
+  'confiaram': 'trusted me',
   'Melhores <span class="said">trabalhos</span>': 'Best <span class="said">work</span>',
   'comece por aqui ✦': 'start here ✦',
   'Todos os <span class="said">vídeos</span>': 'All the <span class="said">videos</span>',

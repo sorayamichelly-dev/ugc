@@ -123,10 +123,16 @@ h1, h2, h3 { break-after: avoid; }
 .foto-convite .invite-cap { font-size: 19px; }
 
 /* onde cada folha comeca */
-#marcas { padding-block: 10px 6px; }
-.faixa-marcas { padding: 18px 22px 20px; box-shadow: 6px 6px 0 var(--ink); break-inside: avoid; }
-.marcas-lista { gap: 10px 26px; margin-top: 11px; }
-.marcas-lista span { font-size: 26px; }
+#marcas { padding-block: 8px 4px; }
+.faixa-marcas { padding: 20px 0 22px; break-inside: avoid; }
+.marcas-titulo { margin-bottom: 18px; }
+.mt-serif { font-size: 34px; }
+.mt-que { font-size: 28px; }
+.mt-hand { font-size: 40px; }
+.marcas-brilho { top: 12px; width: 38px; height: 44px; }
+.marcas-lista { gap: 14px 20px; }
+.marca { width: 92px; height: 92px; box-shadow: 3px 3px 0 var(--ink); }
+.marca span { font-size: 13px; }
 #melhores { break-before: page; padding-top: 24px; }
 /* as fotos seguem na mesma folha da faixa "sua marca aqui", que sozinha
    ocuparia uma pagina inteira */

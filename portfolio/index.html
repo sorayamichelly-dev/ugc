@@ -335,31 +335,99 @@
 
   /* faixa de prova social: quem ja confiou no trabalho */
   .faixa-marcas {
-    background: var(--wine);
-    color: #FFF1E8;
-    border: 3px solid var(--ink);
-    border-radius: 18px;
-    box-shadow: 8px 8px 0 var(--ink);
-    padding: 24px 26px 28px;
+    position: relative;
+    border-top: 3px solid var(--ink);
+    border-bottom: 3px solid var(--ink);
+    padding: 26px 0 30px;
+    text-align: center;
   }
 
-  .faixa-marcas .note { color: #FFC46B; }
+  .marcas-brilho {
+    position: absolute;
+    top: 18px;
+    width: 46px;
+    height: 54px;
+    color: var(--ink);
+    opacity: .55;
+  }
+
+  .marcas-brilho.esq { left: 10px; }
+  .marcas-brilho.dir { right: 10px; }
+
+  .marcas-titulo {
+    margin: 0 0 24px;
+    display: grid;
+    justify-items: center;
+    gap: 2px;
+    line-height: .95;
+  }
+
+  .mt-serif {
+    font-family: var(--serif);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: clamp(26px, 4.6vw, 48px);
+    letter-spacing: 0.01em;
+  }
+
+  .mt-linha2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mt-que {
+    background: var(--ink);
+    color: var(--ground);
+    font-family: var(--poster);
+    text-transform: uppercase;
+    font-size: clamp(22px, 3.8vw, 40px);
+    line-height: 1;
+    padding: 4px 9px 6px;
+  }
+
+  .mt-hand {
+    font-family: var(--hand);
+    font-weight: 700;
+    font-size: clamp(30px, 5.4vw, 56px);
+  }
 
   .marcas-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    gap: 12px 30px;
-    margin-top: 14px;
+    justify-content: center;
+    gap: 16px 22px;
   }
 
-  .marcas-lista span {
+  .marca {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    border: 3px solid var(--ink);
+    background: var(--paper);
+    display: grid;
+    place-items: center;
+    padding: 12px;
+    box-shadow: 4px 4px 0 var(--ink);
+    overflow: hidden;
+  }
+
+  .marca span {
     font-family: var(--poster);
-    font-weight: 400;
     text-transform: uppercase;
-    font-size: clamp(21px, 3vw, 33px);
-    line-height: 1;
+    font-size: 15px;
+    line-height: 1.05;
     letter-spacing: 0.01em;
+  }
+
+  /* quando o logo chegar, basta trocar o <span> por <img> dentro do circulo */
+  .marca img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   /* faixa que abre cada nicho dentro de "todos os videos" */
@@ -1277,14 +1345,27 @@
   <!-- ================= MARCAS ================= -->
   <section id="marcas">
     <div class="faixa-marcas">
-      <span class="note">marcas que confiaram no meu trabalho</span>
-      <div class="marcas-lista">
-        <span>Simple Organic</span>
-        <span>LUX</span>
-        <span>Letty</span>
-        <span>Gold Spell</span>
-        <span>Forever Liss</span>
-      </div>
+      <svg class="marcas-brilho esq" viewBox="0 0 60 70" aria-hidden="true">
+        <path d="M30 2c2 22 8 30 28 33-20 3-26 11-28 33-2-22-8-30-28-33 20-3 26-11 28-33z"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <svg class="marcas-brilho dir" viewBox="0 0 64 62" aria-hidden="true">
+        <path d="M32 3l9 20 22 2-16 15 5 21-20-11-20 11 5-21L1 25l22-2z"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+
+      <p class="marcas-titulo">
+        <span class="mt-serif">Algumas marcas</span>
+        <span class="mt-linha2"><span class="mt-que">que</span> <span class="mt-hand">confiaram</span></span>
+      </p>
+
+      <ul class="marcas-lista">
+        <li class="marca"><span>Simple<br>Organic</span></li>
+        <li class="marca"><span>LUX</span></li>
+        <li class="marca"><span>Letty</span></li>
+        <li class="marca"><span>Gold<br>Spell</span></li>
+        <li class="marca"><span>Forever<br>Liss</span></li>
+      </ul>
     </div>
   </section>
 
