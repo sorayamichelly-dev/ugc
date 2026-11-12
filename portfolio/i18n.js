@@ -161,7 +161,7 @@ const EN = {
   'Unboxing · skincare': 'Unboxing · skincare',
   'Demonstração · olheiras': 'Demo · under-eye',
   'LUX': 'LUX',
-  'Lançamento de fragrância · banho': 'Fragrance launch · bath',
+  'Demonstração de lançamento · banho': 'Launch demo · bath',
   'Glory of Soul': 'Glory of Soul',
   'Barreira cutânea · loja de skincare': 'Skin barrier · skincare shop',
   'ver no Instagram ↗': 'watch on Instagram ↗',
