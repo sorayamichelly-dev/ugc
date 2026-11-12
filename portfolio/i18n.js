@@ -145,7 +145,7 @@ const EN = {
   'Moda <small>provador, look e acessório</small>': 'Fashion <small>try-on, outfit and accessories</small>',
   'Mixer 3 em 1 Elgin': 'Elgin 3-in-1 Hand Blender',
   'Demonstração · cozinha': 'Demo · kitchen',
-  'Depoimento · cabelo': 'Testimonial · hair',
+  'Teste e demonstração · cabelo': 'Test and demo · hair',
   'Demonstração · skincare': 'Demo · skincare',
   'Receita completa · cozinha': 'Full recipe · kitchen',
   'Demonstração de produto · skincare': 'Product demo · skincare',
