@@ -158,7 +158,7 @@ const EN = {
   'BIOHEAL BOH': 'BIOHEAL BOH',
   'Trio Probioderm · skincare': 'Probioderm trio · skincare',
   'Simple Organic': 'Simple Organic',
-  'Teste de produtos · skincare': 'Product test · skincare',
+  'Unboxing · skincare': 'Unboxing · skincare',
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
   'LUX': 'LUX',
   'Lançamento de fragrância · banho': 'Fragrance launch · bath',
