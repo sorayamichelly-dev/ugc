@@ -156,7 +156,7 @@ const EN = {
   'Unboxing dos looks · moda': 'Outfit unboxing · fashion',
   'Provador e caimento · moda': 'Try-on and fit · fashion',
   'BIOHEAL BOH': 'BIOHEAL BOH',
-  'Trio Probioderm · skincare': 'Probioderm trio · skincare',
+  'Demonstração do trio · skincare': 'Trio demo · skincare',
   'Simple Organic': 'Simple Organic',
   'Unboxing · skincare': 'Unboxing · skincare',
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
