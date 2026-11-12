@@ -159,7 +159,7 @@ const EN = {
   'Demonstração do trio · skincare': 'Trio demo · skincare',
   'Simple Organic': 'Simple Organic',
   'Unboxing · skincare': 'Unboxing · skincare',
-  'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
+  'Demonstração · olheiras': 'Demo · under-eye',
   'LUX': 'LUX',
   'Lançamento de fragrância · banho': 'Fragrance launch · bath',
   'Glory of Soul': 'Glory of Soul',
