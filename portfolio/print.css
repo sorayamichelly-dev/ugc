@@ -75,14 +75,14 @@ section { padding-block: 16px; }
 .sticker p { font-size: 13.5px; }
 
 /* no papel: quatro colunas fecham as oito capas em duas fileiras cheias */
-/* cinco colunas: nenhum nicho passa de cinco videos, entao cada grade
-   fecha numa linha so */
-.reel { grid-template-columns: repeat(5, 1fr); gap: 12px; }
-.clip .frame { max-width: 122px; }
+/* seis colunas: nenhum nicho passa de seis videos, entao cada grade fecha
+   numa linha so */
+.reel { grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.clip .frame { max-width: 110px; }
 .clip { gap: 9px; }
 .clip-title { font-size: 15px; }
 .clip-sub { font-size: 10px; }
-.clip-link { font-size: 10px; }
+.clip-link { font-size: 8.5px; }
 /* o convite "sua marca aqui" vira uma faixa na ultima linha. precisa ser
    pela classe: com os videos divididos por nicho ha varias grades, e
    :last-child pegaria o ultimo cartao de cada uma delas */
@@ -115,7 +115,7 @@ h1, h2, h3 { break-after: avoid; }
 /* quatro colunas: as tres fotos mais o convite fecham numa linha e a secao
    inteira cabe na folha dos nichos */
 .galeria { grid-template-columns: repeat(4, 1fr); gap: 13px; }
-.fotos-lede { font-size: 14px; max-width: 70ch; margin-bottom: 14px; break-after: avoid; }
+.fotos-lede { font-size: 14px; max-width: 70ch; margin-bottom: 14px; break-inside: avoid; break-after: avoid; }
 .foto { box-shadow: 4px 4px 0 var(--ink); break-inside: avoid; }
 .foto figcaption { padding: 10px 13px 12px; }
 .foto-titulo { font-size: 14px; }

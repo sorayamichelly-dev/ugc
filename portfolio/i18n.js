@@ -157,6 +157,8 @@ const EN = {
   'Provador e caimento · moda': 'Try-on and fit · fashion',
   'BIOHEAL BOH': 'BIOHEAL BOH',
   'Trio Probioderm · skincare': 'Probioderm trio · skincare',
+  'Simple Organic': 'Simple Organic',
+  'Teste de produtos · skincare': 'Product test · skincare',
   'Tratamento de olheiras · skincare': 'Under-eye treatment · skincare',
   'LUX': 'LUX',
   'Lançamento de fragrância · banho': 'Fragrance launch · bath',
