@@ -22,6 +22,8 @@ const EN = {
   'Nem toda campanha precisa de vídeo. Entrego também a foto: o produto na mão, na pele, no corpo — sempre com gente em cena, mesma luz natural, mesma casa real.':
     'Not every campaign needs video. I also deliver photos: the product in the hand, on the skin, on the body — always with a person in frame, same natural light, same real home.',
   'Produto em uso · cabelo': 'Product in use · hair',
+  'Letty': 'Letty',
+  'Produto em uso · maquiagem': 'Product in use · makeup',
   'Joias': 'Jewellery',
   'Retrato · moda': 'Portrait · fashion',
   'Máscara para olheiras': 'Under-eye patches',

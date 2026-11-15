@@ -112,9 +112,9 @@ section { padding-block: 16px; }
 h1, h2, h3 { break-after: avoid; }
 
 /* fotos: a folha A4 tem 794px e cairia na grade de duas colunas */
-/* quatro colunas: as tres fotos mais o convite fecham numa linha e a secao
+/* cinco colunas: as quatro fotos mais o convite fecham numa linha e a secao
    inteira cabe na folha dos nichos */
-.galeria { grid-template-columns: repeat(4, 1fr); gap: 13px; }
+.galeria { grid-template-columns: repeat(5, 1fr); gap: 12px; }
 .fotos-lede { font-size: 14px; max-width: 70ch; margin-bottom: 14px; break-inside: avoid; break-after: avoid; }
 .foto { box-shadow: 4px 4px 0 var(--ink); break-inside: avoid; }
 .foto figcaption { padding: 10px 13px 12px; }
