@@ -75,14 +75,14 @@ section { padding-block: 16px; }
 .sticker p { font-size: 13.5px; }
 
 /* no papel: quatro colunas fecham as oito capas em duas fileiras cheias */
-/* seis colunas: nenhum nicho passa de seis videos, entao cada grade fecha
+/* sete colunas: nenhum nicho passa de sete videos, entao cada grade fecha
    numa linha so */
-.reel { grid-template-columns: repeat(6, 1fr); gap: 10px; }
-.clip .frame { max-width: 110px; }
-.clip { gap: 9px; }
-.clip-title { font-size: 15px; }
-.clip-sub { font-size: 10px; }
-.clip-link { font-size: 8.5px; }
+.reel { grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.clip .frame { max-width: 94px; }
+.clip { gap: 7px; }
+.clip-title { font-size: 13px; }
+.clip-sub { font-size: 8.5px; }
+.clip-link { font-size: 7.5px; }
 /* o convite "sua marca aqui" vira uma faixa na ultima linha. precisa ser
    pela classe: com os videos divididos por nicho ha varias grades, e
    :last-child pegaria o ultimo cartao de cada uma delas */
