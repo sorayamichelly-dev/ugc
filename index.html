@@ -206,6 +206,82 @@
 
   .link.portfolio .at { color: #FFC46B; }
 
+  /* cupons */
+
+  .cupons {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin-top: clamp(14px, 2vh, 22px);
+  }
+
+  .cupons .nota {
+    font-family: var(--hand);
+    font-size: clamp(22px, 5.6vw, 27px);
+    color: var(--berry);
+    rotate: -1.2deg;
+  }
+
+  .cupom-lista {
+    width: 100%;
+    display: grid;
+    gap: clamp(9px, 1.2vh, 12px);
+  }
+
+  .cupom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: clamp(13px, 1.7vh, 17px) clamp(18px, 4.6vw, 24px);
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: clamp(15px, 4vw, 17px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    box-shadow: 5px 5px 0 var(--ink);
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+
+  .cupom:hover,
+  .cupom:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+
+  .cupom:focus-visible { outline: 3px solid var(--berry); outline-offset: 4px; }
+
+  .cupom.letty { background: var(--berry-soft); }
+  .cupom.simple { background: var(--lilac-soft); }
+
+  .cupom-codigo {
+    font-family: var(--mono);
+    font-size: clamp(12px, 3.2vw, 14px);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  .cupom-acao {
+    font-family: var(--mono);
+    font-size: clamp(10px, 2.6vw, 11.5px);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    white-space: nowrap;
+  }
+
+  .cupom.copiado .cupom-acao { color: #1F7A60; }
+
   .destaque {
     width: 100%;
     display: grid;
@@ -287,6 +363,24 @@
     </a>
   </div>
 
+  <div class="cupons">
+    <span class="nota">meus cupons ✦</span>
+
+    <div class="cupom-lista">
+      <button class="cupom letty" type="button" data-codigo="SORAYA10">
+        <span>Letty</span>
+        <span class="cupom-codigo">SORAYA10</span>
+        <span class="cupom-acao">copiar</span>
+      </button>
+
+      <button class="cupom simple" type="button" data-codigo="S-SORAYAAOLIROUTINE">
+        <span>Simple</span>
+        <span class="cupom-codigo">S-SORAYAAOLIROUTINE</span>
+        <span class="cupom-acao">copiar</span>
+      </button>
+    </div>
+  </div>
+
   <div class="destaque">
     <span class="nota">é uma marca? olha aqui ↓</span>
 
@@ -302,6 +396,40 @@
   </footer>
 
 </div>
+
+<script>
+  /* um toque copia o cupom: no celular selecionar o texto a mao e ruim */
+  document.querySelectorAll('.cupom').forEach(function (b) {
+    var acao = b.querySelector('.cupom-acao');
+    b.addEventListener('click', function () {
+      var codigo = b.dataset.codigo;
+      var pronto = function () {
+        b.classList.add('copiado');
+        acao.textContent = 'copiado ✓';
+        setTimeout(function () {
+          b.classList.remove('copiado');
+          acao.textContent = 'copiar';
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(codigo).then(pronto, function () {
+          acao.textContent = 'copie: ' + codigo;
+        });
+      } else {
+        var campo = document.createElement('textarea');
+        campo.value = codigo;
+        campo.setAttribute('readonly', '');
+        campo.style.position = 'fixed';
+        campo.style.opacity = '0';
+        document.body.appendChild(campo);
+        campo.select();
+        try { document.execCommand('copy'); pronto(); }
+        catch (e) { acao.textContent = 'copie: ' + codigo; }
+        document.body.removeChild(campo);
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
